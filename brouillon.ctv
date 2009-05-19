@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CRANTaskView>
+
+<name>Survival</name>
+<topic>Survival Analysis</topic>
+<maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurélien Latouche</maintainer>
+<version>2009-05-19</version>
+
+<info>
+<p>Survival analysis, also called event history analysis in social science,
+or reliability analysis in engineering, deals with time until occurrence
+of an event of interest. However, this failure time may not be observed
+within the relevant time period, producing so-called censored observations. 
+</p>
+<p>This task view aims at presenting the useful R packages for the analysis
+of time to event data.</p>
+<p>Please let the 
+<a href="mailto:arthur.allignol@fdm.uni-freiburg.de">maintainers</a> know if 
+something is inaccurate or missing.</p>
+
+
