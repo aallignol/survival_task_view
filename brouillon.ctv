@@ -54,23 +54,26 @@ something is inaccurate or missing.</p>
 </ul>
 
 <h2>Hazard Estimation</h2> 
-The <pkg>muhaz</pkg> package permits
-to estimate the hazard function through kernel methods for right-censored data.
-The <code>epi.insthaz</code> function from <pkg>epiR</pkg> computes
-the instantaneous hazard from the Kaplan-Meier estimator.
-<pkg>polspline</pkg>, <pkg>gss</pkg> and <pkg>logspline</pkg> allow 
-to estimate the hazard function using splines.
-The <pkg>eha</pkg> package computes the (cumulative) hazard for 
-several parametric distribution.
+<p>
+  The <pkg>muhaz</pkg> package permits
+  to estimate the hazard function through kernel methods for right-censored data.
+  The <code>epi.insthaz</code> function from <pkg>epiR</pkg> computes
+  the instantaneous hazard from the Kaplan-Meier estimator.
+  <pkg>polspline</pkg>, <pkg>gss</pkg> and <pkg>logspline</pkg> allow 
+  to estimate the hazard function using splines.
+  The <pkg>eha</pkg> package computes the (cumulative) hazard for 
+  several parametric distribution.
+</p>
 
 <h2>Testing</h2>
-The <code>survdiff</code> function of the <pkg>survival</pkg>
-compare survival curves using the G-rho familly of test,
-while <pkg>NADA</pkg> implements the same test for left-censored
-data.
-<code>SurvTest</code> in the <pkg>coin</pkg> package implements 
-the logrank test reformulated as a linear rank test.
-<pkg>surv2sample</pkg> computes Neyman's smooth, logrank,
+<p>
+  The <code>survdiff</code> function of the <pkg>survival</pkg>
+  compare survival curves using the G-rho familly of test,
+  while <pkg>NADA</pkg> implements the same test for left-censored
+  data.
+  <code>SurvTest</code> in the <pkg>coin</pkg> package implements 
+  the logrank test reformulated as a linear rank test.
+  <pkg>surv2sample</pkg> computes Neyman's smooth, logrank,
 Kolmogorov–Smirnov, Cramer–von Mises and Anderson–Darling tests
 to compare 2 survival curves.
 <pkg>survcomp</pkg> permits to compare 2 hazard ratios.
@@ -105,4 +108,24 @@ to compare 2 survival curves.
   <li><em><b>Parametric Proportional Hazards Model</b></em>
     The <pkg>eha</pkg> and <pkg>mixPHM</pkg> packages
     implement a proportional hazards model with a parametric baseline
-    hazard
+    hazard. The <code>pphsm</code> in <pkg>Design</pkg> translates 
+    an AFT model to proportional hazards form.
+  </li>
+</ul>
+<h3>Accelerated Failure Time (AFT) Model</h3>
+<p>
+  The <code>survreg</code> function in package <pkg>survival</pkg>
+  can fit an accelerated failure time model.
+  A modified version of <code>survreg</code> is implemented in the 
+  <pkg>Design</pkg> package. It permits to use some of the <pkg>Design</pkg>
+  functionalities.
+  The <pkg>eha</pkg> package lso proposes an implementation of the AFT model
+  (function <code>aftreg</code>).
+  An AFT model with an error distribution assumed to be a mixture of G-splines
+  is implemented in the <pkg>smoothSurv</pkg> package.
+  The <pkg>NADA</pkg> package proposes the frontends of the <code>survreg</code> 
+  function for left-censored observations.
+  The <pkg>lss</pkg> implements an AFT model based on the least-squares principle.
+  The <pkg>rankreg</pkg> package fits an AFT model using 
+  rank methodology.
+</p>
