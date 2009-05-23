@@ -147,8 +147,8 @@ The <code>cph</code> function of the <pkg>Design</pkg> package fits the Anderson
 model for recurrent events, model which can also be fitted with the
 <pkg>frailtypack</pkg> package. The <pkg>survrec</pkg> package proposes
 implementations of several models for recurrent events data, such as
-the Pena-Strawderman-Hollander, Wang-Chang estimators, and MLE estimation 
-under a Gamma Frailty model. The Pena-Hollander model can be fitted using
+the Peña-Strawderman-Hollander, Wang-Chang estimators, and MLE estimation 
+under a Gamma Frailty model. The Peña-Hollander model can be fitted using
 the <pkg>gcmrec</pkg> package. 
   </li>
 

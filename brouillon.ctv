@@ -19,14 +19,16 @@ of time to event data.</p>
 something is inaccurate or missing.</p>
 
 <h1>Standard Survival Analysis</h1>
-<h2>Estimation of the Survival Distribution</h2>
+
+<p><strong>Estimation of the Survival Distribution</strong></p>
+
 <ul>
-  <li><em><b>Kaplan-Meier:</b></em>
+  <li><em>Kaplan-Meier:</em>
     The <code>survfit</code> function from the <pkg>survival</pkg> package 
     computes the Kaplan-Meier estimator for truncated and/or censored data.
     <pkg>Design</pkg> proposes a modified version of the <code>survfit</code>
     function.
-    The <pkg>prodlim</pkg> includes features for estimating the survival
+    The <pkg>prodlim</pkg> package includes features for estimating the survival
     distribution that are not included in <pkg>survival</pkg>.
     <code>plot.Surv</code> of package <pkg>eha</pkg> permits to plot 
     the Kaplan-Meier estimator.
@@ -35,7 +37,7 @@ something is inaccurate or missing.</p>
     <code>svykm</code> in <pkg>survey</pkg> provides a weighted Kaplan-Meier 
     estimator.
     <code>nested.km</code> in <pkg>NestedCohort</pkg> estimate the 
-    survival curve for each level categorical variables with missing data.
+    survival curve for each level of categorical variables with missing data.
     The <code>kaplan-meier</code> function in <pkg>spatstat</pkg>
     computes the Kaplan-Meier estimator from histogram data.
     The <pkg>MAMSE</pkg> permits to compute a weighted Kaplan-Meier estimate.
@@ -43,8 +45,8 @@ something is inaccurate or missing.</p>
     function using a variant of the Kaplan-Meier estimator.
   </li>
 
-  <li><em><b>NPMLE:</b></em>
-    The <pkg>Icens</pkg> provides several ways to computes the NPMLE
+  <li><em>NPMLE:</em>
+    The <pkg>Icens</pkg> package provides several ways to computes the NPMLE
     of the survival distribution for various censoring and truncation 
     schemes.
     <pkg>MLEcens</pkg> can also be used to compute the MLE for interval-censored data.
@@ -53,20 +55,25 @@ something is inaccurate or missing.</p>
   </li>
 </ul>
 
-<h2>Hazard Estimation</h2> 
-<p>
+<p><strong>Hazard Estimation</strong></p>
+<ul>
+  <li>
   The <pkg>muhaz</pkg> package permits
   to estimate the hazard function through kernel methods for right-censored data.
   The <code>epi.insthaz</code> function from <pkg>epiR</pkg> computes
   the instantaneous hazard from the Kaplan-Meier estimator.
   <pkg>polspline</pkg>, <pkg>gss</pkg> and <pkg>logspline</pkg> allow 
   to estimate the hazard function using splines.
+  The <pkg>ICE</pkg> package aims at estimating the hazard for interval
+  censored data.
   The <pkg>eha</pkg> package computes the (cumulative) hazard for 
   several parametric distribution.
-</p>
+  </li>
+</ul>
 
-<h2>Testing</h2>
-<p>
+<p><strong>Testing</strong></p>
+<ul>
+  <li>
   The <code>survdiff</code> function of the <pkg>survival</pkg>
   compare survival curves using the G-rho familly of test,
   while <pkg>NADA</pkg> implements the same test for left-censored
@@ -74,17 +81,19 @@ something is inaccurate or missing.</p>
   <code>SurvTest</code> in the <pkg>coin</pkg> package implements 
   the logrank test reformulated as a linear rank test.
   <pkg>surv2sample</pkg> computes Neyman's smooth, logrank,
-Kolmogorov–Smirnov, Cramer–von Mises and Anderson–Darling tests
-to compare 2 survival curves.
-<pkg>survcomp</pkg> permits to compare 2 hazard ratios.
-
-<h2>Regression Modelling</h2>
-<h3>Proportional Hazards model</h3>
+  Kolmogorov–Smirnov, Cramer–von Mises and Anderson–Darling tests
+  to compare 2 survival curves.
+  <pkg>survcomp</pkg> permits to compare 2 hazard ratios.
+  </li>
+</ul>
+  
+<p><strong>Regression Modelling</strong></p>
 <ul>
-  <li><em><b>Cox model:</b></em>
+  <li>
+    <em><b>Cox model:</b></em>
     The <code>coxph</code> function in the <pkg>survival</pkg> package fits
     the Cox model.
-    <code>cph</code> in <pkg>Design</pkg> and <pkg>eha</pkg> propose some extensions to the 
+    <code>cph</code> in <pkg>Design</pkg> and the <pkg>eha</pkg> package propose some extensions to the 
     <code>coxph</code> function.
     The package <pkg>coxphf</pkg>
     implements the Firth's penalized maximum likelihood bias reduction
@@ -93,39 +102,205 @@ to compare 2 survival curves.
     in <pkg>coxphw</pkg>.
     The <pkg>coxrobust</pkg> package implements a robust implementation 
     of the Cox model.
+    <code>timecox</code> in package <pkg>timereg</pkg> fits Cox models
+    with possibly time-varying effects.
     The <pkg>mfp</pkg> package permits to fit Cox models with multiple 
     fractional polynomial.
     The <pkg>NestedCohort</pkg> fits Cox models for covariates with missing data.
     A Cox model model can be fitted to data from complex survey design 
     using the <code>svycoxph</code> function in <pkg>survey</pkg>.
     Package <pkg>SimHap</pkg> fits the Cox model to epidemiological, 
-    SNP and haplotypes survival data.
+    SNP and haplotypes survival data.<br/>
     The <code>cumres</code> function in <pkg>gof</pkg> computes goodness-of-fit
     methods for the Cox proportional hazards model.
-    The proportionality can be checked using the <code>cox.zph</code> function 
+    The proportionality assumption can be checked using the <code>cox.zph</code> function 
     in <pkg>survival</pkg>, an also with the <pkg>proptest</pkg> package.
   </li>
-  <li><em><b>Parametric Proportional Hazards Model</b></em>
+
+  <li>
+    <b><em>Parametric Proportional Hazards Model:</b></em>
+    <code>survreg</code> (from <pkg>survival</pkg>) and other 
+    version of it (see below), can be used to fit a parametric
+    proportional hazards model.
     The <pkg>eha</pkg> and <pkg>mixPHM</pkg> packages
     implement a proportional hazards model with a parametric baseline
     hazard. The <code>pphsm</code> in <pkg>Design</pkg> translates 
-    an AFT model to proportional hazards form.
+    an AFT model to proportional hazards form. The <pkg>polspline</pkg>
+    package includes the <code>hare</code> function that fits a hazard
+    regression model, using splines to model the baseline hazard. Hazards
+    can be, but not necessarily, proportional.
+  </li>
+
+  <li>
+    <em><b>Accelerated Failure Time (AFT) Models:</b></em>
+    The <code>survreg</code> function in package <pkg>survival</pkg>
+    can fit an accelerated failure time model.
+    A modified version of <code>survreg</code> is implemented in the 
+    <pkg>Design</pkg> package. It permits to use some of the <pkg>Design</pkg>
+    functionalities.
+    The <pkg>eha</pkg> package also proposes an implementation of the AFT model
+    (function <code>aftreg</code>).
+    An AFT model with an error distribution assumed to be a mixture of G-splines
+    is implemented in the <pkg>smoothSurv</pkg> package.
+    The <pkg>NADA</pkg> package proposes the frontend of the <code>survreg</code> 
+    function for left-censored data.
+    The <pkg>lss</pkg> package implements an AFT model based on the least-squares principle.
+    The <pkg>rankreg</pkg> package fits an AFT model using 
+    rank methodology.
+  </li>
+
+  <li>
+    <b><em>Additive Models:</em></b>
+    Both <pkg>survival</pkg> and <pkg>timereg</pkg> fit the additive hazards
+    model of Aalen in functions <code>aareg</code> and <code>aalen</code>, 
+    respectively. <pkg>timereg</pkg> also proposes an implementation of 
+    the Cox-Aalen model and the partly parametric additive risk model 
+    of McKeague and Sasieni.
+  </li>
+
+  <li>
+    <b><em>Buckley-James Models:</em></b>
+    The <code>bj</code> function in <pkg>Design</pkg> and 
+    <code>BJnoint</code> in <pkg>emplik</pkg> compute the 
+    Buckley-James model, though the latter does it without 
+    an intercept term. 
+  </li>
+
+  <li>
+    <b><em>Other models:</em></b>
+    Functions like <code>survreg</code> can fit other types
+    of models depending on the chosen distribution, <em>e.g.</em>,
+    a tobit model.
+    The <pkg>timereg</pkg> package provides implementation of 
+    the proportional odds model and of the proportional excess hazards
+    model.
+    The <code>Icens</code> function in package <pkg>Epi</pkg> provides
+    a multiplicative relative risk and an additive excess risk model
+    for interval-censored Data.
+    The <pkg>VGAM</pkg> package can fit vector generalized linear and 
+    additive models for censored data.
+    The <pkg>gamlss.cens</pkg> package implements the generalized 
+    additive models for location, scale and shape that can be fitted
+    to censored data.
+    The <pkg>nltm</pkg> package fits non-linear transformation
+    models for censored data, which include, <em>e.g.</em>, proportional 
+    hazards, proportional odds, or cure models.
+    The <code>locfit.censor</code> function in <pkg>locfit</pkg> produces local
+    regression estimates.
+    <code>zicensor</code> in package <pkg>zicounts</pkg> can be used 
+    to fit the classical and the zero-inflated interval count data regression model.
+    The <pkg>gnlm</pkg> package fits generalised nonlinear regression models 
+    for left-, right- and interval-censored data.
+    The <code>crq</code> function included in the <pkg>quantreg</pkg> package implements
+    a conditional quantile regression model for censored data.
+    The <pkg>JM</pkg> package fits shared parameter models for the joint modelling
+    of a longitudinal response and event times.
+</ul>
+
+<h1>Multistate Models</h1>
+<ul>
+  <li>
+    <em><b>General Multistate Models:</b></em>
+    The <code>coxph</code> function from package <pkg>survival</pkg> can be
+    fitted for any transition of a multistate model. It can also
+    be used for comparing two transition hazards, using correspondence
+    between multistate models and time-dependent covariates. Besides,
+    all the regression methods presented above can be used for multistate models
+    as long as they allow for left-truncation.<br/>
+    The <pkg>mvna</pkg> package provides convenient functions for estimating
+    and plotting the cumulative transition hazards in any multistate model,
+    possibly subject to right-censoring and left-truncation.
+    <pkg>changeLOS</pkg> permits to estimate and plot the transition probabilities
+    for any multistate model. It also estimates the change of length of hospital
+    stay. 
+    The <pkg>etm</pkg> package estimates and plots transition probabilities
+    for any multistate models. It can also estimate the variance of the 
+    Aalen-Johansen estimator, and handles left-truncated data.
+    The <pkg>msm</pkg> package contains functions for fitting general continuous-time
+    Markov and hidden Markov multistate models to longitudinal data. Transition rates 
+    and output processes can be modelled in terms of covariates.
+  </li>
+  
+  <li>
+    <em><b>Competing risks:</b></em>
+    <pkg>surv2sample</pkg> provides estimation of the cumulative incidence
+    functions for several causes of failure. The package also performs comparison
+    in two samples. The package <pkg>cmprsk</pkg> also estimates the cumulative 
+    incidence functions, but they can be compared in more than two samples.
+    The package also implements the Fine and Gray model for regressing the
+    subdistribution hazards.
+    Package <pkg>pseudo</pkg> computes pseudo observations
+    for modelling competing risks based on the cumulative incidence functions.
+    (Klein and Andersen 2005). 
+    <pkg>timereg</pkg> does flexible regression modelling for competing risks data based 
+    on the IPCW direct binomial regression approach (Scheike, Zhang, Gerds, 2008).
+    Packages <pkg>survival</pkg> (via <code>survfit</code>) and <pkg>prodlim</pkg>
+    can also be used to estimate and sisplay the cumulative incidence functions.
+  </li>
+  
+  <li>
+    <em><b>Recurrent event data:</b></em>
+    <code>coxph</code> from the <pkg>survival</pkg> can be used to 
+    analyze recurrent event data.
+    The <code>cph</code> function of the <pkg>Design</pkg> package fits the Anderson-Gill
+    model for recurrent events, model which can also be fitted with the
+    <pkg>frailtypack</pkg> package. The <pkg>survrec</pkg> package proposes
+    implementations of several models for recurrent events data, such as
+    the Peña-Strawderman-Hollander, Wang-Chang estimators, and MLE estimation 
+    under a Gamma Frailty model. The Peña-Hollander model can be fitted using
+    the <pkg>gcmrec</pkg> package. 
   </li>
 </ul>
-<h3>Accelerated Failure Time (AFT) Model</h3>
-<p>
-  The <code>survreg</code> function in package <pkg>survival</pkg>
-  can fit an accelerated failure time model.
-  A modified version of <code>survreg</code> is implemented in the 
-  <pkg>Design</pkg> package. It permits to use some of the <pkg>Design</pkg>
-  functionalities.
-  The <pkg>eha</pkg> package lso proposes an implementation of the AFT model
-  (function <code>aftreg</code>).
-  An AFT model with an error distribution assumed to be a mixture of G-splines
-  is implemented in the <pkg>smoothSurv</pkg> package.
-  The <pkg>NADA</pkg> package proposes the frontends of the <code>survreg</code> 
-  function for left-censored observations.
-  The <pkg>lss</pkg> implements an AFT model based on the least-squares principle.
-  The <pkg>rankreg</pkg> package fits an AFT model using 
-  rank methodology.
+
+<h1>Relative Survival</h1>
+<ul>
+  <li>
+    The <pkg>relsurv</pkg> package proposes several functions to deal
+    with relative survival data. For example, <code>rs.surv</code> computes a relative
+    survival curve. <code>rs.add</code> fits an additive model and <code>rsmul</code>
+    fits the Cox model of Andersen et al. for relative survival, while <code>rstrans</code>
+    fits a Cox model in transformed time.
+  </li>
+  <li>
+    The <pkg>timereg</pkg> package permits to fit relative survival models like 
+    the proportional excess and additive excess models. 
+  </li>
+</ul>
+
+<h1>Multivariate Survival</h1>
+<p> 
+  We mean by multivariate survival the analysis of unit,
+  e.g., the survival of twins or a family. To analyze 
+  such data, we can estimate the joint distribution of the 
+  survival times or use frailty models.
 </p>
+<ul>
+  <li>
+    <em><b>Joint modelling:</b></em>
+    Both <pkg>Icens</pkg> and <pkg>MLEcens</pkg> can estimate bivariate
+    survival data subject to interval censoring.
+  </li>
+  <li>
+    <em><b>Frailties:</b></em>
+    Frailty terms can be added in <code>coxph</code> and <code>survreg</code>
+    functions in package <pkg>survival</pkg>. The <code>coxme</code> function
+    in package <pkg>kinship</pkg> fits a mixed-effects Cox model.
+    The <code>two.stage.reg</code> function in the <pkg>timereg</pkg> package
+    fits the Clayton-Oakes-Glidden model.
+    The <pkg>frailtypack</pkg> proportional hazards model with a shared Gamma
+    frailty to right-censored and/or left-truncated data.
+    A proportional hazards model with mixed effects can be fitted using the 
+    <pkg>phmm</pkg> package.
+  </li>
+</ul>
+
+
+</info>
+
+<packagelist>
+</packagelist>
+
+<links>
+</links>
+
+</CRANTaskView>
