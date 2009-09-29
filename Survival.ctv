@@ -43,8 +43,9 @@ something is inaccurate or missing.</p>
     The <code>kaplan-meier</code> function in <pkg>spatstat</pkg>
     computes the Kaplan-Meier estimator from histogram data.
     The <pkg>MAMSE</pkg> package permits to compute a weighted Kaplan-Meier estimate.
-    The <code>KM</code> function in package <pkg>rhosp</pkg> plots the survival
-    function using a variant of the Kaplan-Meier estimator.
+    The <code>KM</code> function in package <pkg>rhosp</pkg> plots the survival 
+    function using a variant of the Kaplan-Meier estimator in a hospitalisation 
+    risk context.
   </li>
 
   <li>
