@@ -10,7 +10,7 @@
   <table summary="Survival task view information">
     <tr><td valign="top"><b>Maintainer:</b></td><td>Arthur Allignol and Aurélien Latouche</td></tr>
     <tr><td valign="top"><b>Contact:</b></td><td>&#x61;&#x72;&#x74;&#x68;&#x75;&#x72;&#x2e;&#x61;&#x6c;&#x6c;&#x69;&#x67;&#x6e;&#x6f;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x66;&#x64;&#x6d;&#x2e;&#x75;&#x6e;&#x69;&#x2d;&#x66;&#x72;&#x65;&#x69;&#x62;&#x75;&#x72;&#x67;&#x2e;&#x64;&#x65;</td></tr>
-    <tr><td valign="top"><b>Version:</b></td><td>2009-05-26</td></tr>
+    <tr><td valign="top"><b>Version:</b></td><td>2009-09-29</td></tr>
   </table>
 
     <div>
@@ -62,6 +62,10 @@ something is inaccurate or missing.
           package implements a fast algorithm and some features
     not included in
 <a href="../packages/survival/index.html">survival</a>.
+    Various confidence intervals and confidence bands for the Kaplan-Meier estimator 
+    are implemented in the
+<a href="../packages/km.ci/index.html">km.ci</a>
+          package.
 <tt>plot.Surv</tt>
           of package
 <a href="../packages/eha/index.html">eha</a>
@@ -93,8 +97,9 @@ something is inaccurate or missing.
 <tt>KM</tt>
           function in package
 <a href="../packages/rhosp/index.html">rhosp</a>
-          plots the survival
-    function using a variant of the Kaplan-Meier estimator.
+          plots the survival 
+    function using a variant of the Kaplan-Meier estimator in a hospitalisation 
+    risk context.
         </li>
         <li>
           <b>
@@ -112,6 +117,12 @@ something is inaccurate or missing.
 <a href="../packages/dblcens/index.html">dblcens</a>
           permits to compute the NPMLE of the cumulative distribution
     function for left- and right-censored data.
+    The
+<tt>icfit</tt>
+          function in package
+<a href="../packages/interval/index.html">interval</a>
+          computes the NPMLE
+    of interval-censored data.
         </li>
         <li>
           <b>
@@ -197,6 +208,18 @@ something is inaccurate or missing.
     to compare 2 survival curves.
         </li>
         <li>
+          The
+<a href="../packages/maxstat/index.html">maxstat</a>
+          package performs tests using maximally selected 
+    rank statistics.
+        </li>
+        <li>
+          The
+<a href="../packages/interval/index.html">interval</a>
+          package implements lograng and Wilcoxon type tests 
+    for interval-censored data.
+        </li>
+        <li>
 <a href="../packages/survcomp/index.html">survcomp</a>
           compares 2 hazard ratios.
         </li>
@@ -205,6 +228,12 @@ something is inaccurate or missing.
 <a href="../packages/TSHRC/index.html">TSHRC</a>
           implements a two stage procedure for comparing
     hazard functions.
+        </li>
+        <li>
+          The
+<a href="../packages/cmprskContin/index.html">cmprskContin</a>
+          package compares continuous marh-specific relative 
+    risks in two treatment groups, with a view towards vaccine trials.
         </li>
       </ul>
       <p>
@@ -226,9 +255,13 @@ something is inaccurate or missing.
           package fits
     the Cox model.
 <tt>cph</tt>
-          in
+          in the
+<a href="../packages/rms/index.html">rms</a>
+          package 
+    (replacement of the
 <a href="../packages/Design/index.html">Design</a>
-          and the
+          package) 
+    and the
 <a href="../packages/eha/index.html">eha</a>
           package propose some extensions to the
 <tt>coxph</tt>
@@ -244,6 +277,9 @@ something is inaccurate or missing.
 <a href="../packages/coxrobust/index.html">coxrobust</a>
           package proposes a robust implementation 
     of the Cox model.
+    The Cox model can be fitted to interval-censored data using the
+<a href="../packages/intcox/index.html">intcox</a>
+          package.
 <tt>timecox</tt>
           in package
 <a href="../packages/timereg/index.html">timereg</a>
@@ -261,6 +297,10 @@ something is inaccurate or missing.
 <tt>svycoxph</tt>
           function in
 <a href="../packages/survey/index.html">survey</a>.
+    The
+<a href="../packages/OrdFacReg/index.html">OrdFacReg</a>
+          package implements the Cox model using an active
+    set algorithm for dummy variables of ordered factors.
     Package
 <a href="../packages/SimHap/index.html">SimHap</a>
           fits the Cox model to epidemiological, 
@@ -291,6 +331,18 @@ something is inaccurate or missing.
 <tt>coxphQuantile</tt>
           in the latter package draws a quantile 
     curve of the survival distribution as a function of covariates.
+    The
+<a href="../packages/multcomp/index.html">multcomp</a>
+          package computes simultaneous tests and confidence intervals for the Cox 
+    model and other parametric survival models.
+    The
+<a href="../packages/multtest/index.html">multtest</a>
+          package proposes a resampling based multiple hypothesis testing
+    that can be applied to the Cox model.
+    The
+<a href="../packages/rankhazard/index.html">rankhazard</a>
+          package permits to plot visualisation of the relative importance 
+    of covariates in a proportional hazards model.
         </li>
         <li>
           <b>
@@ -312,7 +364,7 @@ something is inaccurate or missing.
     hazard. The
 <tt>pphsm</tt>
           in
-<a href="../packages/Design/index.html">Design</a>
+<a href="../packages/rms/index.html">rms</a>
           translates 
     an AFT model to a proportional hazards form. The
 <a href="../packages/polspline/index.html">polspline</a>
@@ -336,9 +388,11 @@ something is inaccurate or missing.
     A modified version of
 <tt>survreg</tt>
           is implemented in the
-<a href="../packages/Design/index.html">Design</a>
-          package. It permits to use some of the
-<a href="../packages/Design/index.html">Design</a>
+<a href="../packages/rms/index.html">rms</a>
+          package (
+<tt>psm</tt>
+          function). It permits to use some of the
+<a href="../packages/rms/index.html">rms</a>
           functionalities.
     The
 <a href="../packages/eha/index.html">eha</a>
@@ -392,7 +446,7 @@ something is inaccurate or missing.
           The
 <tt>bj</tt>
           function in
-<a href="../packages/Design/index.html">Design</a>
+<a href="../packages/rms/index.html">rms</a>
           and
 <tt>BJnoint</tt>
           in
@@ -522,10 +576,18 @@ something is inaccurate or missing.
     for any multistate models. It can also estimate the variance of the 
     Aalen-Johansen estimator, and handles left-truncated data.
     The
+<a href="../packages/mstate/index.html">mstate</a>
+          package permits to estimate hazards and probabilities, 
+    possibly depending on covariates, and to obtain prediction probabilities in the 
+    context of competing risks and multistate models.
+    The
 <a href="../packages/msm/index.html">msm</a>
           package contains functions for fitting general continuous-time
     Markov and hidden Markov multistate models to longitudinal data. Transition rates 
     and output processes can be modelled in terms of covariates.
+    Nonparametric estimates in illness-death models and other three state models can be 
+    obtained with package
+<a href="../packages/p3state.msm/index.html">p3state.msm</a>.
         </li>
         <li>
           <em>
@@ -543,6 +605,11 @@ something is inaccurate or missing.
     incidence functions, but they can be compared in more than two samples.
     The package also implements the Fine and Gray model (1999) for regressing the
     subdistribution hazard of a competing risk.
+    The
+<a href="../packages/kmi/index.html">kmi</a>
+          performs a Kaplan-Meier multiple imputation to recover missing 
+    potential censoring information from competing risks events, permitting to use standard
+    right-censored methods to analyse cumulative incidence functions.
     Package
 <a href="../packages/pseudo/index.html">pseudo</a>
           computes pseudo observations
@@ -575,7 +642,7 @@ something is inaccurate or missing.
     The
 <tt>cph</tt>
           function of the
-<a href="../packages/Design/index.html">Design</a>
+<a href="../packages/rms/index.html">rms</a>
           package fits the Anderson-Gill
     model for recurrent events, model that can also be fitted with the
 <a href="../packages/frailtypack/index.html">frailtypack</a>
@@ -587,7 +654,11 @@ something is inaccurate or missing.
     under a Gamma Frailty model. The Peña-Hollander model can be fitted using
     the
 <a href="../packages/gcmrec/index.html">gcmrec</a>
-          package.
+          package. 
+    The
+<a href="../packages/condGEE/index.html">condGEE</a>
+          package implements the conditional GEE for recurrent 
+    event gap times.
         </li>
       </ul>
       <h1>
@@ -655,7 +726,10 @@ something is inaccurate or missing.
           function
     in package
 <a href="../packages/kinship/index.html">kinship</a>
-          fits a mixed-effects Cox model.
+          fits a mixed-effects Cox model. A more broad 
+    version of it is implemented in the
+<a href="../packages/coxme/index.html">coxme</a>
+          package.
     The
 <tt>two.stage.reg</tt>
           function in the
@@ -679,6 +753,11 @@ something is inaccurate or missing.
         Bayesian Models
       </h1>
       <ul>
+        <li>
+<a href="../packages/survBayes/index.html">survBayes</a>
+          fits through a Bayesian approach a proportional hazards 
+    model for right and interval-censored data.
+        </li>
         <li>
           The
 <a href="../packages/bayesSurv/index.html">bayesSurv</a>
@@ -854,6 +933,13 @@ something is inaccurate or missing.
       </h1>
       <ul>
         <li>
+          The
+<a href="../packages/Epi/index.html">Epi</a>
+          package implements functions for demographic and epidemiological 
+    analysis in the Lexis diagram, that can be used also for interval-censored data
+    and for representing multistate model data.
+        </li>
+        <li>
           Package
 <a href="../packages/boot/index.html">boot</a>
           proposes the
@@ -867,10 +953,13 @@ something is inaccurate or missing.
           package includes the data sets from Klein and Moeschberger (1997).
     The package
 <a href="../packages/SMIR/index.html">SMIR</a>
-          that accompanies Aitkin et al. (2009) and
+          that accompanies Aitkin et al. (2009),
 <a href="../packages/SMPracticals/index.html">SMPracticals</a>
-          that accompanies Davidson (2003) also contain
-    survival data sets.
+          that accompanies Davidson (2003)
+    and
+<a href="../packages/DAAG/index.html">DAAG</a>
+          that accompanies Maindonald, J.H. and Braun,
+    W.J. (2003, 2007) also contain survival data sets.
         </li>
         <li>
 <a href="../packages/survivalROC/index.html">survivalROC</a>
@@ -900,15 +989,19 @@ something is inaccurate or missing.
     <li><a href="../packages/changeLOS/index.html">changeLOS</a></li>
     <li><a href="../packages/clinfun/index.html">clinfun</a></li>
     <li><a href="../packages/cmprsk/index.html">cmprsk</a> (core)</li>
+    <li><a href="../packages/cmprskContin/index.html">cmprskContin</a></li>
     <li><a href="../packages/coin/index.html">coin</a></li>
     <li><a href="../packages/CompetingRiskFrailty/index.html">CompetingRiskFrailty</a></li>
+    <li><a href="../packages/condGEE/index.html">condGEE</a></li>
     <li><a href="../packages/CoxBoost/index.html">CoxBoost</a></li>
+    <li><a href="../packages/coxme/index.html">coxme</a></li>
     <li><a href="../packages/coxphf/index.html">coxphf</a></li>
     <li><a href="../packages/coxphw/index.html">coxphw</a></li>
     <li><a href="../packages/coxrobust/index.html">coxrobust</a></li>
     <li><a href="../packages/CPE/index.html">CPE</a></li>
+    <li><a href="../packages/DAAG/index.html">DAAG</a></li>
     <li><a href="../packages/dblcens/index.html">dblcens</a></li>
-    <li><a href="../packages/Design/index.html">Design</a> (core)</li>
+    <li><a href="../packages/Design/index.html">Design</a></li>
     <li><a href="../packages/DPpackage/index.html">DPpackage</a></li>
     <li><a href="../packages/eha/index.html">eha</a> (core)</li>
     <li><a href="../packages/emplik/index.html">emplik</a></li>
@@ -925,9 +1018,13 @@ something is inaccurate or missing.
     <li><a href="../packages/gss/index.html">gss</a></li>
     <li><a href="../packages/ICE/index.html">ICE</a></li>
     <li><a href="../packages/Icens/index.html">Icens</a></li>
+    <li><a href="../packages/intcox/index.html">intcox</a></li>
+    <li><a href="../packages/interval/index.html">interval</a></li>
     <li><a href="../packages/ipred/index.html">ipred</a></li>
     <li><a href="../packages/JM/index.html">JM</a></li>
     <li><a href="../packages/kinship/index.html">kinship</a></li>
+    <li><a href="../packages/km.ci/index.html">km.ci</a></li>
+    <li><a href="../packages/kmi/index.html">kmi</a></li>
     <li><a href="../packages/KMsurv/index.html">KMsurv</a></li>
     <li><a href="../packages/LearnBayes/index.html">LearnBayes</a></li>
     <li><a href="../packages/lmec/index.html">lmec</a></li>
@@ -937,6 +1034,7 @@ something is inaccurate or missing.
     <li><a href="../packages/lpc/index.html">lpc</a></li>
     <li><a href="../packages/lss/index.html">lss</a></li>
     <li><a href="../packages/MAMSE/index.html">MAMSE</a></li>
+    <li><a href="../packages/maxstat/index.html">maxstat</a></li>
     <li><a href="../packages/mboost/index.html">mboost</a></li>
     <li><a href="../packages/MCMCglmm/index.html">MCMCglmm</a></li>
     <li><a href="../packages/MCMCpack/index.html">MCMCpack</a></li>
@@ -945,12 +1043,17 @@ something is inaccurate or missing.
     <li><a href="../packages/mixPHM/index.html">mixPHM</a></li>
     <li><a href="../packages/MLEcens/index.html">MLEcens</a></li>
     <li><a href="../packages/msm/index.html">msm</a></li>
+    <li><a href="../packages/mstate/index.html">mstate</a></li>
     <li><a href="../packages/muhaz/index.html">muhaz</a> (core)</li>
+    <li><a href="../packages/multcomp/index.html">multcomp</a></li>
+    <li><a href="../packages/multtest/index.html">multtest</a></li>
     <li><a href="../packages/mvna/index.html">mvna</a></li>
     <li><a href="../packages/mvpart/index.html">mvpart</a></li>
     <li><a href="../packages/NADA/index.html">NADA</a></li>
     <li><a href="../packages/NestedCohort/index.html">NestedCohort</a></li>
     <li><a href="../packages/nltm/index.html">nltm</a></li>
+    <li><a href="../packages/OrdFacReg/index.html">OrdFacReg</a></li>
+    <li><a href="../packages/p3state.msm/index.html">p3state.msm</a></li>
     <li><a href="../packages/pamr/index.html">pamr</a></li>
     <li><a href="../packages/party/index.html">party</a></li>
     <li><a href="../packages/pec/index.html">pec</a></li>
@@ -963,10 +1066,12 @@ something is inaccurate or missing.
     <li><a href="../packages/pseudo/index.html">pseudo</a></li>
     <li><a href="../packages/quantreg/index.html">quantreg</a></li>
     <li><a href="../packages/randomSurvivalForest/index.html">randomSurvivalForest</a></li>
+    <li><a href="../packages/rankhazard/index.html">rankhazard</a></li>
     <li><a href="../packages/rankreg/index.html">rankreg</a></li>
     <li><a href="../packages/relsurv/index.html">relsurv</a></li>
     <li><a href="../packages/rhosp/index.html">rhosp</a></li>
     <li><a href="../packages/risksetROC/index.html">risksetROC</a></li>
+    <li><a href="../packages/rms/index.html">rms</a> (core)</li>
     <li><a href="../packages/rpart/index.html">rpart</a></li>
     <li><a href="../packages/SimHap/index.html">SimHap</a></li>
     <li><a href="../packages/SMIR/index.html">SMIR</a></li>
@@ -975,6 +1080,7 @@ something is inaccurate or missing.
     <li><a href="../packages/spatstat/index.html">spatstat</a></li>
     <li><a href="../packages/superpc/index.html">superpc</a></li>
     <li><a href="../packages/surv2sample/index.html">surv2sample</a></li>
+    <li><a href="../packages/survBayes/index.html">survBayes</a></li>
     <li><a href="../packages/survcomp/index.html">survcomp</a></li>
     <li><a href="../packages/survey/index.html">survey</a></li>
     <li><a href="../packages/survival/index.html">survival</a> (core)</li>
@@ -994,9 +1100,6 @@ something is inaccurate or missing.
     <li>CRAN Task View: <a href="SocialSciences.html">SocialSciences</a></li>
     <li>CRAN Task View: <a href="Bayesian.html">Bayesian</a></li>
     <li>CRAN Task View: <a href="MachineLearning.html">MachineLearning</a></li>
-    <li><a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/Design">
-  The Design package
-</a></li>
     <li><a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/RmS">
   Regression modelling strategy
 </a></li>
