@@ -1,11 +1,17 @@
 aa <- read.ctv("/home/arthur/surv_task_view/Survival.ctv")
 ctv2html(aa, file = "/home/arthur/surv_task_view/Survival.html")
 
-setwd("/home/arthur/surv_task_view/")
-system("mkdir test_download")
-bb <- download.packages(aa$packagelist$name, "/home/arthur/surv_task_view/test_download/")
+bb <- as.vector(available.packages()[,1])
 
-length(aa$packagelist$name) == length(bb[, 1])
-## Should be TRUE :-)
+## test
+all(aa$packagelist$name %in% bb)
+## should be TRUE
 
-system("rm -r test_download")
+## setwd("/home/arthur/surv_task_view/")
+## system("mkdir test_download")
+## bb <- download.packages(aa$packagelist$name, "/home/arthur/surv_task_view/test_download/")
+
+## length(aa$packagelist$name) == length(bb[, 1])
+## ## Should be TRUE :-)
+
+## system("rm -r test_download")

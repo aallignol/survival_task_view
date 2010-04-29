@@ -3,6 +3,7 @@
 <head>
   <title>CRAN Task View: Survival Analysis</title>
   <link rel=stylesheet type="text/css" href="../CRAN_web.css" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 </head>
 
 <body>
@@ -10,7 +11,7 @@
   <table summary="Survival task view information">
     <tr><td valign="top"><b>Maintainer:</b></td><td>Arthur Allignol and Aurélien Latouche</td></tr>
     <tr><td valign="top"><b>Contact:</b></td><td>&#x61;&#x72;&#x74;&#x68;&#x75;&#x72;&#x2e;&#x61;&#x6c;&#x6c;&#x69;&#x67;&#x6e;&#x6f;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x66;&#x64;&#x6d;&#x2e;&#x75;&#x6e;&#x69;&#x2d;&#x66;&#x72;&#x65;&#x69;&#x62;&#x75;&#x72;&#x67;&#x2e;&#x64;&#x65;</td></tr>
-    <tr><td valign="top"><b>Version:</b></td><td>2009-09-29</td></tr>
+    <tr><td valign="top"><b>Version:</b></td><td>2009-11-02</td></tr>
   </table>
 
     <div>
@@ -126,6 +127,10 @@ something is inaccurate or missing.
 <a href="../packages/interval/index.html">interval</a>
           computes the NPMLE
     for interval-censored data.
+    The
+<a href="../packages/DTDA/index.html">DTDA</a>
+          implements several algotithms permitting to analyse possibly doubly 
+    truncated survival data.
         </li>
         <li>
           <b>
@@ -207,7 +212,7 @@ something is inaccurate or missing.
         <li>
 <a href="../packages/surv2sample/index.html">surv2sample</a>
           computes Neyman's smooth, logrank,
-    Kolmogorov–Smirnov, Cramer–von Mises and Anderson–Darling tests
+    Kolmogorov-Smirnov, Cramer-von Mises and Anderson-Darling tests
     to compare 2 survival curves.
         </li>
         <li>
@@ -286,6 +291,10 @@ something is inaccurate or missing.
           fits Cox models
     with possibly time-varying effects.
     The
+<a href="../packages/flexCrossHaz/index.html">flexCrossHaz</a>
+          permits to fit Cox models with time-varying effects 
+    using P-splines and possible crossing points.
+    The
 <a href="../packages/mfp/index.html">mfp</a>
           package permits to fit Cox models with multiple 
     fractional polynomial.
@@ -301,10 +310,6 @@ something is inaccurate or missing.
 <a href="../packages/OrdFacReg/index.html">OrdFacReg</a>
           package implements the Cox model using an active
     set algorithm for dummy variables of ordered factors.
-    Package
-<a href="../packages/SimHap/index.html">SimHap</a>
-          fits the Cox model to epidemiological, 
-    SNP and haplotypes survival data.
           <br>
           </br>
           The
@@ -411,10 +416,6 @@ something is inaccurate or missing.
     The
 <a href="../packages/lss/index.html">lss</a>
           package implements an AFT model based on the least-squares principle.
-    The
-<a href="../packages/rankreg/index.html">rankreg</a>
-          package fits an AFT model using 
-    rank methodology.
         </li>
         <li>
           <b>
@@ -567,30 +568,51 @@ something is inaccurate or missing.
     and plotting the cumulative transition hazards in any multistate model,
     possibly subject to right-censoring and left-truncation.
 <a href="../packages/changeLOS/index.html">changeLOS</a>
-          permits to estimate and plot the transition probabilities
-    for any multistate model. It also estimates the change of length of hospital
-    stay. 
+          permits to estimate and plot the transition
+    probabilities for any multistate model. It also estimates the
+    change of length of hospital stay.  
     The
 <a href="../packages/etm/index.html">etm</a>
-          package estimates and plots transition probabilities
-    for any multistate models. It can also estimate the variance of the 
-    Aalen-Johansen estimator, and handles left-truncated data. It also implements 
-    the technique for estimating the length of hospital stay included in
+          package
+    estimates and plots transition probabilities for any multistate
+    models. It can also estimate the variance of the Aalen-Johansen
+    estimator, and handles left-truncated data. It also implements the
+    technique for estimating the length of hospital stay included
+    in
 <a href="../packages/changeLOS/index.html">changeLOS</a>
           in the presence of left-truncation.
     The
 <a href="../packages/mstate/index.html">mstate</a>
-          package permits to estimate hazards and probabilities, 
-    possibly depending on covariates, and to obtain prediction probabilities in the 
-    context of competing risks and multistate models.
+          package permits to estimate hazards and
+    probabilities, possibly depending on covariates, and to obtain
+    prediction probabilities in the context of competing risks and
+    multistate models.  
     The
 <a href="../packages/msm/index.html">msm</a>
-          package contains functions for fitting general continuous-time
-    Markov and hidden Markov multistate models to longitudinal data. Transition rates 
-    and output processes can be modelled in terms of covariates.
-    Nonparametric estimates in illness-death models and other three state models can be 
-    obtained with package
+          package contains functions
+    for fitting general continuous-time Markov and hidden Markov
+    multistate models to longitudinal data. Transition rates and
+    output processes can be modelled in terms of covariates. 
+    The
+<a href="../packages/mspath/index.html">mspath</a>
+          package, based on
+<a href="../packages/msm/index.html">msm</a>, can fit 
+    non-Markov multistate models by maximum likelihood, using a 
+    discrete-time approximation.
+    Nonparametric estimates in illness-death models and other three
+    state models can be obtained with
+    package
 <a href="../packages/p3state.msm/index.html">p3state.msm</a>.
+          <br>
+          </br>
+          The
+<a href="../packages/Epi/index.html">Epi</a>
+          package implements Lexis objects as a way to represent, 
+    manipulate and summarise data from multistate models. 
+    The
+<a href="../packages/TraMineR/index.html">TraMineR</a>
+          package is intended for analyzing
+    state or event sequences that describe life courses.
         </li>
         <li>
           <em>
@@ -624,6 +646,10 @@ something is inaccurate or missing.
 <a href="../packages/CompetingRiskFrailty/index.html">CompetingRiskFrailty</a>
           package estimates the cause-specific hazards
     of a competing risks model using frailties and splines. 
+    The conditional probability function of a competing event can be estimated using the
+<a href="../packages/Cprob/index.html">Cprob</a>
+          package. It also permits to fit a proportional-odds model using either 
+    the temporal process regression or the pseudo-value approaches.
     Packages
 <a href="../packages/survival/index.html">survival</a>
           (via
@@ -649,7 +675,9 @@ something is inaccurate or missing.
           package fits the Anderson-Gill
     model for recurrent events, model that can also be fitted with the
 <a href="../packages/frailtypack/index.html">frailtypack</a>
-          package. The
+          package. The latter also permits to fit joint 
+    frailty models for joint modelling of recurrent events and a terminal event. 
+    The
 <a href="../packages/survrec/index.html">survrec</a>
           package proposes
     implementations of several models for recurrent events data, such as
@@ -743,7 +771,9 @@ something is inaccurate or missing.
 <a href="../packages/frailtypack/index.html">frailtypack</a>
           package fits proportional hazards models with a shared Gamma
     frailty to right-censored and/or left-truncated data using a penalised 
-    likelihood on the hazard function.
+    likelihood on the hazard function. The package also fits additive and nested frailty 
+    models that can be used for, e.g., meta-analysis and for hierarchically clustered data 
+    (with 2 levels of clustering), respectively.
     A proportional hazards model with mixed effects can be fitted using the
 <a href="../packages/phmm/index.html">phmm</a>
           package.  The
@@ -911,7 +941,11 @@ something is inaccurate or missing.
           The
 <a href="../packages/superpc/index.html">superpc</a>
           package implements the supervised principal components
-    for survival data.
+    for survival data. 
+    The
+<a href="../packages/AIM/index.html">AIM</a>
+          package can construct index models for survival outcomes, that is, 
+    construct scores based on a training dataset.
         </li>
       </ul>
       <h1>
@@ -936,11 +970,11 @@ something is inaccurate or missing.
       </h1>
       <ul>
         <li>
-          The
-<a href="../packages/Epi/index.html">Epi</a>
-          package implements functions for demographic and epidemiological 
-    analysis in the Lexis diagram, that can be used also for interval-censored data
-    and for representing multistate model data.
+          Inverse probability weights can be estimated using the
+<a href="../packages/ipw/index.html">ipw</a>
+          package.
+    These can be used to fit marginal structural models to estimate causal effects
+    from observational data.
         </li>
         <li>
           Package
@@ -985,6 +1019,7 @@ something is inaccurate or missing.
   <h3>CRAN packages:</h3>
   <ul>
     <li><a href="../packages/AER/index.html">AER</a></li>
+    <li><a href="../packages/AIM/index.html">AIM</a></li>
     <li><a href="../packages/bayesSurv/index.html">bayesSurv</a></li>
     <li><a href="../packages/BayHaz/index.html">BayHaz</a></li>
     <li><a href="../packages/BMA/index.html">BMA</a></li>
@@ -1002,16 +1037,19 @@ something is inaccurate or missing.
     <li><a href="../packages/coxphw/index.html">coxphw</a></li>
     <li><a href="../packages/coxrobust/index.html">coxrobust</a></li>
     <li><a href="../packages/CPE/index.html">CPE</a></li>
+    <li><a href="../packages/Cprob/index.html">Cprob</a></li>
     <li><a href="../packages/DAAG/index.html">DAAG</a></li>
     <li><a href="../packages/dblcens/index.html">dblcens</a></li>
     <li><a href="../packages/Design/index.html">Design</a></li>
     <li><a href="../packages/DPpackage/index.html">DPpackage</a></li>
+    <li><a href="../packages/DTDA/index.html">DTDA</a></li>
     <li><a href="../packages/eha/index.html">eha</a> (core)</li>
     <li><a href="../packages/emplik/index.html">emplik</a></li>
     <li><a href="../packages/Epi/index.html">Epi</a></li>
     <li><a href="../packages/epiR/index.html">epiR</a></li>
     <li><a href="../packages/etm/index.html">etm</a></li>
     <li><a href="../packages/fitdistrplus/index.html">fitdistrplus</a></li>
+    <li><a href="../packages/flexCrossHaz/index.html">flexCrossHaz</a></li>
     <li><a href="../packages/frailtypack/index.html">frailtypack</a></li>
     <li><a href="../packages/gamlss.cens/index.html">gamlss.cens</a></li>
     <li><a href="../packages/gbm/index.html">gbm</a></li>
@@ -1024,6 +1062,7 @@ something is inaccurate or missing.
     <li><a href="../packages/intcox/index.html">intcox</a></li>
     <li><a href="../packages/interval/index.html">interval</a></li>
     <li><a href="../packages/ipred/index.html">ipred</a></li>
+    <li><a href="../packages/ipw/index.html">ipw</a></li>
     <li><a href="../packages/JM/index.html">JM</a></li>
     <li><a href="../packages/kinship/index.html">kinship</a></li>
     <li><a href="../packages/km.ci/index.html">km.ci</a></li>
@@ -1046,6 +1085,7 @@ something is inaccurate or missing.
     <li><a href="../packages/mixPHM/index.html">mixPHM</a></li>
     <li><a href="../packages/MLEcens/index.html">MLEcens</a></li>
     <li><a href="../packages/msm/index.html">msm</a></li>
+    <li><a href="../packages/mspath/index.html">mspath</a></li>
     <li><a href="../packages/mstate/index.html">mstate</a></li>
     <li><a href="../packages/muhaz/index.html">muhaz</a> (core)</li>
     <li><a href="../packages/multcomp/index.html">multcomp</a></li>
@@ -1070,13 +1110,11 @@ something is inaccurate or missing.
     <li><a href="../packages/quantreg/index.html">quantreg</a></li>
     <li><a href="../packages/randomSurvivalForest/index.html">randomSurvivalForest</a></li>
     <li><a href="../packages/rankhazard/index.html">rankhazard</a></li>
-    <li><a href="../packages/rankreg/index.html">rankreg</a></li>
     <li><a href="../packages/relsurv/index.html">relsurv</a></li>
     <li><a href="../packages/rhosp/index.html">rhosp</a></li>
     <li><a href="../packages/risksetROC/index.html">risksetROC</a></li>
     <li><a href="../packages/rms/index.html">rms</a> (core)</li>
     <li><a href="../packages/rpart/index.html">rpart</a></li>
-    <li><a href="../packages/SimHap/index.html">SimHap</a></li>
     <li><a href="../packages/SMIR/index.html">SMIR</a></li>
     <li><a href="../packages/smoothSurv/index.html">smoothSurv</a></li>
     <li><a href="../packages/SMPracticals/index.html">SMPracticals</a></li>
@@ -1091,6 +1129,7 @@ something is inaccurate or missing.
     <li><a href="../packages/survrec/index.html">survrec</a></li>
     <li><a href="../packages/timereg/index.html">timereg</a> (core)</li>
     <li><a href="../packages/tpr/index.html">tpr</a></li>
+    <li><a href="../packages/TraMineR/index.html">TraMineR</a></li>
     <li><a href="../packages/TSHRC/index.html">TSHRC</a></li>
     <li><a href="../packages/TwoWaySurvival/index.html">TwoWaySurvival</a></li>
     <li><a href="../packages/uniCox/index.html">uniCox</a></li>
@@ -1100,6 +1139,7 @@ something is inaccurate or missing.
 
   <h3>Related links:</h3>
   <ul>
+    <li>CRAN Task View: <a href="ClinicalTrials.html">ClinicalTrials</a></li>
     <li>CRAN Task View: <a href="SocialSciences.html">SocialSciences</a></li>
     <li>CRAN Task View: <a href="Bayesian.html">Bayesian</a></li>
     <li>CRAN Task View: <a href="MachineLearning.html">MachineLearning</a></li>
