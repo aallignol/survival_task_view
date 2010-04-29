@@ -115,7 +115,7 @@ something is inaccurate or missing.</p>
     rank statistics.
   </li>
   <li>
-    The <pkg>interval</pkg> package implements lograng and Wilcoxon type tests 
+    The <pkg>interval</pkg> package implements logrank and Wilcoxon type tests 
     for interval-censored data.
   </li>
   <li>
