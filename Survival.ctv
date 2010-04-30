@@ -448,7 +448,7 @@ something is inaccurate or missing.</p>
     <em><b>Random forest:</b></em>
     Package <pkg>ipred</pkg> implements bagging for survival data.
     The <pkg>randomSurvivalForest</pkg> package fits random forest
-    to survival data
+    to survival and competing risks data,
     while a variant of the random forest is implemented in <pkg>party</pkg>.
   </li>
   <li>
@@ -514,10 +514,11 @@ something is inaccurate or missing.</p>
     and <pkg>DAAG</pkg> that accompanies Maindonald, J.H. and Braun,
     W.J. (2003, 2007) also contain survival data sets.
   </li>
-  <li> <pkg>survivalROC</pkg> computes time-dependent ROC curves from
-    censored data using Kaplan-Meier or nearest neighbour estimation
-    method, while <pkg>risksetROC</pkg> computes ROC curves and AUC  
-    under proportional or non-proportional hazards assumption.
+  <li> <pkg>survivalROC</pkg> computes time-dependent ROC curves and time-dependent 
+    AUC from censored data using Kaplan-Meier or Akritas's nearest neighbour estimation method 
+    (Cumulative sensitivity and dynamic specifity) 
+    while <pkg>risksetROC</pkg> considers time-dependent Incident sensitivity and dynamic 
+    to compute time-dependent accuracy measures 
   </li>
   <li>
     The <pkg>survcomp</pkg> package provides several functions to
