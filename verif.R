@@ -1,3 +1,5 @@
+require(ctv)
+
 aa <- read.ctv("/home/arthur/surv_task_view/Survival.ctv")
 ctv2html(aa, file = "/home/arthur/surv_task_view/Survival.html")
 
