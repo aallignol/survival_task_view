@@ -203,6 +203,8 @@ something is inaccurate or missing.</p>
     The <pkg>NADA</pkg> package proposes the front end of the <code>survreg</code> 
     function for left-censored data.
     The <pkg>lss</pkg> package implements an AFT model based on the least-squares principle.
+    The Simulation-Extrapolation algorithm for the AFT model is implemented in the <pkg>simexaft</pkg>
+    package. It is used with covariates subject to measurement error.
   </li>
 
   <li>
