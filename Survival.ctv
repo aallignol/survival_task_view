@@ -46,6 +46,8 @@ something is inaccurate or missing.</p>
     The <code>KM</code> function in package <pkg>rhosp</pkg> plots the survival 
     function using a variant of the Kaplan-Meier estimator in a hospitalisation 
     risk context.
+    The <pkg>survPresmooth</pkg> computes presmoothed estimates of the main quantities used 
+    for right-censored data, i.e., survival, hazard and density functions.
   </li>
 
   <li>
@@ -102,6 +104,9 @@ something is inaccurate or missing.</p>
     covariates.
   </li>
   <li>
+    The <pkg>exactRankTests</pkg> implements the shift-algorithm by Streitberg and Roehmel for 
+    computing exact conditional p-values and quantiles, possibly for censored data.
+  <li>
     <code>SurvTest</code> in the <pkg>coin</pkg> package implements 
     the logrank test reformulated as a linear rank test.
   </li>
@@ -118,6 +123,9 @@ something is inaccurate or missing.</p>
     The <pkg>interval</pkg> package implements logrank and Wilcoxon type tests 
     for interval-censored data.
   </li>
+  <li>
+    Three generalised logrank tests and a score test for interval-censored data
+    are implemented in the <pkg>glrt</pkg> package.
   <li>
     <pkg>survcomp</pkg> compares 2 hazard ratios.
   </li>
@@ -172,6 +180,8 @@ something is inaccurate or missing.</p>
     model and other parametric survival models.
     The <pkg>multtest</pkg> package proposes a resampling based multiple hypothesis testing
     that can be applied to the Cox model.
+    Testing coefficients of Cox regression models using a Wald test with a 
+    sandwich estimator of variance can be done using the <pkg>saws</pkg> package.
     The <pkg>rankhazard</pkg> package permits to plot visualisation of the relative importance 
     of covariates in a proportional hazards model.
   </li>
@@ -202,9 +212,9 @@ something is inaccurate or missing.</p>
     is implemented in the <pkg>smoothSurv</pkg> package.
     The <pkg>NADA</pkg> package proposes the front end of the <code>survreg</code> 
     function for left-censored data.
-    The <pkg>lss</pkg> package implements an AFT model based on the least-squares principle.
-    The Simulation-Extrapolation algorithm for the AFT model is implemented in the <pkg>simexaft</pkg>
-    package. It is used with covariates subject to measurement error.
+    A least-square principled implemantation of the AFT model can be found in the <pkg>lss</pkg> package.
+    The <pkg>simexaft</pkg> package implements the Simulation-Extrapolation algorithm for the 
+    AFT model, that can be used when covariates are subject to measurement error.
   </li>
 
   <li>
@@ -231,6 +241,8 @@ something is inaccurate or missing.</p>
     a tobit model.
     The <pkg>AER</pkg> package provides the <code>tobit</code> function,
     which is a wrapper of <code>survreg</code> to fit the tobit model.
+    An implementation of the tobit model cross-sectional data and panel data
+    can be found in the <pkg>censReg</pkg> package.
     The <pkg>timereg</pkg> package provides implementation of 
     the proportional odds model and of the proportional excess hazards
     model.
@@ -259,6 +271,10 @@ something is inaccurate or missing.</p>
     package.
     The <pkg>TwoWaySurvival</pkg> package permits to fit an additive model using 
     two time scales.
+    The <pkg>spef</pkg> package fits a proportional means model for panel count 
+    survival data.
+    Aster models, which combine aspects of generalized linear models and Cox models, are 
+    implemented in the <pkg>aster</pkg> and <pkg>aster2</pkg> packages.
   </li>
 </ul>
 
@@ -434,6 +450,11 @@ something is inaccurate or missing.</p>
   <li>
     The <pkg>MCMCglmm</pkg> fits generalised linear mixed models using MCMC
     to right-, left- and interval censored data.
+  </li>
+  <li>
+    The <pkg>splinesurv</pkg> package implements a proportional hazards model 
+    for possibly clustered survival data using MCMC. Baseline hazard and frailty 
+    densities are modelled using B-splines.
   </li>
 </ul>
 
