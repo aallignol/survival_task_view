@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2010-05-26</version>
+<version>2010-11-16</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -47,7 +47,7 @@ something is inaccurate or missing.</p>
     The <code>KM</code> function in package <pkg>rhosp</pkg> plots the survival 
     function using a variant of the Kaplan-Meier estimator in a hospitalisation 
     risk context.
-    The <pkg>survPresmooth</pkg> computes presmoothed estimates of the main quantities used 
+    The <pkg>survPresmooth</pkg> package computes presmoothed estimates of the main quantities used 
     for right-censored data, i.e., survival, hazard and density functions.
   </li>
 
@@ -244,7 +244,7 @@ something is inaccurate or missing.</p>
     a tobit model.
     The <pkg>AER</pkg> package provides the <code>tobit</code> function,
     which is a wrapper of <code>survreg</code> to fit the tobit model.
-    An implementation of the tobit model cross-sectional data and panel data
+    An implementation of the tobit model for cross-sectional data and panel data
     can be found in the <pkg>censReg</pkg> package.
     The <pkg>timereg</pkg> package provides implementation of 
     the proportional odds model and of the proportional excess hazards
@@ -560,10 +560,13 @@ something is inaccurate or missing.</p>
 <packagelist>
 <pkg>AER</pkg>
 <pkg>AIM</pkg>
+<pkg>aster</pkg>
+<pkg>aster2</pkg>
 <pkg>bayesSurv</pkg>
 <pkg>BayHaz</pkg>
 <pkg>BMA</pkg>
 <pkg>boot</pkg>
+<pkg>censReg</pkg>
 <pkg>changeLOS</pkg>
 <pkg>clinfun</pkg>
 <pkg priority="core">cmprsk</pkg>
@@ -588,6 +591,7 @@ something is inaccurate or missing.</p>
 <pkg>Epi</pkg>
 <pkg>epiR</pkg>
 <pkg>etm</pkg>
+<pkg>exactRankTests</pkg>
 <pkg>fitdistrplus</pkg>
 <pkg>flexCrossHaz</pkg>
 <pkg>frailtypack</pkg>
@@ -595,6 +599,7 @@ something is inaccurate or missing.</p>
 <pkg>gbm</pkg>
 <pkg>gcmrec</pkg>
 <pkg>glmpath</pkg>
+<pkg>glrt</pkg>
 <pkg>gof</pkg>
 <pkg>gss</pkg>
 <pkg>ICE</pkg>
@@ -655,10 +660,14 @@ something is inaccurate or missing.</p>
 <pkg>rhosp</pkg>
 <pkg priority="core">rms</pkg>
 <pkg>rpart</pkg>
+<pkg>saws</pkg>
+<pkg>simexaft</pkg>
 <pkg>SMIR</pkg>
 <pkg>smoothSurv</pkg>
 <pkg>SMPracticals</pkg>
 <pkg>spatstat</pkg>
+<pkg>spef</pkg>
+<pkg>splinesurv</pkg>
 <pkg>superpc</pkg>
 <pkg>surv2sample</pkg>
 <pkg>survBayes</pkg>
@@ -667,6 +676,7 @@ something is inaccurate or missing.</p>
 <pkg priority="core">survival</pkg>
 <pkg>survivalROC</pkg>
 <pkg>survrec</pkg>
+<pkg>survPresmooth</pkg>
 <pkg priority="core">timereg</pkg>
 <pkg>tpr</pkg>
 <pkg>TraMineR</pkg>
