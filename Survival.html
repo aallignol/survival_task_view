@@ -104,6 +104,10 @@ something is inaccurate or missing.
           plots the survival 
     function using a variant of the Kaplan-Meier estimator in a hospitalisation 
     risk context.
+    The
+<a href="../packages/survPresmooth/index.html">survPresmooth</a>
+          computes presmoothed estimates of the main quantities used 
+    for right-censored data, i.e., survival, hazard and density functions.
         </li>
         <li>
           <b>
@@ -202,6 +206,12 @@ something is inaccurate or missing.
     covariates.
         </li>
         <li>
+          The
+<a href="../packages/exactRankTests/index.html">exactRankTests</a>
+          implements the shift-algorithm by Streitberg and Roehmel for 
+    computing exact conditional p-values and quantiles, possibly for censored data.
+        </li>
+        <li>
 <tt>SurvTest</tt>
           in the
 <a href="../packages/coin/index.html">coin</a>
@@ -225,6 +235,12 @@ something is inaccurate or missing.
 <a href="../packages/interval/index.html">interval</a>
           package implements logrank and Wilcoxon type tests 
     for interval-censored data.
+        </li>
+        <li>
+          Three generalised logrank tests and a score test for interval-censored data
+    are implemented in the
+<a href="../packages/glrt/index.html">glrt</a>
+          package.
         </li>
         <li>
 <a href="../packages/survcomp/index.html">survcomp</a>
@@ -343,6 +359,10 @@ something is inaccurate or missing.
 <a href="../packages/multtest/index.html">multtest</a>
           package proposes a resampling based multiple hypothesis testing
     that can be applied to the Cox model.
+    Testing coefficients of Cox regression models using a Wald test with a 
+    sandwich estimator of variance can be done using the
+<a href="../packages/saws/index.html">saws</a>
+          package.
     The
 <a href="../packages/rankhazard/index.html">rankhazard</a>
           package permits to plot visualisation of the relative importance 
@@ -411,9 +431,13 @@ something is inaccurate or missing.
           package proposes the front end of the
 <tt>survreg</tt>
           function for left-censored data.
-    The
+    A least-square principled implemantation of the AFT model can be found in the
 <a href="../packages/lss/index.html">lss</a>
-          package implements an AFT model based on the least-squares principle.
+          package.
+    The
+<a href="../packages/simexaft/index.html">simexaft</a>
+          package implements the Simulation-Extrapolation algorithm for the 
+    AFT model, that can be used when covariates are subject to measurement error.
         </li>
         <li>
           <b>
@@ -476,6 +500,10 @@ something is inaccurate or missing.
     which is a wrapper of
 <tt>survreg</tt>
           to fit the tobit model.
+    An implementation of the tobit model cross-sectional data and panel data
+    can be found in the
+<a href="../packages/censReg/index.html">censReg</a>
+          package.
     The
 <a href="../packages/timereg/index.html">timereg</a>
           package provides implementation of 
@@ -536,6 +564,16 @@ something is inaccurate or missing.
 <a href="../packages/TwoWaySurvival/index.html">TwoWaySurvival</a>
           package permits to fit an additive model using 
     two time scales.
+    The
+<a href="../packages/spef/index.html">spef</a>
+          package fits a proportional means model for panel count 
+    survival data.
+    Aster models, which combine aspects of generalized linear models and Cox models, are 
+    implemented in the
+<a href="../packages/aster/index.html">aster</a>
+          and
+<a href="../packages/aster2/index.html">aster2</a>
+          packages.
         </li>
       </ul>
       <h1>
@@ -849,6 +887,13 @@ something is inaccurate or missing.
 <a href="../packages/MCMCglmm/index.html">MCMCglmm</a>
           fits generalised linear mixed models using MCMC
     to right-, left- and interval censored data.
+        </li>
+        <li>
+          The
+<a href="../packages/splinesurv/index.html">splinesurv</a>
+          package implements a proportional hazards model 
+    for possibly clustered survival data using MCMC. Baseline hazard and frailty 
+    densities are modelled using B-splines.
         </li>
       </ul>
       <h1>

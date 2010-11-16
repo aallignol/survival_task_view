@@ -18,6 +18,7 @@ of time to event data.</p>
 <a href="mailto:arthur.allignol@fdm.uni-freiburg.de">maintainers</a> know if 
 something is inaccurate or missing.</p>
 
+
 <h1>Standard Survival Analysis</h1>
 
 <p><strong>Estimation of the Survival Distribution</strong></p>
@@ -106,6 +107,7 @@ something is inaccurate or missing.</p>
   <li>
     The <pkg>exactRankTests</pkg> implements the shift-algorithm by Streitberg and Roehmel for 
     computing exact conditional p-values and quantiles, possibly for censored data.
+  </li>
   <li>
     <code>SurvTest</code> in the <pkg>coin</pkg> package implements 
     the logrank test reformulated as a linear rank test.
@@ -126,6 +128,7 @@ something is inaccurate or missing.</p>
   <li>
     Three generalised logrank tests and a score test for interval-censored data
     are implemented in the <pkg>glrt</pkg> package.
+  </li>
   <li>
     <pkg>survcomp</pkg> compares 2 hazard ratios.
   </li>
@@ -136,7 +139,7 @@ something is inaccurate or missing.</p>
   <li>
     The <pkg>cmprskContin</pkg> package compares continuous mark-specific relative 
     risks in two treatment groups, with a view towards vaccine trials.
-  </li>  
+  </li>
 </ul>
   
 <p><strong>Regression Modelling</strong></p>
