@@ -267,7 +267,6 @@ something is inaccurate or missing.</p>
     regression estimates.
     The <code>crq</code> function included in the <pkg>quantreg</pkg> package implements
     a conditional quantile regression model for censored data.
-    The <pkg>XReg</pkg> implements the extreme regression estimation.
     The <pkg>JM</pkg> package fits shared parameter models for the joint modelling
     of a longitudinal response and event times.
     The temporal process regression model is implemented in the <pkg>tpr</pkg>
@@ -525,9 +524,6 @@ something is inaccurate or missing.</p>
     <pkg>survivalROC</pkg>  computes time-dependent ROC curves and time-dependent AUC from 
     censored data using Kaplan-Meier or Akritas's nearest neighbour estimation method 
     (Cumulative sensitivity and dynamic specificity).
-    <pkg>risksetROC</pkg>  considers time-dependent  
-    Incident sensitivity and dynamic specificity to compute 
-    time-dependent accuracy measures.
   </li>
   <li>
     The <pkg>survcomp</pkg> package provides several functions to
@@ -656,7 +652,6 @@ something is inaccurate or missing.</p>
 <pkg>randomSurvivalForest</pkg>
 <pkg>rankhazard</pkg>
 <pkg>relsurv</pkg>
-<pkg>risksetROC</pkg>
 <pkg>rhosp</pkg>
 <pkg priority="core">rms</pkg>
 <pkg>rpart</pkg>
@@ -684,7 +679,6 @@ something is inaccurate or missing.</p>
 <pkg>TwoWaySurvival</pkg>
 <pkg>uniCox</pkg>
 <pkg>VGAM</pkg>
-<pkg>XReg</pkg>
 </packagelist>
 
 <links>
