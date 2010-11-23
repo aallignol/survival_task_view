@@ -215,7 +215,7 @@ something is inaccurate or missing.</p>
     is implemented in the <pkg>smoothSurv</pkg> package.
     The <pkg>NADA</pkg> package proposes the front end of the <code>survreg</code> 
     function for left-censored data.
-    A least-square principled implemantation of the AFT model can be found in the <pkg>lss</pkg> package.
+    A least-square principled implementation of the AFT model can be found in the <pkg>lss</pkg> package.
     The <pkg>simexaft</pkg> package implements the Simulation-Extrapolation algorithm for the 
     AFT model, that can be used when covariates are subject to measurement error.
   </li>
@@ -249,7 +249,7 @@ something is inaccurate or missing.</p>
     The <pkg>timereg</pkg> package provides implementation of 
     the proportional odds model and of the proportional excess hazards
     model.
-    The <pkg>pseuso</pkg> package computes the pseudo-observation for 
+    The <pkg>pseudo</pkg> package computes the pseudo-observation for 
     modelling the survival function based on the Kaplan-Meier estimator
     and the restricted mean.
     The <code>Icens</code> function in package <pkg>Epi</pkg> provides
