@@ -283,43 +283,45 @@ something is inaccurate or missing.</p>
 <h1>Multistate Models</h1>
 <ul>
   <li>
-    <em><b>General Multistate Models:</b></em>
-    The <code>coxph</code> function from package <pkg>survival</pkg> can be
-    fitted for any transition of a multistate model. It can also
-    be used for comparing two transition hazards, using correspondence
-    between multistate models and time-dependent covariates. Besides,
-    all the regression methods presented above can be used for multistate models
-    as long as they allow for left-truncation.<br/>
-    The <pkg>mvna</pkg> package provides convenient functions for estimating
-    and plotting the cumulative transition hazards in any multistate model,
-    possibly subject to right-censoring and left-truncation.
-    <pkg>changeLOS</pkg> permits to estimate and plot the transition
-    probabilities for any multistate model. It also estimates the
-    change of length of hospital stay.  
-    The <pkg>etm</pkg> package
-    estimates and plots transition probabilities for any multistate
-    models. It can also estimate the variance of the Aalen-Johansen
-    estimator, and handles left-truncated data. It also implements the
-    technique for estimating the length of hospital stay included
-    in <pkg>changeLOS</pkg> in the presence of left-truncation.
-    The <pkg>mstate</pkg> package permits to estimate hazards and
-    probabilities, possibly depending on covariates, and to obtain
-    prediction probabilities in the context of competing risks and
-    multistate models.  
-    The <pkg>msm</pkg> package contains functions
-    for fitting general continuous-time Markov and hidden Markov
-    multistate models to longitudinal data. Transition rates and
-    output processes can be modelled in terms of covariates. 
-    The <pkg>mspath</pkg> package, based on <pkg>msm</pkg>, can fit 
-    non-Markov multistate models by maximum likelihood, using a 
-    discrete-time approximation.
+    <em><b>General Multistate Models:</b></em> The <code>coxph</code>
+    function from package <pkg>survival</pkg> can be fitted for any
+    transition of a multistate model. It can also be used for
+    comparing two transition hazards, using correspondence between
+    multistate models and time-dependent covariates. Besides, all the
+    regression methods presented above can be used for multistate
+    models as long as they allow for left-truncation.<br/> The
+    <pkg>mvna</pkg> package provides convenient functions for
+    estimating and plotting the cumulative transition hazards in any
+    multistate model, possibly subject to right-censoring and
+    left-truncation.  <pkg>changeLOS</pkg> permits to estimate and
+    plot the transition probabilities for any multistate model. It
+    also estimates the change of length of hospital stay.  The
+    <pkg>etm</pkg> package estimates and plots transition
+    probabilities for any multistate models. It can also estimate the
+    variance of the Aalen-Johansen estimator, and handles
+    left-truncated data. It also implements the technique for
+    estimating the length of hospital stay included in
+    <pkg>changeLOS</pkg> in the presence of left-truncation.  The
+    <pkg>msSurv</pkg> package provides nonparametric estimation for
+    multistate models subject to right-censoring (possibly
+    state-dependent) and left-truncation. The <pkg>mstate</pkg>
+    package permits to estimate hazards and probabilities, possibly
+    depending on covariates, and to obtain prediction probabilities in
+    the context of competing risks and multistate models.  The
+    <pkg>msm</pkg> package contains functions for fitting general
+    continuous-time Markov and hidden Markov multistate models to
+    longitudinal data. Transition rates and output processes can be
+    modelled in terms of covariates.  The <pkg>mspath</pkg> package,
+    based on <pkg>msm</pkg>, can fit non-Markov multistate models by
+    maximum likelihood, using a discrete-time approximation.
     Nonparametric estimates in illness-death models and other three
-    state models can be obtained with
-    package <pkg>p3state.msm</pkg>.<br/>
-    The <pkg>Epi</pkg> package implements Lexis objects as a way to represent, 
-    manipulate and summarise data from multistate models. 
-    The <pkg>TraMineR</pkg> package is intended for analysing
-    state or event sequences that describe life courses. 
+    state models can be obtained with package
+    <pkg>p3state.msm</pkg>.<br/> The <pkg>Epi</pkg> package implements
+    Lexis objects as a way to represent, manipulate and summarise data
+    from multistate models.  The <pkg>TraMineR</pkg> package is
+    intended for analysing state or event sequences that describe life
+    courses. Also, the <pkg>Biograph</pkg> package provides various functions
+    for exploring life histories.
   </li>
   
   <li>
@@ -331,6 +333,7 @@ something is inaccurate or missing.</p>
     incidence functions, but they can be compared in more than two samples.
     The package also implements the Fine and Gray model for regressing the
     subdistribution hazard of a competing risk.
+    <pkg>crrSC</pkg> extends the <pkg>cmprsk</pkg> package to stratified and clustered data.
     The <pkg>kmi</pkg> package performs a Kaplan-Meier multiple imputation to recover missing 
     potential censoring information from competing risks events, permitting to use standard
     right-censored methods to analyse cumulative incidence functions.
@@ -345,25 +348,28 @@ something is inaccurate or missing.</p>
     the temporal process regression or the pseudo-value approaches.
     Packages <pkg>survival</pkg> (via <code>survfit</code>) and <pkg>prodlim</pkg>
     can also be used to estimate the cumulative incidence function.
+    The <pkg>compeir</pkg> package estimates event-specific incidence rates
+    rate ratios, event-specific incidence proportions and cumulative incidence functions.
     <pkg>RandomSurvivalForest</pkg> provides summary measures for 
     competing risk such as ensemble CIF.
   </li>
   
   <li>
-    <em><b>Recurrent event data:</b></em>
-    <code>coxph</code> from the <pkg>survival</pkg> package can be used to 
-    analyse recurrent event data.
-    The <code>cph</code> function of the <pkg>rms</pkg> package fits the Anderson-Gill
-    model for recurrent events, model that can also be fitted with the
-    <pkg>frailtypack</pkg> package. The latter also permits to fit joint 
-    frailty models for joint modelling of recurrent events and a terminal event. 
-    The <pkg>survrec</pkg> package proposes
-    implementations of several models for recurrent events data, such as
-    the Pe&#241;a-Strawderman-Hollander, Wang-Chang estimators, and MLE estimation 
-    under a Gamma Frailty model. The Pe&#241;a-Hollander model can be fitted using
-    the <pkg>gcmrec</pkg> package. 
-    The <pkg>condGEE</pkg> package implements the conditional GEE for recurrent 
-    event gap times.
+    <em><b>Recurrent event data:</b></em> <code>coxph</code> from the
+    <pkg>survival</pkg> package can be used to analyse recurrent event
+    data.  The <code>cph</code> function of the <pkg>rms</pkg> package
+    fits the Anderson-Gill model for recurrent events, model that can
+    also be fitted with the <pkg>frailtypack</pkg> package. The latter
+    also permits to fit joint frailty models for joint modelling of
+    recurrent events and a terminal event.  The <pkg>survrec</pkg>
+    package proposes implementations of several models for recurrent
+    events data, such as the Pe&#241;a-Strawderman-Hollander,
+    Wang-Chang estimators, and MLE estimation under a Gamma Frailty
+    model. The Pe&#241;a-Hollander model can be fitted using the
+    <pkg>gcmrec</pkg> package.  The <pkg>condGEE</pkg> package
+    implements the conditional GEE for recurrent event gap times.
+    <pkg>survivalBIV</pkg> permits to estimate the bivariate
+    distribution of two gap times.
   </li>
 </ul>
 
@@ -410,7 +416,8 @@ something is inaccurate or missing.</p>
     (with 2 levels of clustering), respectively.
     A proportional hazards model with mixed effects can be fitted using the 
     <pkg>phmm</pkg> package.  The <pkg>lmec</pkg> package fits a
-    linear mixed-effects model for left-censored data.
+    linear mixed-effects model for left-censored data. The Cox model using h-likelihood 
+    estimation for the frailty terms can be fitted using the <pkg>frailtyHL</pkg> package.
   </li>
 </ul>
 
@@ -490,6 +497,8 @@ something is inaccurate or missing.</p>
     method.
     The <pkg>timereg</pkg> package implements the LASSO estimator for the
     additive risk model.
+    <pkg>bujar</pkg> provides the Buckley-James regression model for 
+    high-dimensional data.
   </li>
   <li>
     <em><b>Boosting:</b></em>
@@ -497,6 +506,8 @@ something is inaccurate or missing.</p>
     package.
     The <pkg>mboost</pkg> package includes a generic gradient boosting algorithm 
     for the construction of prognostic and diagnostic models for right-censored data.
+    <pkg>globalboosttest</pkg> implements permutation-based testing procedure to test 
+    the additional predictive value of high-dimensional data. It is based on <pkg>mboost</pkg>.
     <pkg>CoxBoost</pkg> provides routines for fitting the Cox proportional hazards model 
     and the Fine and Gray model by likelihood based boosting.
   </li>
@@ -504,6 +515,8 @@ something is inaccurate or missing.</p>
     <em><b>Other:</b></em>
     The <pkg>superpc</pkg> package implements the supervised principal components
     for survival data. 
+    Package <pkg>plsRcox</pkg> fits Cox models in a high dimensional setting 
+    through partial least square regression.
     The <pkg>AIM</pkg> package can construct index models for survival outcomes, that is, 
     construct scores based on a training dataset.
   </li>
@@ -526,6 +539,13 @@ something is inaccurate or missing.</p>
     (Cumulative sensitivity and dynamic specificity).
   </li>
   <li>
+    <pkg>risksetROC</pkg> also implements time-dependent ROC curves,
+    AUC and integrated AUC of Heagerty and Zheng (2005).
+  </li>
+  <li>
+    Time-dependent true/false positive rates and AUC can be had in the <pkg>survAUC</pkg> package.
+  </li>
+  <li>
     The <pkg>survcomp</pkg> package provides several functions to
     assess and compare the performance of survival models.
   </li>
@@ -541,6 +561,19 @@ something is inaccurate or missing.</p>
   <li>
     Package <pkg>boot</pkg> proposes the <code>censboot</code> function that 
     implements several types of bootstrap techniques for right-censored data.
+  </li>
+  <li>
+    The <pkg>PermAlgo</pkg> package permits to simulate complex survival data,
+    in which event and censoring times could be conditional on 
+    an user-specified list of (possibly time-dependent) covariates.
+  </li>
+  <li>
+    The <pkg>survJamda</pkg> package provides functions for performing meta-analyses 
+    of gene expression data and to predict patients' survival and risk assessment.
+  </li>
+  <li>
+    <pkg>ipdmeta</pkg> provides tools for individual patient data meta-analysis, mixed-level meta-analysis with patient 
+    level data and mulivariate survival estimates for aggregate studies.
   </li>
   <li>
     The <pkg>KMsurv</pkg> package includes the data sets from Klein and Moeschberger (1997).
@@ -560,7 +593,9 @@ something is inaccurate or missing.</p>
 <pkg>aster2</pkg>
 <pkg>bayesSurv</pkg>
 <pkg>BayHaz</pkg>
+<pkg>Biograph</pkg>
 <pkg>BMA</pkg>
+<pkg>bujar</pkg>
 <pkg>boot</pkg>
 <pkg>censReg</pkg>
 <pkg>changeLOS</pkg>
@@ -569,6 +604,7 @@ something is inaccurate or missing.</p>
 <pkg>cmprskContin</pkg>
 <pkg>coin</pkg>
 <pkg>condGEE</pkg>
+<pkg>compeir</pkg>
 <pkg>CompetingRiskFrailty</pkg>
 <pkg>CoxBoost</pkg>
 <pkg>coxme</pkg>
@@ -577,6 +613,7 @@ something is inaccurate or missing.</p>
 <pkg>coxrobust</pkg>
 <pkg>CPE</pkg>
 <pkg>Cprob</pkg>
+<pkg>crrSC</pkg>
 <pkg>DAAG</pkg>
 <pkg>dblcens</pkg>
 <pkg>Design</pkg>
@@ -590,11 +627,13 @@ something is inaccurate or missing.</p>
 <pkg>exactRankTests</pkg>
 <pkg>fitdistrplus</pkg>
 <pkg>flexCrossHaz</pkg>
+<pkg>frailtyHL</pkg>
 <pkg>frailtypack</pkg>
 <pkg>gamlss.cens</pkg>
 <pkg>gbm</pkg>
 <pkg>gcmrec</pkg>
 <pkg>glmpath</pkg>
+<pkg>globalboosttest</pkg>
 <pkg>glrt</pkg>
 <pkg>gof</pkg>
 <pkg>gss</pkg>
@@ -627,6 +666,7 @@ something is inaccurate or missing.</p>
 <pkg>MLEcens</pkg>
 <pkg>msm</pkg>
 <pkg>mspath</pkg>
+<pkg>msSurv</pkg>
 <pkg>mstate</pkg>
 <pkg priority="core">muhaz</pkg>
 <pkg>multcomp</pkg>
@@ -643,6 +683,8 @@ something is inaccurate or missing.</p>
 <pkg>pec</pkg>
 <pkg>penalized</pkg>
 <pkg>peperr</pkg>
+<pkg>PermAlgo</pkg>
+<pkg>plsRcox</pkg>
 <pkg>polspline</pkg>
 <pkg>prodlim</pkg>
 <pkg>proptest</pkg>
@@ -653,6 +695,7 @@ something is inaccurate or missing.</p>
 <pkg>rankhazard</pkg>
 <pkg>relsurv</pkg>
 <pkg>rhosp</pkg>
+<pkg>risksetROC</pkg>
 <pkg priority="core">rms</pkg>
 <pkg>rpart</pkg>
 <pkg>saws</pkg>
@@ -665,11 +708,14 @@ something is inaccurate or missing.</p>
 <pkg>splinesurv</pkg>
 <pkg>superpc</pkg>
 <pkg>surv2sample</pkg>
+<pkg>survAUC</pkg>
 <pkg>survBayes</pkg>
 <pkg>survcomp</pkg>
 <pkg>survey</pkg>
 <pkg priority="core">survival</pkg>
+<pkg>survivalBIV</pkg>
 <pkg>survivalROC</pkg>
+<pkg>survJamda</pkg>
 <pkg>survrec</pkg>
 <pkg>survPresmooth</pkg>
 <pkg priority="core">timereg</pkg>

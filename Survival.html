@@ -587,65 +587,67 @@ something is inaccurate or missing.
 <tt>coxph</tt>
           function from package
 <a href="../packages/survival/index.html">survival</a>
-          can be
-    fitted for any transition of a multistate model. It can also
-    be used for comparing two transition hazards, using correspondence
-    between multistate models and time-dependent covariates. Besides,
-    all the regression methods presented above can be used for multistate models
-    as long as they allow for left-truncation.
+          can be fitted for any
+    transition of a multistate model. It can also be used for
+    comparing two transition hazards, using correspondence between
+    multistate models and time-dependent covariates. Besides, all the
+    regression methods presented above can be used for multistate
+    models as long as they allow for left-truncation.
           <br>
           </br>
           The
 <a href="../packages/mvna/index.html">mvna</a>
-          package provides convenient functions for estimating
-    and plotting the cumulative transition hazards in any multistate model,
-    possibly subject to right-censoring and left-truncation.
+          package provides convenient functions for
+    estimating and plotting the cumulative transition hazards in any
+    multistate model, possibly subject to right-censoring and
+    left-truncation.
 <a href="../packages/changeLOS/index.html">changeLOS</a>
-          permits to estimate and plot the transition
-    probabilities for any multistate model. It also estimates the
-    change of length of hospital stay.  
-    The
+          permits to estimate and
+    plot the transition probabilities for any multistate model. It
+    also estimates the change of length of hospital stay.  The
 <a href="../packages/etm/index.html">etm</a>
-          package
-    estimates and plots transition probabilities for any multistate
-    models. It can also estimate the variance of the Aalen-Johansen
-    estimator, and handles left-truncated data. It also implements the
-    technique for estimating the length of hospital stay included
-    in
+          package estimates and plots transition
+    probabilities for any multistate models. It can also estimate the
+    variance of the Aalen-Johansen estimator, and handles
+    left-truncated data. It also implements the technique for
+    estimating the length of hospital stay included in
 <a href="../packages/changeLOS/index.html">changeLOS</a>
-          in the presence of left-truncation.
-    The
+          in the presence of left-truncation.  The
+<a href="../packages/msSurv/index.html">msSurv</a>
+          package provides nonparametric estimation for
+    multistate models subject to right-censoring (possibly
+    state-dependent) and left-truncation. The
 <a href="../packages/mstate/index.html">mstate</a>
-          package permits to estimate hazards and
-    probabilities, possibly depending on covariates, and to obtain
-    prediction probabilities in the context of competing risks and
-    multistate models.  
-    The
+          package permits to estimate hazards and probabilities, possibly
+    depending on covariates, and to obtain prediction probabilities in
+    the context of competing risks and multistate models.  The
 <a href="../packages/msm/index.html">msm</a>
-          package contains functions
-    for fitting general continuous-time Markov and hidden Markov
-    multistate models to longitudinal data. Transition rates and
-    output processes can be modelled in terms of covariates. 
-    The
+          package contains functions for fitting general
+    continuous-time Markov and hidden Markov multistate models to
+    longitudinal data. Transition rates and output processes can be
+    modelled in terms of covariates.  The
 <a href="../packages/mspath/index.html">mspath</a>
-          package, based on
-<a href="../packages/msm/index.html">msm</a>, can fit 
-    non-Markov multistate models by maximum likelihood, using a 
-    discrete-time approximation.
+          package,
+    based on
+<a href="../packages/msm/index.html">msm</a>, can fit non-Markov multistate models by
+    maximum likelihood, using a discrete-time approximation.
     Nonparametric estimates in illness-death models and other three
-    state models can be obtained with
-    package
+    state models can be obtained with package
 <a href="../packages/p3state.msm/index.html">p3state.msm</a>.
           <br>
           </br>
           The
 <a href="../packages/Epi/index.html">Epi</a>
-          package implements Lexis objects as a way to represent, 
-    manipulate and summarise data from multistate models. 
-    The
+          package implements
+    Lexis objects as a way to represent, manipulate and summarise data
+    from multistate models.  The
 <a href="../packages/TraMineR/index.html">TraMineR</a>
-          package is intended for analysing
-    state or event sequences that describe life courses.
+          package is
+    intended for analysing state or event sequences that describe life
+    courses. Also, the
+<a href="../packages/Biograph/index.html">Biograph</a>
+          package provides various functions
+    for exploring life histories.
         </li>
         <li>
           <em>
@@ -663,6 +665,10 @@ something is inaccurate or missing.
     incidence functions, but they can be compared in more than two samples.
     The package also implements the Fine and Gray model for regressing the
     subdistribution hazard of a competing risk.
+<a href="../packages/crrSC/index.html">crrSC</a>
+          extends the
+<a href="../packages/cmprsk/index.html">cmprsk</a>
+          package to stratified and clustered data.
     The
 <a href="../packages/kmi/index.html">kmi</a>
           package performs a Kaplan-Meier multiple imputation to recover missing 
@@ -690,6 +696,10 @@ something is inaccurate or missing.
 <tt>survfit</tt>) and
 <a href="../packages/prodlim/index.html">prodlim</a>
           can also be used to estimate the cumulative incidence function.
+    The
+<a href="../packages/compeir/index.html">compeir</a>
+          package estimates event-specific incidence rates
+    rate ratios, event-specific incidence proportions and cumulative incidence functions.
 <a href="../packages/RandomSurvivalForest/index.html">RandomSurvivalForest</a>
           provides summary measures for 
     competing risk such as ensemble CIF.
@@ -703,30 +713,31 @@ something is inaccurate or missing.
 <tt>coxph</tt>
           from the
 <a href="../packages/survival/index.html">survival</a>
-          package can be used to 
-    analyse recurrent event data.
-    The
+          package can be used to analyse recurrent event
+    data.  The
 <tt>cph</tt>
           function of the
 <a href="../packages/rms/index.html">rms</a>
-          package fits the Anderson-Gill
-    model for recurrent events, model that can also be fitted with the
+          package
+    fits the Anderson-Gill model for recurrent events, model that can
+    also be fitted with the
 <a href="../packages/frailtypack/index.html">frailtypack</a>
-          package. The latter also permits to fit joint 
-    frailty models for joint modelling of recurrent events and a terminal event. 
-    The
+          package. The latter
+    also permits to fit joint frailty models for joint modelling of
+    recurrent events and a terminal event.  The
 <a href="../packages/survrec/index.html">survrec</a>
-          package proposes
-    implementations of several models for recurrent events data, such as
-    the Peña-Strawderman-Hollander, Wang-Chang estimators, and MLE estimation 
-    under a Gamma Frailty model. The Peña-Hollander model can be fitted using
-    the
+          package proposes implementations of several models for recurrent
+    events data, such as the Peña-Strawderman-Hollander,
+    Wang-Chang estimators, and MLE estimation under a Gamma Frailty
+    model. The Peña-Hollander model can be fitted using the
 <a href="../packages/gcmrec/index.html">gcmrec</a>
-          package. 
-    The
+          package.  The
 <a href="../packages/condGEE/index.html">condGEE</a>
-          package implements the conditional GEE for recurrent 
-    event gap times.
+          package
+    implements the conditional GEE for recurrent event gap times.
+<a href="../packages/survivalBIV/index.html">survivalBIV</a>
+          permits to estimate the bivariate
+    distribution of two gap times.
         </li>
       </ul>
       <h1>
@@ -816,7 +827,10 @@ something is inaccurate or missing.
           package.  The
 <a href="../packages/lmec/index.html">lmec</a>
           package fits a
-    linear mixed-effects model for left-censored data.
+    linear mixed-effects model for left-censored data. The Cox model using h-likelihood 
+    estimation for the frailty terms can be fitted using the
+<a href="../packages/frailtyHL/index.html">frailtyHL</a>
+          package.
         </li>
       </ul>
       <h1>
@@ -958,6 +972,9 @@ something is inaccurate or missing.
 <a href="../packages/timereg/index.html">timereg</a>
           package implements the LASSO estimator for the
     additive risk model.
+<a href="../packages/bujar/index.html">bujar</a>
+          provides the Buckley-James regression model for 
+    high-dimensional data.
         </li>
         <li>
           <em>
@@ -972,6 +989,10 @@ something is inaccurate or missing.
 <a href="../packages/mboost/index.html">mboost</a>
           package includes a generic gradient boosting algorithm 
     for the construction of prognostic and diagnostic models for right-censored data.
+<a href="../packages/globalboosttest/index.html">globalboosttest</a>
+          implements permutation-based testing procedure to test 
+    the additional predictive value of high-dimensional data. It is based on
+<a href="../packages/mboost/index.html">mboost</a>.
 <a href="../packages/CoxBoost/index.html">CoxBoost</a>
           provides routines for fitting the Cox proportional hazards model 
     and the Fine and Gray model by likelihood based boosting.
@@ -986,6 +1007,10 @@ something is inaccurate or missing.
 <a href="../packages/superpc/index.html">superpc</a>
           package implements the supervised principal components
     for survival data. 
+    Package
+<a href="../packages/plsRcox/index.html">plsRcox</a>
+          fits Cox models in a high dimensional setting 
+    through partial least square regression.
     The
 <a href="../packages/AIM/index.html">AIM</a>
           package can construct index models for survival outcomes, that is, 
@@ -1015,6 +1040,16 @@ something is inaccurate or missing.
     (Cumulative sensitivity and dynamic specificity).
         </li>
         <li>
+<a href="../packages/risksetROC/index.html">risksetROC</a>
+          also implements time-dependent ROC curves,
+    AUC and integrated AUC of Heagerty and Zheng (2005).
+        </li>
+        <li>
+          Time-dependent true/false positive rates and AUC can be had in the
+<a href="../packages/survAUC/index.html">survAUC</a>
+          package.
+        </li>
+        <li>
           The
 <a href="../packages/survcomp/index.html">survcomp</a>
           package provides several functions to
@@ -1042,6 +1077,24 @@ something is inaccurate or missing.
         </li>
         <li>
           The
+<a href="../packages/PermAlgo/index.html">PermAlgo</a>
+          package permits to simulate complex survival data,
+    in which event and censoring times could be conditional on 
+    an user-specified list of (possibly time-dependent) covariates.
+        </li>
+        <li>
+          The
+<a href="../packages/survJamda/index.html">survJamda</a>
+          package provides functions for performing meta-analyses 
+    of gene expression data and to predict patients' survival and risk assessment.
+        </li>
+        <li>
+<a href="../packages/ipdmeta/index.html">ipdmeta</a>
+          provides tools for individual patient data meta-analysis, mixed-level meta-analysis with patient 
+    level data and mulivariate survival estimates for aggregate studies.
+        </li>
+        <li>
+          The
 <a href="../packages/KMsurv/index.html">KMsurv</a>
           package includes the data sets from Klein and Moeschberger (1997).
     The package
@@ -1065,14 +1118,17 @@ something is inaccurate or missing.
     <li><a href="../packages/aster2/index.html">aster2</a></li>
     <li><a href="../packages/bayesSurv/index.html">bayesSurv</a></li>
     <li><a href="../packages/BayHaz/index.html">BayHaz</a></li>
+    <li><a href="../packages/Biograph/index.html">Biograph</a></li>
     <li><a href="../packages/BMA/index.html">BMA</a></li>
     <li><a href="../packages/boot/index.html">boot</a></li>
+    <li><a href="../packages/bujar/index.html">bujar</a></li>
     <li><a href="../packages/censReg/index.html">censReg</a></li>
     <li><a href="../packages/changeLOS/index.html">changeLOS</a></li>
     <li><a href="../packages/clinfun/index.html">clinfun</a></li>
     <li><a href="../packages/cmprsk/index.html">cmprsk</a> (core)</li>
     <li><a href="../packages/cmprskContin/index.html">cmprskContin</a></li>
     <li><a href="../packages/coin/index.html">coin</a></li>
+    <li><a href="../packages/compeir/index.html">compeir</a></li>
     <li><a href="../packages/CompetingRiskFrailty/index.html">CompetingRiskFrailty</a></li>
     <li><a href="../packages/condGEE/index.html">condGEE</a></li>
     <li><a href="../packages/CoxBoost/index.html">CoxBoost</a></li>
@@ -1082,6 +1138,7 @@ something is inaccurate or missing.
     <li><a href="../packages/coxrobust/index.html">coxrobust</a></li>
     <li><a href="../packages/CPE/index.html">CPE</a></li>
     <li><a href="../packages/Cprob/index.html">Cprob</a></li>
+    <li><a href="../packages/crrSC/index.html">crrSC</a></li>
     <li><a href="../packages/DAAG/index.html">DAAG</a></li>
     <li><a href="../packages/dblcens/index.html">dblcens</a></li>
     <li><a href="../packages/Design/index.html">Design</a></li>
@@ -1095,11 +1152,13 @@ something is inaccurate or missing.
     <li><a href="../packages/exactRankTests/index.html">exactRankTests</a></li>
     <li><a href="../packages/fitdistrplus/index.html">fitdistrplus</a></li>
     <li><a href="../packages/flexCrossHaz/index.html">flexCrossHaz</a></li>
+    <li><a href="../packages/frailtyHL/index.html">frailtyHL</a></li>
     <li><a href="../packages/frailtypack/index.html">frailtypack</a></li>
     <li><a href="../packages/gamlss.cens/index.html">gamlss.cens</a></li>
     <li><a href="../packages/gbm/index.html">gbm</a></li>
     <li><a href="../packages/gcmrec/index.html">gcmrec</a></li>
     <li><a href="../packages/glmpath/index.html">glmpath</a></li>
+    <li><a href="../packages/globalboosttest/index.html">globalboosttest</a></li>
     <li><a href="../packages/glrt/index.html">glrt</a></li>
     <li><a href="../packages/gof/index.html">gof</a></li>
     <li><a href="../packages/gss/index.html">gss</a></li>
@@ -1132,6 +1191,7 @@ something is inaccurate or missing.
     <li><a href="../packages/MLEcens/index.html">MLEcens</a></li>
     <li><a href="../packages/msm/index.html">msm</a></li>
     <li><a href="../packages/mspath/index.html">mspath</a></li>
+    <li><a href="../packages/msSurv/index.html">msSurv</a></li>
     <li><a href="../packages/mstate/index.html">mstate</a></li>
     <li><a href="../packages/muhaz/index.html">muhaz</a> (core)</li>
     <li><a href="../packages/multcomp/index.html">multcomp</a></li>
@@ -1148,7 +1208,9 @@ something is inaccurate or missing.
     <li><a href="../packages/pec/index.html">pec</a></li>
     <li><a href="../packages/penalized/index.html">penalized</a></li>
     <li><a href="../packages/peperr/index.html">peperr</a></li>
+    <li><a href="../packages/PermAlgo/index.html">PermAlgo</a></li>
     <li><a href="../packages/phmm/index.html">phmm</a></li>
+    <li><a href="../packages/plsRcox/index.html">plsRcox</a></li>
     <li><a href="../packages/polspline/index.html">polspline</a></li>
     <li><a href="../packages/prodlim/index.html">prodlim</a></li>
     <li><a href="../packages/proptest/index.html">proptest</a></li>
@@ -1158,6 +1220,7 @@ something is inaccurate or missing.
     <li><a href="../packages/rankhazard/index.html">rankhazard</a></li>
     <li><a href="../packages/relsurv/index.html">relsurv</a></li>
     <li><a href="../packages/rhosp/index.html">rhosp</a></li>
+    <li><a href="../packages/risksetROC/index.html">risksetROC</a></li>
     <li><a href="../packages/rms/index.html">rms</a> (core)</li>
     <li><a href="../packages/rpart/index.html">rpart</a></li>
     <li><a href="../packages/saws/index.html">saws</a></li>
@@ -1170,11 +1233,14 @@ something is inaccurate or missing.
     <li><a href="../packages/splinesurv/index.html">splinesurv</a></li>
     <li><a href="../packages/superpc/index.html">superpc</a></li>
     <li><a href="../packages/surv2sample/index.html">surv2sample</a></li>
+    <li><a href="../packages/survAUC/index.html">survAUC</a></li>
     <li><a href="../packages/survBayes/index.html">survBayes</a></li>
     <li><a href="../packages/survcomp/index.html">survcomp</a></li>
     <li><a href="../packages/survey/index.html">survey</a></li>
     <li><a href="../packages/survival/index.html">survival</a> (core)</li>
+    <li><a href="../packages/survivalBIV/index.html">survivalBIV</a></li>
     <li><a href="../packages/survivalROC/index.html">survivalROC</a></li>
+    <li><a href="../packages/survJamda/index.html">survJamda</a></li>
     <li><a href="../packages/survPresmooth/index.html">survPresmooth</a></li>
     <li><a href="../packages/survrec/index.html">survrec</a></li>
     <li><a href="../packages/timereg/index.html">timereg</a> (core)</li>
