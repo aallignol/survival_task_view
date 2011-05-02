@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2010-11-16</version>
+<version>2011-4-21</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -277,6 +277,9 @@ something is inaccurate or missing.</p>
     survival data.
     Aster models, which combine aspects of generalized linear models and Cox models, are 
     implemented in the <pkg>aster</pkg> and <pkg>aster2</pkg> packages.
+    The <pkg>concreg</pkg> package implements conditional logistic 
+    regression for survival data as an alternative to the Cox model 
+    when hazards are non-proportional.
   </li>
 </ul>
 
@@ -348,7 +351,7 @@ something is inaccurate or missing.</p>
     the temporal process regression or the pseudo-value approaches.
     Packages <pkg>survival</pkg> (via <code>survfit</code>) and <pkg>prodlim</pkg>
     can also be used to estimate the cumulative incidence function.
-    The <pkg>compeir</pkg> package estimates event-specific incidence rates
+    The <pkg>compeir</pkg> package estimates event-specific incidence rates,
     rate ratios, event-specific incidence proportions and cumulative incidence functions.
     <pkg>RandomSurvivalForest</pkg> provides summary measures for 
     competing risk such as ensemble CIF.
@@ -539,15 +542,12 @@ something is inaccurate or missing.</p>
     (Cumulative sensitivity and dynamic specificity).
   </li>
   <li>
-    <pkg>risksetROC</pkg> also implements time-dependent ROC curves,
-    AUC and integrated AUC of Heagerty and Zheng (2005).
+    <pkg>risksetROC</pkg> implements time-dependent ROC curves,
+    AUC and integrated AUC of Heagerty and Zheng (Biometrics, 2005).
   </li>
   <li>
-    Time-dependent true/false positive rates and AUC can be had in the <pkg>survAUC</pkg> package.
-  </li>
-  <li>
-    The <pkg>survcomp</pkg> package provides several functions to
-    assess and compare the performance of survival models.
+    Various time-dependent true/false positive rates and 
+    Cumulative/Dynamic AUC are implemented in the <pkg>survAUC</pkg> package.
   </li>
 </ul>
 
@@ -561,6 +561,11 @@ something is inaccurate or missing.</p>
   <li>
     Package <pkg>boot</pkg> proposes the <code>censboot</code> function that 
     implements several types of bootstrap techniques for right-censored data.
+  </li>
+  <li>
+    The <pkg>powerSurvEpi</pkg> package provides power and sample size 
+    calculation 
+    for survival analysis (with a focus towards epidemiological studies).
   </li>
   <li>
     The <pkg>PermAlgo</pkg> package permits to simulate complex survival data,
@@ -603,6 +608,7 @@ something is inaccurate or missing.</p>
 <pkg priority="core">cmprsk</pkg>
 <pkg>cmprskContin</pkg>
 <pkg>coin</pkg>
+<pkg>concreg</pkg>
 <pkg>condGEE</pkg>
 <pkg>compeir</pkg>
 <pkg>CompetingRiskFrailty</pkg>
@@ -690,6 +696,7 @@ something is inaccurate or missing.</p>
 <pkg>proptest</pkg>
 <pkg>quantreg</pkg>
 <pkg>phmm</pkg>
+<pkg>powerSurvEpi</pkg>
 <pkg>pseudo</pkg>
 <pkg>randomSurvivalForest</pkg>
 <pkg>rankhazard</pkg>
@@ -710,7 +717,6 @@ something is inaccurate or missing.</p>
 <pkg>surv2sample</pkg>
 <pkg>survAUC</pkg>
 <pkg>survBayes</pkg>
-<pkg>survcomp</pkg>
 <pkg>survey</pkg>
 <pkg priority="core">survival</pkg>
 <pkg>survivalBIV</pkg>
@@ -742,7 +748,7 @@ something is inaccurate or missing.</p>
   <a href="http://cran.r-project.org/doc/contrib/Fox-Companion/appendix-cox-regression.pdf">Proportional-Hazards
     Regression for Survival Data. Appendix to An R and S-PLUS
     Companion to Applied Regression.</a>
-
+    <a href="http://www.jstatsoft.org/v38">Journal of Statistical Software. Special Volume: Competing Risks and Multi-State Models</a>
 </links>
 
 </CRANTaskView>
