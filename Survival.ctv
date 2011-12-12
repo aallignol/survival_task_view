@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2011-5-2</version>
+<version>2011-12-02</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -27,7 +27,7 @@ something is inaccurate or missing.</p>
   <li><b><em>Kaplan-Meier:</em></b>
     The <code>survfit</code> function from the <pkg>survival</pkg> package 
     computes the Kaplan-Meier estimator for truncated and/or censored data.
-    <pkg>rms</pkg> (replacement of the <pkg>Design</pkg> package) 
+    <pkg>rms</pkg> (replacement of the Design package) 
     proposes a modified version of the <code>survfit</code> function.
     The <pkg>prodlim</pkg> package implements a fast algorithm and some features
     not included in <pkg>survival</pkg>.
@@ -53,7 +53,7 @@ something is inaccurate or missing.</p>
 
   <li>
     <b><em>Nonparametric maximum likelihood estimation (NPMLE):</em></b>
-    The <pkg>Icens</pkg> package provides several ways to compute the NPMLE
+    The <bioc>Icens</bioc> package provides several ways to compute the NPMLE
     of the survival distribution for various censoring and truncation 
     schemes.
     <pkg>MLEcens</pkg> can also be used to compute the MLE for interval-censored data.
@@ -162,8 +162,6 @@ something is inaccurate or missing.</p>
     <pkg>intcox</pkg> package.
     <code>timecox</code> in package <pkg>timereg</pkg> fits Cox models
     with possibly time-varying effects.
-    The <pkg>flexCrossHaz</pkg> permits to fit Cox models with time-varying effects 
-    using P-splines and possible crossing points.
     The <pkg>mfp</pkg> package permits to fit Cox models with multiple 
     fractional polynomial.
     The <pkg>NestedCohort</pkg> fits Cox models for covariates with missing data.
@@ -181,7 +179,7 @@ something is inaccurate or missing.</p>
     curve of the survival distribution as a function of covariates.
     The <pkg>multcomp</pkg> package computes simultaneous tests and confidence intervals for the Cox 
     model and other parametric survival models.
-    The <pkg>multtest</pkg> package proposes a resampling based multiple hypothesis testing
+    The <bioc>multtest</bioc> package on Bioconductor proposes a resampling based multiple hypothesis testing
     that can be applied to the Cox model.
     Testing coefficients of Cox regression models using a Wald test with a 
     sandwich estimator of variance can be done using the <pkg>saws</pkg> package.
@@ -401,7 +399,7 @@ something is inaccurate or missing.</p>
 <ul>
   <li>
     <em><b>Joint modelling:</b></em>
-    Both <pkg>Icens</pkg> and <pkg>MLEcens</pkg> can estimate bivariate
+    Both <bioc>Icens</bioc> and <pkg>MLEcens</pkg> can estimate bivariate
     survival data subject to interval censoring. 
   </li>
   <li>
@@ -626,7 +624,6 @@ something is inaccurate or missing.</p>
 <pkg>crrSC</pkg>
 <pkg>DAAG</pkg>
 <pkg>dblcens</pkg>
-<pkg>Design</pkg>
 <pkg>DPpackage</pkg>
 <pkg>DTDA</pkg>
 <pkg priority="core">eha</pkg>
@@ -636,7 +633,6 @@ something is inaccurate or missing.</p>
 <pkg>etm</pkg>
 <pkg>exactRankTests</pkg>
 <pkg>fitdistrplus</pkg>
-<pkg>flexCrossHaz</pkg>
 <pkg>frailtyHL</pkg>
 <pkg>frailtypack</pkg>
 <pkg>gamlss.cens</pkg>
@@ -648,7 +644,6 @@ something is inaccurate or missing.</p>
 <pkg>gof</pkg>
 <pkg>gss</pkg>
 <pkg>ICE</pkg>
-<pkg>Icens</pkg>
 <pkg>intcox</pkg>
 <pkg>interval</pkg>
 <pkg>ipred</pkg>
@@ -680,7 +675,6 @@ something is inaccurate or missing.</p>
 <pkg>mstate</pkg>
 <pkg priority="core">muhaz</pkg>
 <pkg>multcomp</pkg>
-<pkg>multtest</pkg>
 <pkg>mvna</pkg>
 <pkg>mvpart</pkg>
 <pkg>NADA</pkg>
@@ -742,6 +736,8 @@ something is inaccurate or missing.</p>
   <view>SocialSciences</view>
   <view>Bayesian</view>
   <view>MachineLearning</view>
+  <bioc>Icens</bioc>
+  <bioc>multtest</bioc>
   <bioc>survcomp</bioc>
   <a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/RmS">Regression modelling strategy</a>
   <a href="http://www.gamlss.com/">GAMLSS</a>
