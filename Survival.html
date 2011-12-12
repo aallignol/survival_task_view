@@ -11,7 +11,7 @@
   <table summary="Survival task view information">
     <tr><td valign="top"><b>Maintainer:</b></td><td>Arthur Allignol and Aurelien Latouche</td></tr>
     <tr><td valign="top"><b>Contact:</b></td><td>&#x61;&#x72;&#x74;&#x68;&#x75;&#x72;&#x2e;&#x61;&#x6c;&#x6c;&#x69;&#x67;&#x6e;&#x6f;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x66;&#x64;&#x6d;&#x2e;&#x75;&#x6e;&#x69;&#x2d;&#x66;&#x72;&#x65;&#x69;&#x62;&#x75;&#x72;&#x67;&#x2e;&#x64;&#x65;</td></tr>
-    <tr><td valign="top"><b>Version:</b></td><td>2011-5-2</td></tr>
+    <tr><td valign="top"><b>Version:</b></td><td>2011-12-13</td></tr>
   </table>
 
     <div>
@@ -55,9 +55,7 @@ something is inaccurate or missing.
           package 
     computes the Kaplan-Meier estimator for truncated and/or censored data.
 <a href="../packages/rms/index.html">rms</a>
-          (replacement of the
-<a href="../packages/Design/index.html">Design</a>
-          package) 
+          (replacement of the Design package) 
     proposes a modified version of the
 <tt>survfit</tt>
           function.
@@ -108,6 +106,9 @@ something is inaccurate or missing.
 <a href="../packages/survPresmooth/index.html">survPresmooth</a>
           package computes presmoothed estimates of the main quantities used 
     for right-censored data, i.e., survival, hazard and density functions.
+    The
+<a href="../packages/asbio/index.html">asbio</a>
+          package permits to compute the Kaplan-Meier estimator following Pollock et al. (1998).
         </li>
         <li>
           <b>
@@ -116,7 +117,7 @@ something is inaccurate or missing.
             </em>
           </b>
           The
-<a href="../packages/Icens/index.html">Icens</a>
+<a href="http://www.Bioconductor.org/packages/release/bioc/html/Icens.html"><span class="BioC">Icens</span></a>
           package provides several ways to compute the NPMLE
     of the survival distribution for various censoring and truncation 
     schemes.
@@ -132,9 +133,17 @@ something is inaccurate or missing.
           computes the NPMLE
     for interval-censored data.
     The
+<a href="../packages/dcens/index.html">dcens</a>
+          package simultaneously estimates marginal survival probabilities 
+    in the presence of interval censoring.
+    The
 <a href="../packages/DTDA/index.html">DTDA</a>
           implements several algorithms permitting to analyse possibly doubly 
     truncated survival data.
+    The conditional survival function can be estimated nomparametrically for successive 
+    survival times using the
+<a href="../packages/bwsurvival/index.html">bwsurvival</a>
+          package.
         </li>
         <li>
           <b>
@@ -254,6 +263,12 @@ something is inaccurate or missing.
         </li>
         <li>
           The
+<a href="../packages/Survgini/index.html">Survgini</a>
+          package proposes to test the equality of
+    two survival distributions based on the Gini index.
+        </li>
+        <li>
+          The
 <a href="../packages/cmprskContin/index.html">cmprskContin</a>
           package compares continuous mark-specific relative 
     risks in two treatment groups, with a view towards vaccine trials.
@@ -273,100 +288,100 @@ something is inaccurate or missing.
           </em>
           The
 <tt>coxph</tt>
-          function in the
+          function in
+    the
 <a href="../packages/survival/index.html">survival</a>
-          package fits
-    the Cox model.
+          package fits the Cox model.
 <tt>cph</tt>
           in the
 <a href="../packages/rms/index.html">rms</a>
-          package 
-    and the
+          package and
+    the
 <a href="../packages/eha/index.html">eha</a>
           package propose some extensions to the
 <tt>coxph</tt>
-          function.
-    The package
+          function.  The package
 <a href="../packages/coxphf/index.html">coxphf</a>
           implements the Firth's penalised maximum likelihood bias reduction
-    method for the Cox model.
-    An implementation of weighted estimation in Cox regression can be found 
-    in
+    method for the Cox model.  An implementation of weighted
+    estimation in Cox regression can be found in
 <a href="../packages/coxphw/index.html">coxphw</a>.
     The
 <a href="../packages/coxrobust/index.html">coxrobust</a>
-          package proposes a robust implementation 
-    of the Cox model.
-    The Cox model can be fitted to interval-censored data using the
+          package proposes a robust implementation
+    of the Cox model.  The Cox model can be fitted to
+    interval-censored data using the
 <a href="../packages/intcox/index.html">intcox</a>
           package.
 <tt>timecox</tt>
           in package
 <a href="../packages/timereg/index.html">timereg</a>
           fits Cox models
-    with possibly time-varying effects.
-    The
-<a href="../packages/flexCrossHaz/index.html">flexCrossHaz</a>
-          permits to fit Cox models with time-varying effects 
-    using P-splines and possible crossing points.
-    The
+    with possibly time-varying effects.  The
 <a href="../packages/mfp/index.html">mfp</a>
-          package permits to fit Cox models with multiple 
-    fractional polynomial.
+          package
+    permits to fit Cox models with multiple fractional polynomial.
     The
 <a href="../packages/NestedCohort/index.html">NestedCohort</a>
-          fits Cox models for covariates with missing data.
-    A Cox model model can be fitted to data from complex survey design 
-    using the
+          fits Cox models for covariates with
+    missing data.  A Cox model model can be fitted to data from
+    complex survey design using the
 <tt>svycoxph</tt>
-          function in
-<a href="../packages/survey/index.html">survey</a>.
-    The
+          function
+    in
+<a href="../packages/survey/index.html">survey</a>.  The
+<a href="../packages/dynsurv/index.html">dynsurv</a>
+          package fits
+    time-varying coefficient models for interval censored and right
+    censored survival data using a Bayesian Cox model, a spline based
+    Cox model or a transformation model. The
 <a href="../packages/OrdFacReg/index.html">OrdFacReg</a>
-          package implements the Cox model using an active
-    set algorithm for dummy variables of ordered factors.
+          package implements the Cox model using an active set algorithm for
+    dummy variables of ordered factors.
           <br>
           </br>
           The
 <tt>cumres</tt>
           function in
 <a href="../packages/gof/index.html">gof</a>
-          computes goodness-of-fit
-    methods for the Cox proportional hazards model.
-    The proportionality assumption can be checked using the
+          computes goodness-of-fit methods for
+    the Cox proportional hazards model.  The proportionality
+    assumption can be checked using the
 <tt>cox.zph</tt>
-          function 
+          function
     in
 <a href="../packages/survival/index.html">survival</a>, and also with the
 <a href="../packages/proptest/index.html">proptest</a>
-          package.
-    The
+          package.  The
 <a href="../packages/CPE/index.html">CPE</a>
-          package calculates concordance probability estimate for the Cox model,
-    as does the
+          package calculates concordance
+    probability estimate for the Cox model, as does
+    the
 <tt>coxphCPE</tt>
           function in
-<a href="../packages/clinfun/index.html">clinfun</a>. 
+<a href="../packages/clinfun/index.html">clinfun</a>.
     The
 <tt>coxphQuantile</tt>
-          in the latter package draws a quantile 
-    curve of the survival distribution as a function of covariates.
-    The
+          in the latter package draws a
+    quantile curve of the survival distribution as a function of
+    covariates.  The
 <a href="../packages/multcomp/index.html">multcomp</a>
-          package computes simultaneous tests and confidence intervals for the Cox 
-    model and other parametric survival models.
-    The
-<a href="../packages/multtest/index.html">multtest</a>
-          package proposes a resampling based multiple hypothesis testing
-    that can be applied to the Cox model.
-    Testing coefficients of Cox regression models using a Wald test with a 
-    sandwich estimator of variance can be done using the
+          package computes simultaneous
+    tests and confidence intervals for the Cox model and other
+    parametric survival models.  The
+<a href="http://www.Bioconductor.org/packages/release/bioc/html/multtest.html"><span class="BioC">multtest</span></a>
+          package on
+    Bioconductor proposes a resampling based multiple hypothesis
+    testing that can be applied to the Cox model.  Testing
+    coefficients of Cox regression models using a Wald test with a
+    sandwich estimator of variance can be done using
+    the
 <a href="../packages/saws/index.html">saws</a>
-          package.
-    The
+          package.  The
 <a href="../packages/rankhazard/index.html">rankhazard</a>
-          package permits to plot visualisation of the relative importance 
-    of covariates in a proportional hazards model.
+          package
+    permits to plot visualisation of the relative importance of
+    covariates in a proportional hazards model.
         </li>
         <li>
           <b>
@@ -377,25 +392,30 @@ something is inaccurate or missing.
 <tt>survreg</tt>
           (from
 <a href="../packages/survival/index.html">survival</a>) fits a parametric
-    proportional hazards model.
-    The
+    proportional hazards model.  The
 <a href="../packages/eha/index.html">eha</a>
           and
 <a href="../packages/mixPHM/index.html">mixPHM</a>
-          packages
-    implement a proportional hazards model with a parametric baseline
-    hazard. The
+          packages implement a proportional hazards
+    model with a parametric baseline hazard. The
 <tt>pphsm</tt>
           in
 <a href="../packages/rms/index.html">rms</a>
-          translates 
-    an AFT model to a proportional hazards form. The
+          translates an AFT model to a proportional
+    hazards form. The
 <a href="../packages/polspline/index.html">polspline</a>
-          package includes the
+          package includes
+    the
 <tt>hare</tt>
-          function that fits a hazard
-    regression model, using splines to model the baseline hazard. Hazards
-    can be, but not necessarily, proportional.
+          function that fits a hazard regression
+    model, using splines to model the baseline hazard. Hazards can be,
+    but not necessarily, proportional. The
+<a href="../packages/flexsurv/index.html">flexsurv</a>
+          package
+    implements the model of Royston and Parmar (2002). The model uses
+    natural cubic splines for the baseline survival function, and
+    proportional hazards, proportional odds or probit functions for
+    regression.
         </li>
         <li>
           <em>
@@ -438,6 +458,8 @@ something is inaccurate or missing.
 <a href="../packages/simexaft/index.html">simexaft</a>
           package implements the Simulation-Extrapolation algorithm for the 
     AFT model, that can be used when covariates are subject to measurement error.
+    A robust version of the accelerated failure time model can be found in
+<a href="../packages/RobustAFT/index.html">RobustAFT</a>.
         </li>
         <li>
           <b>
@@ -449,16 +471,17 @@ something is inaccurate or missing.
 <a href="../packages/survival/index.html">survival</a>
           and
 <a href="../packages/timereg/index.html">timereg</a>
-          fit the additive hazards
-    model of Aalen in functions
+          fit the additive hazards model of Aalen in
+    functions
 <tt>aareg</tt>
           and
-<tt>aalen</tt>, 
+<tt>aalen</tt>,
     respectively.
 <a href="../packages/timereg/index.html">timereg</a>
-          also proposes an implementation of 
-    the Cox-Aalen model and the partly parametric additive risk model 
-    of McKeague and Sasieni.
+          also proposes an implementation
+    of the Cox-Aalen model (that can also be used to perform the Lin, Wei and
+    Ying (1994) goodness-of-fit for Cox regression models) and the
+    partly parametric additive risk model of McKeague and Sasieni.
         </li>
         <li>
           <b>
@@ -514,67 +537,67 @@ something is inaccurate or missing.
           package computes the pseudo-observation for 
     modelling the survival function based on the Kaplan-Meier estimator
     and the restricted mean.
+<a href="../packages/flexsurv/index.html">flexsurv</a>
+          fits parametric time-to-event models, in which
+    any parametric distribution can be used to model the survival probability, and
+    where one of the parameters is a linear function of covariates.
     The
 <tt>Icens</tt>
           function in package
 <a href="../packages/Epi/index.html">Epi</a>
           provides
     a multiplicative relative risk and an additive excess risk model
-    for interval-censored data.
-    The
+    for interval-censored data.  The
 <a href="../packages/VGAM/index.html">VGAM</a>
-          package can fit vector generalised linear and 
-    additive models for censored data.
+          package can fit
+    vector generalised linear and additive models for censored data.
     The
 <a href="../packages/gamlss.cens/index.html">gamlss.cens</a>
-          package implements the generalised 
-    additive model for location, scale and shape that can be fitted
-    to censored data.
-    The
+          package implements the generalised
+    additive model for location, scale and shape that can be fitted to
+    censored data.  The
 <a href="../packages/nltm/index.html">nltm</a>
-          package fits non-linear transformation
-    models for censored data, which include,
+          package fits non-linear
+    transformation models for censored data, which
+    include,
           <em>
             e.g.
-          </em>, proportional 
-    hazards, proportional odds, or cure models.
-    The
+          </em>, proportional hazards, proportional odds,
+    or cure models.  The
 <tt>locfit.censor</tt>
-          function in
+          function
+    in
 <a href="../packages/locfit/index.html">locfit</a>
-          produces local
-    regression estimates.
+          produces local regression estimates.
     The
 <tt>crq</tt>
           function included in the
 <a href="../packages/quantreg/index.html">quantreg</a>
-          package implements
-    a conditional quantile regression model for censored data.
-    The
+          package implements a conditional quantile regression model for
+    censored data.  The
 <a href="../packages/JM/index.html">JM</a>
-          package fits shared parameter models for the joint modelling
-    of a longitudinal response and event times.
-    The temporal process regression model is implemented in the
+          package fits shared parameter
+    models for the joint modelling of a longitudinal response and
+    event times.  The temporal process regression model is implemented
+    in the
 <a href="../packages/tpr/index.html">tpr</a>
-          package.
-    The
+          package.  The
 <a href="../packages/TwoWaySurvival/index.html">TwoWaySurvival</a>
-          package permits to fit an additive model using 
-    two time scales.
+          package permits to fit an additive model using two time scales.
     The
 <a href="../packages/spef/index.html">spef</a>
-          package fits a proportional means model for panel count 
-    survival data.
-    Aster models, which combine aspects of generalized linear models and Cox models, are 
-    implemented in the
+          package fits a proportional means model for
+    panel count survival data.  Aster models, which combine aspects of
+    generalized linear models and Cox models, are implemented in
+    the
 <a href="../packages/aster/index.html">aster</a>
           and
 <a href="../packages/aster2/index.html">aster2</a>
           packages.
     The
 <a href="../packages/concreg/index.html">concreg</a>
-          package implements conditional logistic 
-    regression for survival data as an alternative to the Cox model 
+          package implements conditional logistic
+    regression for survival data as an alternative to the Cox model
     when hazards are non-proportional.
         </li>
       </ul>
@@ -651,8 +674,12 @@ something is inaccurate or missing.
     intended for analysing state or event sequences that describe life
     courses. Also, the
 <a href="../packages/Biograph/index.html">Biograph</a>
-          package provides various functions
-    for exploring life histories.
+          package provides various
+    functions for exploring life histories.
+<a href="../packages/asbio/index.html">asbio</a>
+          compute the
+    expected numbers of individuals in specified age classes or life
+    stages given survivorship probabilities from a transition matrix.
         </li>
         <li>
           <em>
@@ -788,7 +815,7 @@ something is inaccurate or missing.
             </b>
           </em>
           Both
-<a href="../packages/Icens/index.html">Icens</a>
+<a href="http://www.Bioconductor.org/packages/release/bioc/html/Icens.html"><span class="BioC">Icens</span></a>
           and
 <a href="../packages/MLEcens/index.html">MLEcens</a>
           can estimate bivariate
@@ -810,12 +837,12 @@ something is inaccurate or missing.
           function
     in package
 <a href="../packages/kinship/index.html">kinship</a>
-          fits a mixed-effects Cox model. A more broad 
+          fits a mixed-effects Cox model. A broader 
     version of it is implemented in the
 <a href="../packages/coxme/index.html">coxme</a>
           package.
     The
-<tt>two.stage.reg</tt>
+<tt>two.stage</tt>
           function in the
 <a href="../packages/timereg/index.html">timereg</a>
           package
@@ -832,10 +859,14 @@ something is inaccurate or missing.
           package.  The
 <a href="../packages/lmec/index.html">lmec</a>
           package fits a
-    linear mixed-effects model for left-censored data. The Cox model using h-likelihood 
-    estimation for the frailty terms can be fitted using the
+    linear mixed-effects model for left-censored data. The Cox model
+    using h-likelihood estimation for the frailty terms can be fitted
+    using the
 <a href="../packages/frailtyHL/index.html">frailtyHL</a>
-          package.
+          package.  The
+<a href="../packages/tlmec/index.html">tlmec</a>
+          package implements a linear mixed effects model for censored data
+    with Student-t or normal distributions.
         </li>
       </ul>
       <h1>
@@ -911,6 +942,14 @@ something is inaccurate or missing.
     for possibly clustered survival data using MCMC. Baseline hazard and frailty 
     densities are modelled using B-splines.
         </li>
+        <li>
+          The
+<a href="../packages/BaSTA/index.html">BaSTA</a>
+          package aims at drawing inference on
+    age-specific mortality from capture-recapture/recovery data when
+    some or all records have missing information on times of birth
+    and death. Covariates can also be included in the model.
+        </li>
       </ul>
       <h1>
         High-Dimensional Data
@@ -974,8 +1013,8 @@ something is inaccurate or missing.
           package implements the lassoed principal components
     method.
     The
-<a href="../packages/timereg/index.html">timereg</a>
-          package implements the LASSO estimator for the
+<a href="../packages/ahaz/index.html">ahaz</a>
+          package implements the LASSO and elastic net estimator for the
     additive risk model.
 <a href="../packages/bujar/index.html">bujar</a>
           provides the Buckley-James regression model for 
@@ -1061,11 +1100,22 @@ something is inaccurate or missing.
           package provides several functions to 
     assess and compare the performance of survival models.
         </li>
+        <li>
+          C-statistics for risk prediction models with censored survival
+    data can be computed via the
+<a href="../packages/survC1/index.html">survC1</a>
+          package.
+        </li>
       </ul>
       <h1>
         Miscellaneous
       </h1>
       <ul>
+        <li>
+<a href="../packages/dynpred/index.html">dynpred</a>
+          is the companion package to "Dynamic Prediction
+    in Clinical Survival Analysis".
+        </li>
         <li>
           Inverse probability weights can be estimated using the
 <a href="../packages/ipw/index.html">ipw</a>
@@ -1120,21 +1170,37 @@ something is inaccurate or missing.
           that accompanies Maindonald, J.H. and Braun,
     W.J. (2003, 2007) also contain survival data sets.
         </li>
+        <li>
+          The
+<a href="../packages/rtv/index.html">rtv</a>
+          package proposes convenience functions for
+    representing, manipulating and visualising time data.
+        </li>
+        <li>
+          The
+<a href="../packages/logconcens/index.html">logconcens</a>
+          package compute the MLE of a density
+    (log-concave) possibly for interval censored data.
+        </li>
       </ul>
     </div>
 
   <h3>CRAN packages:</h3>
   <ul>
     <li><a href="../packages/AER/index.html">AER</a></li>
+    <li><a href="../packages/ahaz/index.html">ahaz</a></li>
     <li><a href="../packages/AIM/index.html">AIM</a></li>
+    <li><a href="../packages/asbio/index.html">asbio</a></li>
     <li><a href="../packages/aster/index.html">aster</a></li>
     <li><a href="../packages/aster2/index.html">aster2</a></li>
+    <li><a href="../packages/BaSTA/index.html">BaSTA</a></li>
     <li><a href="../packages/bayesSurv/index.html">bayesSurv</a></li>
     <li><a href="../packages/BayHaz/index.html">BayHaz</a></li>
     <li><a href="../packages/Biograph/index.html">Biograph</a></li>
     <li><a href="../packages/BMA/index.html">BMA</a></li>
     <li><a href="../packages/boot/index.html">boot</a></li>
     <li><a href="../packages/bujar/index.html">bujar</a></li>
+    <li><a href="../packages/bwsurvival/index.html">bwsurvival</a></li>
     <li><a href="../packages/censReg/index.html">censReg</a></li>
     <li><a href="../packages/changeLOS/index.html">changeLOS</a></li>
     <li><a href="../packages/clinfun/index.html">clinfun</a></li>
@@ -1155,9 +1221,11 @@ something is inaccurate or missing.
     <li><a href="../packages/crrSC/index.html">crrSC</a></li>
     <li><a href="../packages/DAAG/index.html">DAAG</a></li>
     <li><a href="../packages/dblcens/index.html">dblcens</a></li>
-    <li><a href="../packages/Design/index.html">Design</a></li>
+    <li><a href="../packages/dcens/index.html">dcens</a></li>
     <li><a href="../packages/DPpackage/index.html">DPpackage</a></li>
     <li><a href="../packages/DTDA/index.html">DTDA</a></li>
+    <li><a href="../packages/dynpred/index.html">dynpred</a></li>
+    <li><a href="../packages/dynsurv/index.html">dynsurv</a></li>
     <li><a href="../packages/eha/index.html">eha</a> (core)</li>
     <li><a href="../packages/emplik/index.html">emplik</a></li>
     <li><a href="../packages/Epi/index.html">Epi</a></li>
@@ -1165,7 +1233,7 @@ something is inaccurate or missing.
     <li><a href="../packages/etm/index.html">etm</a></li>
     <li><a href="../packages/exactRankTests/index.html">exactRankTests</a></li>
     <li><a href="../packages/fitdistrplus/index.html">fitdistrplus</a></li>
-    <li><a href="../packages/flexCrossHaz/index.html">flexCrossHaz</a></li>
+    <li><a href="../packages/flexsurv/index.html">flexsurv</a></li>
     <li><a href="../packages/frailtyHL/index.html">frailtyHL</a></li>
     <li><a href="../packages/frailtypack/index.html">frailtypack</a></li>
     <li><a href="../packages/gamlss.cens/index.html">gamlss.cens</a></li>
@@ -1177,7 +1245,6 @@ something is inaccurate or missing.
     <li><a href="../packages/gof/index.html">gof</a></li>
     <li><a href="../packages/gss/index.html">gss</a></li>
     <li><a href="../packages/ICE/index.html">ICE</a></li>
-    <li><a href="../packages/Icens/index.html">Icens</a></li>
     <li><a href="../packages/intcox/index.html">intcox</a></li>
     <li><a href="../packages/interval/index.html">interval</a></li>
     <li><a href="../packages/ipred/index.html">ipred</a></li>
@@ -1190,6 +1257,7 @@ something is inaccurate or missing.
     <li><a href="../packages/LearnBayes/index.html">LearnBayes</a></li>
     <li><a href="../packages/lmec/index.html">lmec</a></li>
     <li><a href="../packages/locfit/index.html">locfit</a></li>
+    <li><a href="../packages/logconcens/index.html">logconcens</a></li>
     <li><a href="../packages/LogicReg/index.html">LogicReg</a></li>
     <li><a href="../packages/logspline/index.html">logspline</a></li>
     <li><a href="../packages/lpc/index.html">lpc</a></li>
@@ -1209,7 +1277,6 @@ something is inaccurate or missing.
     <li><a href="../packages/mstate/index.html">mstate</a></li>
     <li><a href="../packages/muhaz/index.html">muhaz</a> (core)</li>
     <li><a href="../packages/multcomp/index.html">multcomp</a></li>
-    <li><a href="../packages/multtest/index.html">multtest</a></li>
     <li><a href="../packages/mvna/index.html">mvna</a></li>
     <li><a href="../packages/mvpart/index.html">mvpart</a></li>
     <li><a href="../packages/NADA/index.html">NADA</a></li>
@@ -1237,7 +1304,9 @@ something is inaccurate or missing.
     <li><a href="../packages/rhosp/index.html">rhosp</a></li>
     <li><a href="../packages/risksetROC/index.html">risksetROC</a></li>
     <li><a href="../packages/rms/index.html">rms</a> (core)</li>
+    <li><a href="../packages/RobustAFT/index.html">RobustAFT</a></li>
     <li><a href="../packages/rpart/index.html">rpart</a></li>
+    <li><a href="../packages/rtv/index.html">rtv</a></li>
     <li><a href="../packages/saws/index.html">saws</a></li>
     <li><a href="../packages/simexaft/index.html">simexaft</a></li>
     <li><a href="../packages/SMIR/index.html">SMIR</a></li>
@@ -1250,7 +1319,9 @@ something is inaccurate or missing.
     <li><a href="../packages/surv2sample/index.html">surv2sample</a></li>
     <li><a href="../packages/survAUC/index.html">survAUC</a></li>
     <li><a href="../packages/survBayes/index.html">survBayes</a></li>
+    <li><a href="../packages/survC1/index.html">survC1</a></li>
     <li><a href="../packages/survey/index.html">survey</a></li>
+    <li><a href="../packages/Survgini/index.html">Survgini</a></li>
     <li><a href="../packages/survival/index.html">survival</a> (core)</li>
     <li><a href="../packages/survivalBIV/index.html">survivalBIV</a></li>
     <li><a href="../packages/survivalROC/index.html">survivalROC</a></li>
@@ -1258,6 +1329,7 @@ something is inaccurate or missing.
     <li><a href="../packages/survPresmooth/index.html">survPresmooth</a></li>
     <li><a href="../packages/survrec/index.html">survrec</a></li>
     <li><a href="../packages/timereg/index.html">timereg</a> (core)</li>
+    <li><a href="../packages/tlmec/index.html">tlmec</a></li>
     <li><a href="../packages/tpr/index.html">tpr</a></li>
     <li><a href="../packages/TraMineR/index.html">TraMineR</a></li>
     <li><a href="../packages/TSHRC/index.html">TSHRC</a></li>
@@ -1272,7 +1344,12 @@ something is inaccurate or missing.
     <li>CRAN Task View: <a href="SocialSciences.html">SocialSciences</a></li>
     <li>CRAN Task View: <a href="Bayesian.html">Bayesian</a></li>
     <li>CRAN Task View: <a href="MachineLearning.html">MachineLearning</a></li>
+    <li>Bioconductor Package: <a href="http://www.Bioconductor.org/packages/release/bioc/html/Icens.html" target="_top"><span class="BioC">Icens</span></a></li>
+    <li>Bioconductor Package: <a href="http://www.Bioconductor.org/packages/release/bioc/html/multtest.html" target="_top"><span class="BioC">multtest</span></a></li>
     <li>Bioconductor Package: <a href="http://www.Bioconductor.org/packages/release/bioc/html/survcomp.html" target="_top"><span class="BioC">survcomp</span></a></li>
+    <li><a href="http://www.imbi.uni-freiburg.de/comprisksmultistate">
+  Competing Risks and Multistate Models with R
+</a></li>
     <li><a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/RmS">
   Regression modelling strategy
 </a></li>
