@@ -140,7 +140,7 @@ something is inaccurate or missing.
 <a href="../packages/DTDA/index.html">DTDA</a>
           implements several algorithms permitting to analyse possibly doubly 
     truncated survival data.
-    The conditional survival function can be estimated nomparametrically for successive 
+    The conditional survival function can be estimated nonparametrically for successive 
     survival times using the
 <a href="../packages/bwsurvival/index.html">bwsurvival</a>
           package.
@@ -334,7 +334,12 @@ something is inaccurate or missing.
           package fits
     time-varying coefficient models for interval censored and right
     censored survival data using a Bayesian Cox model, a spline based
-    Cox model or a transformation model. The
+    Cox model or a transformation model. 
+    The
+<a href="../packages/CSHshape/index.html">CSHshape</a>
+          package computes the Cox proportional hazards model 
+    with shape constrained hazard functions.
+    The
 <a href="../packages/OrdFacReg/index.html">OrdFacReg</a>
           package implements the Cox model using an active set algorithm for
     dummy variables of ordered factors.
@@ -713,6 +718,10 @@ something is inaccurate or missing.
 <a href="../packages/timereg/index.html">timereg</a>
           does flexible regression modelling for competing risks data based 
     on the on the inverse-probability-censoring-weights and direct binomial regression approach.
+<a href="../packages/riskRegression/index.html">riskRegression</a>
+          implements risk regression for competing risks data, 
+    along with other extensions of existing packages useful for survival analysis and 
+    competing risks data. 
     The
 <a href="../packages/CompetingRiskFrailty/index.html">CompetingRiskFrailty</a>
           package estimates the cause-specific hazards
@@ -827,34 +836,36 @@ something is inaccurate or missing.
               Frailties:
             </b>
           </em>
-          Frailty terms can be added in
+          Frailty terms can be added
+    in
 <tt>coxph</tt>
           and
 <tt>survreg</tt>
-          functions in package
-<a href="../packages/survival/index.html">survival</a>. The
-<tt>coxme</tt>
-          function
-    in package
-<a href="../packages/kinship/index.html">kinship</a>
-          fits a mixed-effects Cox model. A broader 
-    version of it is implemented in the
+          functions in
+    package
+<a href="../packages/survival/index.html">survival</a>. A mixed-effects Cox model is
+    implemented in the
 <a href="../packages/coxme/index.html">coxme</a>
           package.
     The
 <tt>two.stage</tt>
           function in the
 <a href="../packages/timereg/index.html">timereg</a>
-          package
-    fits the Clayton-Oakes-Glidden model.
+          package fits the Clayton-Oakes-Glidden model.
+    The
+<a href="../packages/parfm/index.html">parfm</a>
+          package fits fully parametric frailty models
+    via maximisation of the marginal likelihood.
     The
 <a href="../packages/frailtypack/index.html">frailtypack</a>
-          package fits proportional hazards models with a shared Gamma
-    frailty to right-censored and/or left-truncated data using a penalised 
-    likelihood on the hazard function. The package also fits additive and nested frailty 
-    models that can be used for, e.g., meta-analysis and for hierarchically clustered data 
-    (with 2 levels of clustering), respectively.
-    A proportional hazards model with mixed effects can be fitted using the
+          package fits proportional hazards
+    models with a shared Gamma frailty to right-censored and/or
+    left-truncated data using a penalised likelihood on the hazard
+    function. The package also fits additive and nested frailty models
+    that can be used for, e.g., meta-analysis and for hierarchically
+    clustered data (with 2 levels of clustering), respectively.  A
+    proportional hazards model with mixed effects can be fitted using
+    the
 <a href="../packages/phmm/index.html">phmm</a>
           package.  The
 <a href="../packages/lmec/index.html">lmec</a>
@@ -972,6 +983,9 @@ something is inaccurate or missing.
     data.
 <a href="../packages/LogicReg/index.html">LogicReg</a>
           can perform logic regression.
+<a href="../packages/kaps/index.html">kaps</a>
+          implements K-adaptive partitioning and recursive
+    partitioning algorithms for censored survival data
         </li>
         <li>
           <em>
@@ -1141,7 +1155,7 @@ something is inaccurate or missing.
         <li>
           The
 <a href="../packages/PermAlgo/index.html">PermAlgo</a>
-          package permits to simulate complex survival data,
+          package permits the user to simulate complex survival data,
     in which event and censoring times could be conditional on 
     an user-specified list of (possibly time-dependent) covariates.
         </li>
@@ -1160,6 +1174,9 @@ something is inaccurate or missing.
           The
 <a href="../packages/KMsurv/index.html">KMsurv</a>
           package includes the data sets from Klein and Moeschberger (1997).
+    Some supplementary data sets and functions can be found in the
+<a href="../packages/OIsurv/index.html">OIsurv</a>
+          package.
     The package
 <a href="../packages/SMIR/index.html">SMIR</a>
           that accompanies Aitkin et al. (2009),
@@ -1217,6 +1234,7 @@ something is inaccurate or missing.
     <li><a href="../packages/coxphw/index.html">coxphw</a></li>
     <li><a href="../packages/coxrobust/index.html">coxrobust</a></li>
     <li><a href="../packages/CPE/index.html">CPE</a></li>
+    <li><a href="../packages/CPHshape/index.html">CPHshape</a></li>
     <li><a href="../packages/Cprob/index.html">Cprob</a></li>
     <li><a href="../packages/crrSC/index.html">crrSC</a></li>
     <li><a href="../packages/DAAG/index.html">DAAG</a></li>
@@ -1250,7 +1268,7 @@ something is inaccurate or missing.
     <li><a href="../packages/ipred/index.html">ipred</a></li>
     <li><a href="../packages/ipw/index.html">ipw</a></li>
     <li><a href="../packages/JM/index.html">JM</a></li>
-    <li><a href="../packages/kinship/index.html">kinship</a></li>
+    <li><a href="../packages/kaps/index.html">kaps</a></li>
     <li><a href="../packages/km.ci/index.html">km.ci</a></li>
     <li><a href="../packages/kmi/index.html">kmi</a></li>
     <li><a href="../packages/KMsurv/index.html">KMsurv</a></li>
@@ -1282,9 +1300,11 @@ something is inaccurate or missing.
     <li><a href="../packages/NADA/index.html">NADA</a></li>
     <li><a href="../packages/NestedCohort/index.html">NestedCohort</a></li>
     <li><a href="../packages/nltm/index.html">nltm</a></li>
+    <li><a href="../packages/OIsurv/index.html">OIsurv</a></li>
     <li><a href="../packages/OrdFacReg/index.html">OrdFacReg</a></li>
     <li><a href="../packages/p3state.msm/index.html">p3state.msm</a></li>
     <li><a href="../packages/pamr/index.html">pamr</a></li>
+    <li><a href="../packages/parfm/index.html">parfm</a></li>
     <li><a href="../packages/party/index.html">party</a></li>
     <li><a href="../packages/pec/index.html">pec</a></li>
     <li><a href="../packages/penalized/index.html">penalized</a></li>
@@ -1302,6 +1322,7 @@ something is inaccurate or missing.
     <li><a href="../packages/rankhazard/index.html">rankhazard</a></li>
     <li><a href="../packages/relsurv/index.html">relsurv</a></li>
     <li><a href="../packages/rhosp/index.html">rhosp</a></li>
+    <li><a href="../packages/riskRegression/index.html">riskRegression</a></li>
     <li><a href="../packages/risksetROC/index.html">risksetROC</a></li>
     <li><a href="../packages/rms/index.html">rms</a> (core)</li>
     <li><a href="../packages/RobustAFT/index.html">RobustAFT</a></li>
@@ -1313,7 +1334,6 @@ something is inaccurate or missing.
     <li><a href="../packages/smoothSurv/index.html">smoothSurv</a></li>
     <li><a href="../packages/SMPracticals/index.html">SMPracticals</a></li>
     <li><a href="../packages/spatstat/index.html">spatstat</a></li>
-    <li><a href="../packages/spef/index.html">spef</a></li>
     <li><a href="../packages/splinesurv/index.html">splinesurv</a></li>
     <li><a href="../packages/superpc/index.html">superpc</a></li>
     <li><a href="../packages/surv2sample/index.html">surv2sample</a></li>

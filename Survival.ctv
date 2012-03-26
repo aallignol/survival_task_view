@@ -66,7 +66,7 @@ something is inaccurate or missing.</p>
     in the presence of interval censoring.
     The <pkg>DTDA</pkg> implements several algorithms permitting to analyse possibly doubly 
     truncated survival data.
-    The conditional survival function can be estimated nomparametrically for successive 
+    The conditional survival function can be estimated nonparametrically for successive 
     survival times using the <pkg>bwsurvival</pkg> package.
   </li>
   <li>
@@ -175,7 +175,10 @@ something is inaccurate or missing.</p>
     in <pkg>survey</pkg>.  The <pkg>dynsurv</pkg> package fits
     time-varying coefficient models for interval censored and right
     censored survival data using a Bayesian Cox model, a spline based
-    Cox model or a transformation model. The <pkg>OrdFacReg</pkg>
+    Cox model or a transformation model. 
+    The <pkg>CSHshape</pkg> package computes the Cox proportional hazards model 
+    with shape constrained hazard functions.
+    The <pkg>OrdFacReg</pkg>
     package implements the Cox model using an active set algorithm for
     dummy variables of ordered factors.<br/>  The <code>cumres</code>
     function in <pkg>gof</pkg> computes goodness-of-fit methods for
@@ -362,6 +365,9 @@ something is inaccurate or missing.</p>
     for modelling competing risks based on the cumulative incidence functions.
     <pkg>timereg</pkg> does flexible regression modelling for competing risks data based 
     on the on the inverse-probability-censoring-weights and direct binomial regression approach.
+    <pkg>riskRegression</pkg> implements risk regression for competing risks data, 
+    along with other extensions of existing packages useful for survival analysis and 
+    competing risks data. 
     The <pkg>CompetingRiskFrailty</pkg> package estimates the cause-specific hazards
     of a competing risks model using frailties and splines. 
     The <pkg>Cprob</pkg> package estimates the  conditional probability  of a competing event, aka., 
@@ -423,19 +429,22 @@ something is inaccurate or missing.</p>
     survival data subject to interval censoring. 
   </li>
   <li>
-    <em><b>Frailties:</b></em>
-    Frailty terms can be added in <code>coxph</code> and <code>survreg</code>
-    functions in package <pkg>survival</pkg>. The <code>coxme</code> function
-    in package <pkg>kinship</pkg> fits a mixed-effects Cox model. A broader 
-    version of it is implemented in the <pkg>coxme</pkg> package.
-    The <code>two.stage</code> function in the <pkg>timereg</pkg> package
-    fits the Clayton-Oakes-Glidden model.
-    The <pkg>frailtypack</pkg> package fits proportional hazards models with a shared Gamma
-    frailty to right-censored and/or left-truncated data using a penalised 
-    likelihood on the hazard function. The package also fits additive and nested frailty 
-    models that can be used for, e.g., meta-analysis and for hierarchically clustered data 
-    (with 2 levels of clustering), respectively.
-    A proportional hazards model with mixed effects can be fitted using the 
+    <em><b>Frailties:</b></em> Frailty terms can be added
+    in <code>coxph</code> and <code>survreg</code> functions in
+    package <pkg>survival</pkg>. A mixed-effects Cox model is
+    implemented in the <pkg>coxme</pkg> package.
+    The <code>two.stage</code> function in the <pkg>timereg</pkg>
+    package fits the Clayton-Oakes-Glidden model.
+    The <pkg>parfm</pkg> package fits fully parametric frailty models
+    via maximisation of the marginal likelihood.
+    The <pkg>frailtypack</pkg> package fits proportional hazards
+    models with a shared Gamma frailty to right-censored and/or
+    left-truncated data using a penalised likelihood on the hazard
+    function. The package also fits additive and nested frailty models
+    that can be used for, e.g., meta-analysis and for hierarchically
+    clustered data (with 2 levels of clustering), respectively.  A
+    proportional hazards model with mixed effects can be fitted using
+    the
     <pkg>phmm</pkg> package.  The <pkg>lmec</pkg> package fits a
     linear mixed-effects model for left-censored data. The Cox model
     using h-likelihood estimation for the frailty terms can be fitted
@@ -506,6 +515,9 @@ something is inaccurate or missing.</p>
     The <pkg>party</pkg> package implements recursive partitioning for survival
     data.
     <pkg>LogicReg</pkg> can perform logic regression.
+    <pkg>kaps</pkg> implements K-adaptive partitioning and recursive
+    partitioning algorithms for censored survival data
+
   </li>
   <li>
     <em><b>Random forest:</b></em>
@@ -607,7 +619,7 @@ something is inaccurate or missing.</p>
     for survival analysis (with a focus towards epidemiological studies).
   </li>
   <li>
-    The <pkg>PermAlgo</pkg> package permits to simulate complex survival data,
+    The <pkg>PermAlgo</pkg> package permits the user to simulate complex survival data,
     in which event and censoring times could be conditional on 
     an user-specified list of (possibly time-dependent) covariates.
   </li>
@@ -621,6 +633,7 @@ something is inaccurate or missing.</p>
   </li>
   <li>
     The <pkg>KMsurv</pkg> package includes the data sets from Klein and Moeschberger (1997).
+    Some supplementary data sets and functions can be found in the <pkg>OIsurv</pkg> package.
     The package <pkg>SMIR</pkg> that accompanies Aitkin et al. (2009), 
     <pkg>SMPracticals</pkg> that accompanies Davidson (2003)
     and <pkg>DAAG</pkg> that accompanies Maindonald, J.H. and Braun,
@@ -669,6 +682,7 @@ something is inaccurate or missing.</p>
 <pkg>coxphw</pkg>
 <pkg>coxrobust</pkg>
 <pkg>CPE</pkg>
+<pkg>CPHshape</pkg>
 <pkg>Cprob</pkg>
 <pkg>crrSC</pkg>
 <pkg>DAAG</pkg>
@@ -702,7 +716,7 @@ something is inaccurate or missing.</p>
 <pkg>ipred</pkg>
 <pkg>ipw</pkg>
 <pkg>JM</pkg>
-<pkg>kinship</pkg>
+<pkg>kaps</pkg>
 <pkg>km.ci</pkg>
 <pkg>kmi</pkg>
 <pkg>KMsurv</pkg>
@@ -734,6 +748,7 @@ something is inaccurate or missing.</p>
 <pkg>NADA</pkg>
 <pkg>NestedCohort</pkg>
 <pkg>nltm</pkg>
+<pkg>OIsurv</pkg>
 <pkg>OrdFacReg</pkg>
 <pkg>p3state.msm</pkg>
 <pkg>pamr</pkg>
@@ -747,6 +762,7 @@ something is inaccurate or missing.</p>
 <pkg>prodlim</pkg>
 <pkg>proptest</pkg>
 <pkg>quantreg</pkg>
+<pkg>parfm</pkg>
 <pkg>phmm</pkg>
 <pkg>powerSurvEpi</pkg>
 <pkg>pseudo</pkg>
@@ -754,6 +770,7 @@ something is inaccurate or missing.</p>
 <pkg>rankhazard</pkg>
 <pkg>relsurv</pkg>
 <pkg>rhosp</pkg>
+<pkg>riskRegression</pkg>
 <pkg>risksetROC</pkg>
 <pkg priority="core">rms</pkg>
 <pkg>RobustAFT</pkg>
@@ -765,7 +782,6 @@ something is inaccurate or missing.</p>
 <pkg>smoothSurv</pkg>
 <pkg>SMPracticals</pkg>
 <pkg>spatstat</pkg>
-<pkg>spef</pkg>
 <pkg>splinesurv</pkg>
 <pkg>superpc</pkg>
 <pkg>surv2sample</pkg>
