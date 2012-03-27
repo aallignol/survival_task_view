@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2011-12-13</version>
+<version>2012-03-27</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -176,7 +176,7 @@ something is inaccurate or missing.</p>
     time-varying coefficient models for interval censored and right
     censored survival data using a Bayesian Cox model, a spline based
     Cox model or a transformation model. 
-    The <pkg>CSHshape</pkg> package computes the Cox proportional hazards model 
+    The <pkg>CPHshape</pkg> package computes the Cox proportional hazards model 
     with shape constrained hazard functions.
     The <pkg>OrdFacReg</pkg>
     package implements the Cox model using an active set algorithm for
