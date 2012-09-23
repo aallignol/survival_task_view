@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2012-08-22</version>
+<version>2012-03-27</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -66,6 +66,8 @@ something is inaccurate or missing.</p>
     in the presence of interval censoring.
     The <pkg>DTDA</pkg> implements several algorithms permitting to analyse possibly doubly 
     truncated survival data.
+    The conditional survival function can be estimated nonparametrically for successive 
+    survival times using the <pkg>bwsurvival</pkg> package.
   </li>
   <li>
     <b><em>MLE:</em></b>
@@ -288,7 +290,8 @@ something is inaccurate or missing.</p>
     censored data.  The <pkg>JM</pkg> package fits shared parameter
     models for the joint modelling of a longitudinal response and
     event times.  The temporal process regression model is implemented
-    in the <pkg>tpr</pkg> package. 
+    in the <pkg>tpr</pkg> package.  The <pkg>TwoWaySurvival</pkg>
+    package permits to fit an additive model using two time scales.
     Aster models, which combine aspects of
     generalized linear models and Cox models, are implemented in
     the <pkg>aster</pkg> and <pkg>aster2</pkg> packages.
@@ -364,6 +367,8 @@ something is inaccurate or missing.</p>
     <pkg>riskRegression</pkg> implements risk regression for competing risks data, 
     along with other extensions of existing packages useful for survival analysis and 
     competing risks data. 
+    The <pkg>CompetingRiskFrailty</pkg> package estimates the cause-specific hazards
+    of a competing risks model using frailties and splines. 
     The <pkg>Cprob</pkg> package estimates the  conditional probability  of a competing event, aka., 
     the conditional cumulative incidence. It also implements a proportional-odds model using either  
     the temporal process regression or the pseudo-value approaches.
@@ -386,7 +391,8 @@ something is inaccurate or missing.</p>
     package proposes implementations of several models for recurrent
     events data, such as the Pe&#241;a-Strawderman-Hollander,
     Wang-Chang estimators, and MLE estimation under a Gamma Frailty
-    model.  The <pkg>condGEE</pkg> package
+    model. The Pe&#241;a-Hollander model can be fitted using the
+    <pkg>gcmrec</pkg> package.  The <pkg>condGEE</pkg> package
     implements the conditional GEE for recurrent event gap times.
     <pkg>survivalBIV</pkg> permits to estimate the bivariate
     distribution of two gap times.
@@ -550,6 +556,8 @@ something is inaccurate or missing.</p>
     <em><b>Other:</b></em>
     The <pkg>superpc</pkg> package implements the supervised principal components
     for survival data. 
+    Package <pkg>plsRcox</pkg> fits Cox models in a high dimensional setting 
+    through partial least square regression.
     The <pkg>AIM</pkg> package can construct index models for survival outcomes, that is, 
     construct scores based on a training dataset.
   </li>
@@ -570,6 +578,10 @@ something is inaccurate or missing.</p>
     <pkg>survivalROC</pkg>  computes time-dependent ROC curves and time-dependent AUC from 
     censored data using Kaplan-Meier or Akritas's nearest neighbour estimation method 
     (Cumulative sensitivity and dynamic specificity).
+  </li>
+  <li>
+    <pkg>risksetROC</pkg> implements time-dependent ROC curves,
+    AUC and integrated AUC of Heagerty and Zheng (Biometrics, 2005).
   </li>
   <li>
     Various time-dependent true/false positive rates and 
@@ -627,6 +639,10 @@ something is inaccurate or missing.</p>
     W.J. (2003, 2007) also contain survival data sets.
   </li>
   <li>
+    The <pkg>rtv</pkg> package proposes convenience functions for
+    representing, manipulating and visualising time data.
+  </li>
+  <li>
     The <pkg>logconcens</pkg> package compute the MLE of a density
     (log-concave) possibly for interval censored data.
   </li>
@@ -648,6 +664,7 @@ something is inaccurate or missing.</p>
 <pkg>BMA</pkg>
 <pkg>bujar</pkg>
 <pkg>boot</pkg>
+<pkg>bwsurvival</pkg>
 <pkg>censReg</pkg>
 <pkg>changeLOS</pkg>
 <pkg>clinfun</pkg>
@@ -657,6 +674,7 @@ something is inaccurate or missing.</p>
 <pkg>concreg</pkg>
 <pkg>condGEE</pkg>
 <pkg>compeir</pkg>
+<pkg>CompetingRiskFrailty</pkg>
 <pkg>CoxBoost</pkg>
 <pkg>coxme</pkg>
 <pkg>coxphf</pkg>
@@ -685,6 +703,7 @@ something is inaccurate or missing.</p>
 <pkg>frailtypack</pkg>
 <pkg>gamlss.cens</pkg>
 <pkg>gbm</pkg>
+<pkg>gcmrec</pkg>
 <pkg>glmpath</pkg>
 <pkg>globalboosttest</pkg>
 <pkg>glrt</pkg>
@@ -737,6 +756,7 @@ something is inaccurate or missing.</p>
 <pkg>penalized</pkg>
 <pkg>peperr</pkg>
 <pkg>PermAlgo</pkg>
+<pkg>plsRcox</pkg>
 <pkg>polspline</pkg>
 <pkg>prodlim</pkg>
 <pkg>proptest</pkg>
@@ -750,9 +770,11 @@ something is inaccurate or missing.</p>
 <pkg>relsurv</pkg>
 <pkg>rhosp</pkg>
 <pkg>riskRegression</pkg>
+<pkg>risksetROC</pkg>
 <pkg priority="core">rms</pkg>
 <pkg>RobustAFT</pkg>
 <pkg>rpart</pkg>
+<pkg>rtv</pkg>
 <pkg>saws</pkg>
 <pkg>simexaft</pkg>
 <pkg>SMIR</pkg>
@@ -778,6 +800,7 @@ something is inaccurate or missing.</p>
 <pkg>tpr</pkg>
 <pkg>TraMineR</pkg>
 <pkg>TSHRC</pkg>
+<pkg>TwoWaySurvival</pkg>
 <pkg>uniCox</pkg>
 <pkg>VGAM</pkg>
 </packagelist>
