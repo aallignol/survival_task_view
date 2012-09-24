@@ -11,7 +11,7 @@
   <table summary="Survival task view information">
     <tr><td valign="top"><b>Maintainer:</b></td><td>Arthur Allignol and Aurelien Latouche</td></tr>
     <tr><td valign="top"><b>Contact:</b></td><td>&#x61;&#x72;&#x74;&#x68;&#x75;&#x72;&#x2e;&#x61;&#x6c;&#x6c;&#x69;&#x67;&#x6e;&#x6f;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x66;&#x64;&#x6d;&#x2e;&#x75;&#x6e;&#x69;&#x2d;&#x66;&#x72;&#x65;&#x69;&#x62;&#x75;&#x72;&#x67;&#x2e;&#x64;&#x65;</td></tr>
-    <tr><td valign="top"><b>Version:</b></td><td>2012-08-22</td></tr>
+    <tr><td valign="top"><b>Version:</b></td><td>2012-09-24</td></tr>
   </table>
 
     <div>
@@ -113,9 +113,9 @@ something is inaccurate or missing.
           package permits to compute the Kaplan-Meier
     estimator following Pollock et al. (1998). The
 <a href="../packages/bpcp/index.html">bpcp</a>
-          provides several functions for computing confidence intervals of
-    the survival distribution (e.g., beta product confidence
-    procedure).
+          package provides several functions for computing confidence
+    intervals of the survival distribution (e.g., beta product
+    confidence procedure).
         </li>
         <li>
           <b>
@@ -279,8 +279,8 @@ something is inaccurate or missing.
         <li>
           The
 <a href="../packages/TestSurvRec/index.html">TestSurvRec</a>
-          implements statistical tests to compare
-    two survival curves with recurrent events.
+          package implements statistical tests to
+    compare two survival curves with recurrent events.
         </li>
         <li>
           The
@@ -611,7 +611,7 @@ something is inaccurate or missing.
 <a href="../packages/concreg/index.html">concreg</a>
           package implements conditional logistic
     regression for survival data as an alternative to the Cox model
-    when hazards are non-proportional. The
+    when hazards are non-proportional.
 <a href="../packages/lava.tobit/index.html">lava.tobit</a>, an
     extension of the
           <b>
@@ -683,9 +683,9 @@ something is inaccurate or missing.
     state models can be obtained with package
 <a href="../packages/p3state.msm/index.html">p3state.msm</a>. The
 <a href="../packages/TPmsm/index.html">TPmsm</a>
-          package implements
-    estimation of transition probabilities for the illness-death model
-    and or the three-state progressive model.
+          package permits
+    to estimate transition probabilities of an illness-death model
+    or three-state progressive model.
           <br>
           </br>
           The
@@ -830,7 +830,7 @@ something is inaccurate or missing.
 <a href="../packages/JPSurv/index.html">JPSurv</a>
           package implements methods for
     population-based survival analysis, like the proportional hazard
-    relative survival model and the join point relative survival model
+    relative survival model and the join point relative survival model.
         </li>
       </ul>
       <h1>
@@ -886,7 +886,8 @@ something is inaccurate or missing.
           package implements a linear mixed effects model for censored data
     with Student-t or normal distributions. The
 <a href="../packages/jmec/index.html">jmec</a>
-          package fits joint models for event and censoring.
+          package fits joint models for event and censoring times,
+    respectively.
         </li>
         <li>
           <em>
@@ -898,8 +899,8 @@ something is inaccurate or missing.
           The
 <a href="../packages/joineR/index.html">joineR</a>
           package allows the analysis
-    of repeated measurements and time-to-event data via random effects
-    joint models.
+    of repeated measurements and time-to-event data via joint random effects
+    models.
         </li>
       </ul>
       <h1>
@@ -1135,6 +1136,10 @@ something is inaccurate or missing.
 <a href="../packages/AIM/index.html">AIM</a>
           package can construct index models for survival
     outcomes, that is, construct scores based on a training dataset.
+    The
+<a href="../packages/compound.Cox/index.html">compound.Cox</a>
+          package fits Cox proportional hazards
+    model using the compound covariate method.
         </li>
       </ul>
       <h1>
@@ -1180,9 +1185,10 @@ something is inaccurate or missing.
         <li>
           The
 <a href="../packages/survIDINRI/index.html">survIDINRI</a>
-          implements the integrated discrimination
-    improvement index and the category-less net reclassification index
-    for comparing competing risks prediction models.
+          package implements the integrated
+    discrimination improvement index and the category-less net
+    reclassification index for comparing competing risks prediction
+    models.
         </li>
       </ul>
       <h1>
@@ -1216,7 +1222,7 @@ something is inaccurate or missing.
     data.
         </li>
         <li>
-          Power analysis and sample size calculation for SNP associations
+          Power analysis and sample size calculation for SNP association
     studies with time-to-event outcomes can be done using
     the
 <a href="../packages/survSNP/index.html">survSNP</a>
@@ -1237,9 +1243,10 @@ something is inaccurate or missing.
         <li>
           The
 <a href="../packages/PermAlgo/index.html">PermAlgo</a>
-          package permits the user to simulate complex survival data,
-    in which event and censoring times could be conditional on 
-    an user-specified list of (possibly time-dependent) covariates.
+          package permits the user to simulate
+    complex survival data, in which event and censoring times could be
+    conditional on an user-specified list of (possibly time-dependent)
+    covariates.
         </li>
         <li>
           The
@@ -1247,6 +1254,12 @@ something is inaccurate or missing.
           package permits to simulate
     complex survival cohort data (e.g., multiple events, recurrent
     events, ...).
+        </li>
+        <li>
+          The
+<a href="../packages/prodlim/index.html">prodlim</a>
+          package proposes some functions for
+    simulating complex event history data.
         </li>
       </ul>
       <h1>
@@ -1310,7 +1323,7 @@ something is inaccurate or missing.
         <li>
           The
 <a href="../packages/TBSSurvival/index.html">TBSSurvival</a>
-          packages fits parametric
+          package fits parametric
     Transform-both-sides models used in reliability analysis
         </li>
       </ul>
@@ -1340,6 +1353,7 @@ something is inaccurate or missing.
     <li><a href="../packages/coin/index.html">coin</a></li>
     <li><a href="../packages/compeir/index.html">compeir</a></li>
     <li><a href="../packages/complex.surv.dat.sim/index.html">complex.surv.dat.sim</a></li>
+    <li><a href="../packages/compound.Cox/index.html">compound.Cox</a></li>
     <li><a href="../packages/concreg/index.html">concreg</a></li>
     <li><a href="../packages/condGEE/index.html">condGEE</a></li>
     <li><a href="../packages/CoxBoost/index.html">CoxBoost</a></li>
@@ -1386,6 +1400,7 @@ something is inaccurate or missing.
     <li><a href="../packages/ipred/index.html">ipred</a></li>
     <li><a href="../packages/ipw/index.html">ipw</a></li>
     <li><a href="../packages/JM/index.html">JM</a></li>
+    <li><a href="../packages/JMbayes/index.html">JMbayes</a></li>
     <li><a href="../packages/jmec/index.html">jmec</a></li>
     <li><a href="../packages/JMLSD/index.html">JMLSD</a></li>
     <li><a href="../packages/joineR/index.html">joineR</a></li>

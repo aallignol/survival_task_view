@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2012-08-22</version>
+<version>2012-09-24</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -52,9 +52,9 @@ something is inaccurate or missing.</p>
     right-censored data, i.e., survival, hazard and density functions.
     The <pkg>asbio</pkg> package permits to compute the Kaplan-Meier
     estimator following Pollock et al. (1998). The <pkg>bpcp</pkg>
-    provides several functions for computing confidence intervals of
-    the survival distribution (e.g., beta product confidence
-    procedure).
+    package provides several functions for computing confidence
+    intervals of the survival distribution (e.g., beta product
+    confidence procedure).
   </li>
 
   <li>
@@ -153,8 +153,8 @@ something is inaccurate or missing.</p>
     risks in two treatment groups, with a view towards vaccine trials.
   </li>
   <li>
-    The <pkg>TestSurvRec</pkg> implements statistical tests to compare
-    two survival curves with recurrent events.
+    The <pkg>TestSurvRec</pkg> package implements statistical tests to
+    compare two survival curves with recurrent events.
   </li>
   <li>
     The <pkg>FHtest</pkg> package offers several tests based on the
@@ -307,7 +307,7 @@ something is inaccurate or missing.</p>
     the <pkg>aster</pkg> and <pkg>aster2</pkg> packages.
     The <pkg>concreg</pkg> package implements conditional logistic
     regression for survival data as an alternative to the Cox model
-    when hazards are non-proportional. The <pkg>lava.tobit</pkg>, an
+    when hazards are non-proportional. <pkg>lava.tobit</pkg>, an
     extension of the <b>lava</b> package, fits latent variable models
     for censored outcomes via a probit link formulation.
   </li>
@@ -349,9 +349,9 @@ something is inaccurate or missing.</p>
     maximum likelihood, using a discrete-time approximation.
     Nonparametric estimates in illness-death models and other three
     state models can be obtained with package
-    <pkg>p3state.msm</pkg>. The <pkg>TPmsm</pkg> package implements
-    estimation of transition probabilities for the illness-death model
-    and or the three-state progressive model. <br/>
+    <pkg>p3state.msm</pkg>. The <pkg>TPmsm</pkg> package permits
+    to estimate transition probabilities of an illness-death model
+    or three-state progressive model. <br/>
 
     The <pkg>Epi</pkg> package implements
     Lexis objects as a way to represent, manipulate and summarise data
@@ -432,7 +432,7 @@ something is inaccurate or missing.</p>
   <li>
     The <pkg>JPSurv</pkg> package implements methods for
     population-based survival analysis, like the proportional hazard
-    relative survival model and the join point relative survival model
+    relative survival model and the join point relative survival model.
   </li>
 </ul>
 
@@ -461,13 +461,14 @@ something is inaccurate or missing.</p>
     using the <pkg>frailtyHL</pkg> package.  The <pkg>tlmec</pkg>
     package implements a linear mixed effects model for censored data
     with Student-t or normal distributions. The <pkg>jmec</pkg>
-    package fits joint models for event and censoring.
+    package fits joint models for event and censoring times,
+    respectively.
   </li>
   <li>
     <em><b>Joint modelling of time-to-event and longitudinal
     data:</b></em> The <pkg>joineR</pkg> package allows the analysis
-    of repeated measurements and time-to-event data via random effects
-    joint models. 
+    of repeated measurements and time-to-event data via joint random effects
+    models. 
   </li>
 </ul>
 
@@ -602,6 +603,8 @@ something is inaccurate or missing.</p>
     the supervised principal components for survival data.
     The <pkg>AIM</pkg> package can construct index models for survival
     outcomes, that is, construct scores based on a training dataset.
+    The <pkg>compound.Cox</pkg> package fits Cox proportional hazards
+    model using the compound covariate method.
   </li>
 </ul>
 
@@ -634,9 +637,10 @@ something is inaccurate or missing.</p>
     data can be computed via the <pkg>survC1</pkg> package.
   </li>
   <li>
-    The <pkg>survIDINRI</pkg> implements the integrated discrimination
-    improvement index and the category-less net reclassification index
-    for comparing competing risks prediction models. 
+    The <pkg>survIDINRI</pkg> package implements the integrated
+    discrimination improvement index and the category-less net
+    reclassification index for comparing competing risks prediction
+    models.
   </li>
 
 </ul>
@@ -662,7 +666,7 @@ something is inaccurate or missing.</p>
     data.
   </li>
   <li>
-    Power analysis and sample size calculation for SNP associations
+    Power analysis and sample size calculation for SNP association
     studies with time-to-event outcomes can be done using
     the <pkg>survSNP</pkg> package.
   </li>
@@ -676,14 +680,19 @@ something is inaccurate or missing.</p>
     progressive illness-death model.
   </li>
   <li>
-    The <pkg>PermAlgo</pkg> package permits the user to simulate complex survival data,
-    in which event and censoring times could be conditional on 
-    an user-specified list of (possibly time-dependent) covariates.
+    The <pkg>PermAlgo</pkg> package permits the user to simulate
+    complex survival data, in which event and censoring times could be
+    conditional on an user-specified list of (possibly time-dependent)
+    covariates.
   </li>
   <li>
     The <pkg>complex.surv.dat.sim</pkg> package permits to simulate
     complex survival cohort data (e.g., multiple events, recurrent
     events, ...).
+  </li>
+  <li>
+    The <pkg>prodlim</pkg> package proposes some functions for
+    simulating complex event history data.
   </li>
 </ul>
 
@@ -723,7 +732,7 @@ something is inaccurate or missing.</p>
     (log-concave) possibly for interval censored data.
   </li>
   <li>
-    The <pkg>TBSSurvival</pkg> packages fits parametric
+    The <pkg>TBSSurvival</pkg> package fits parametric
     Transform-both-sides models used in reliability analysis
 </li>
 </ul>
@@ -755,6 +764,7 @@ something is inaccurate or missing.</p>
 <pkg>concreg</pkg>
 <pkg>condGEE</pkg>
 <pkg>compeir</pkg>
+<pkg>compound.Cox</pkg>
 <pkg>CoxBoost</pkg>
 <pkg>coxme</pkg>
 <pkg>coxphf</pkg>
@@ -799,6 +809,7 @@ something is inaccurate or missing.</p>
 <pkg>ipred</pkg>
 <pkg>ipw</pkg>
 <pkg>JM</pkg>
+<pkg>JMbayes</pkg>
 <pkg>jmec</pkg>
 <pkg>JMLSD</pkg>
 <pkg>joineR</pkg>
