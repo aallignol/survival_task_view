@@ -394,7 +394,7 @@ something is inaccurate or missing.</p>
     can also be used to estimate the cumulative incidence function.
     The <pkg>compeir</pkg> package estimates event-specific incidence rates,
     rate ratios, event-specific incidence proportions and cumulative incidence functions.
-    <pkg>RandomSurvivalForest</pkg> provides summary measures for 
+    <pkg>randomSurvivalForest</pkg> provides summary measures for 
     competing risk such as ensemble CIF.
   </li>
   
@@ -430,7 +430,7 @@ something is inaccurate or missing.</p>
     the proportional excess and additive excess models. 
   </li>
   <li>
-    The <pkg>JPsurv</pkg> package implements methods for
+    The <pkg>JPSurv</pkg> package implements methods for
     population-based survival analysis, like the proportional hazard
     relative survival model and the join point relative survival model
   </li>
@@ -467,9 +467,7 @@ something is inaccurate or missing.</p>
     <em><b>Joint modelling of time-to-event and longitudinal
     data:</b></em> The <pkg>joineR</pkg> package allows the analysis
     of repeated measurements and time-to-event data via random effects
-    joint models. The <pkg>JMLSD</pkg> package performs power
-    calculation for joint modelling of time-to-event and longitudinal
-    data.
+    joint models. 
   </li>
 </ul>
 
@@ -478,6 +476,7 @@ something is inaccurate or missing.</p>
   survival of twins or a family. To analyse such data, we can estimate
   the joint distribution of the survival times
 </p>
+
 <ul>
   <li>
     <em><b>Joint modelling:</b></em>
@@ -490,6 +489,7 @@ something is inaccurate or missing.</p>
     incidence models, bivariate random effects probit models,
     Clayton-Oakes model.
   </li>
+</ul>
 
 <h1>Bayesian Models</h1>
 <ul>
@@ -523,7 +523,7 @@ something is inaccurate or missing.</p>
     data in a Bayesian framework.
   </li>
   <li>
-    The <code>weibullregpost</code> function in <pkg>learnBayes</pkg> computes
+    The <code>weibullregpost</code> function in <pkg>LearnBayes</pkg> computes
     the log posterior density for a Weibull proportional-odds regression model.
   </li>
   <li>
@@ -602,9 +602,6 @@ something is inaccurate or missing.</p>
     the supervised principal components for survival data.
     The <pkg>AIM</pkg> package can construct index models for survival
     outcomes, that is, construct scores based on a training dataset.
-    Power analysis and sample size calculation for SNP associations
-    studies with time-to-event outcomes can be done using
-    the <pkg>survSNP</pkg> package.
   </li>
 </ul>
 
@@ -640,7 +637,8 @@ something is inaccurate or missing.</p>
     The <pkg>survIDINRI</pkg> implements the integrated discrimination
     improvement index and the category-less net reclassification index
     for comparing competing risks prediction models. 
-</li>
+  </li>
+
 </ul>
 
 <h1>Power Analysis</h1>
@@ -653,6 +651,21 @@ something is inaccurate or missing.</p>
     The <pkg>NPHMC</pkg> permits to calculate sample size based on
     proportional hazards mixture cure models.
   </li>
+  <li>
+    The <pkg>powerSurvEpi</pkg> package provides power and sample size
+    calculation for survival analysis (with a focus towards
+    epidemiological studies).
+  </li>
+  <li>
+    The <pkg>JMLSD</pkg> package performs power
+    calculation for joint modelling of time-to-event and longitudinal
+    data.
+  </li>
+  <li>
+    Power analysis and sample size calculation for SNP associations
+    studies with time-to-event outcomes can be done using
+    the <pkg>survSNP</pkg> package.
+  </li>
 </ul>
 
 <h1>Simulation</h1>
@@ -661,7 +674,17 @@ something is inaccurate or missing.</p>
     The <pkg>genSurv</pkg> package permits to generate data wih one
     binary time-dependent covariate and data stemming from a
     progressive illness-death model.
-  </li>  
+  </li>
+  <li>
+    The <pkg>PermAlgo</pkg> package permits the user to simulate complex survival data,
+    in which event and censoring times could be conditional on 
+    an user-specified list of (possibly time-dependent) covariates.
+  </li>
+  <li>
+    The <pkg>complex.surv.dat.sim</pkg> package permits to simulate
+    complex survival cohort data (e.g., multiple events, recurrent
+    events, ...).
+  </li>
 </ul>
 
 <h1>Miscellaneous</h1>
@@ -678,16 +701,6 @@ something is inaccurate or missing.</p>
   <li>
     Package <pkg>boot</pkg> proposes the <code>censboot</code> function that 
     implements several types of bootstrap techniques for right-censored data.
-  </li>
-  <li>
-    The <pkg>powerSurvEpi</pkg> package provides power and sample size 
-    calculation 
-    for survival analysis (with a focus towards epidemiological studies).
-  </li>
-  <li>
-    The <pkg>PermAlgo</pkg> package permits the user to simulate complex survival data,
-    in which event and censoring times could be conditional on 
-    an user-specified list of (possibly time-dependent) covariates.
   </li>
   <li>
     The <pkg>survJamda</pkg> package provides functions for performing meta-analyses 
@@ -708,11 +721,6 @@ something is inaccurate or missing.</p>
   <li>
     The <pkg>logconcens</pkg> package compute the MLE of a density
     (log-concave) possibly for interval censored data.
-  </li>
-  <li>
-    The <pkg>complex.surv.dat.sim</pkg> package permits to simulate
-    complex survival cohort data (e.g., multiple events, recurrent
-    events, ...).
   </li>
   <li>
     The <pkg>TBSSurvival</pkg> packages fits parametric
@@ -794,7 +802,7 @@ something is inaccurate or missing.</p>
 <pkg>jmec</pkg>
 <pkg>JMLSD</pkg>
 <pkg>joineR</pkg>
-<pkg>JPsurv</pkg>
+<pkg>JPSurv</pkg>
 <pkg>kaps</pkg>
 <pkg>km.ci</pkg>
 <pkg>kmi</pkg>
