@@ -9,7 +9,7 @@ cran_packages <- as.vector(available.packages()[,1])
 all(myTaskView$packagelist$name %in% cran_packages)
 
 
-### same test but in the whole document
+### same test but in the whole document, including <info>
 doc <- xmlTreeParse("Survival.ctv",
                     useInternalNode = TRUE)
 
