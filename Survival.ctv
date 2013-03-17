@@ -601,7 +601,7 @@ something is inaccurate or missing.</p>
     outcomes, that is, construct scores based on a training dataset.
     The <pkg>compound.Cox</pkg> package fits Cox proportional hazards
     model using the compound covariate method. <pkg>plsRcox</pkg>
-    provides Partial least squares Regression and various techniques
+    provides partial least squares regression and various techniques
     for fitting Cox models in high dimensionnal settings.
   </li>
 </ul>
@@ -755,8 +755,8 @@ something is inaccurate or missing.</p>
   </li>
   <li>
     The <pkg>SvyNom</pkg> package permits to construct, validate and
-    calibrate nomograms with right-censored outcomes stemming from
-    complex survey data.
+    calibrate nomograms stemming from complex right-censored survey
+    data.
   </li>
   <li>
     The <pkg>logconcens</pkg> package compute the MLE of a density
