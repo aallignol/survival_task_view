@@ -19,3 +19,38 @@
 = intcox
 = survexp.fr
 = lbiassurv
+
+### Recherche 19.1.2014 ###
+
+lbiassurv
+OutlierDC
+SemiMarkov
+smoothHR
+psbcGroup
+randomSurvivalForest
+TPmsm
+survMisc
+InferenceSMR
+simMSM
+CoxRidge
+YPmodel
+strweib
+LogrankA
+simPH
+NPMLEcmprsk
+TestSurvRec
+UScancer (maybe some nice survival data in there)
+BGPhazard
+rsig
+kmconfband
+survsim
+MRsurv
+AdapEnetClass
+surv2sampleComp
+wtcrsk
+ROCt
+SemiCompRisks
+kmc
+spatsurv
+SurvRegCensCov
+coarseDataTools
