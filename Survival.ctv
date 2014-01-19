@@ -158,7 +158,7 @@ something is inaccurate or missing.</p>
     aggregated data can be used as input.
   </li>
   <li>
-    The short term and long term hazard ratio model for 2 sample
+    The short term and long term hazard ratio model for two samples
     survival data can be found in the <pkg>YPmodel</pkg> package.
   </li>
 </ul>
@@ -317,9 +317,9 @@ something is inaccurate or missing.</p>
     formulation. The <pkg>BGPhazard</pkg> package implements Markov
     beta and gamma processes for modelling the hazard ratio for
     discrete failure time data. The <pkg>surv2sampleComp</pkg>
-    proposes some model-free contrast comparison measures such as
-    difference/ratio of cumulative hazards, quantiles and restricted
-    mean.
+    packages proposes some model-free contrast comparison measures
+    such as difference/ratio of cumulative hazards, quantiles and
+    restricted mean.
   </li>
 </ul>
 
@@ -415,7 +415,7 @@ something is inaccurate or missing.</p>
     <pkg>randomSurvivalForest</pkg> provides summary measures for
     competing risk such as ensemble CIF.  The <pkg>NPMLEcmprsk</pkg>
     package implements the semiparametric mixture model for competing
-    risks data. The <pkg>wtcrsk</pkg> implements a proportional
+    risks data. The <pkg>wtcrsk</pkg> package implements a proportional
     subdistribution hazards model with adjustment for
     covariate-dependent censoring.
   </li>
@@ -630,7 +630,7 @@ something is inaccurate or missing.</p>
     package permits to fit Cox models with a combination of lasso and
     group lasso regularisation. <pkg>CoxRidge</pkg> fits Cox models
     with penalized ridge-type (ridge, dynamic and weighted dynamic)
-    partial likelihood. The <pkg>AdapEnetClass</pkg> implements
+    partial likelihood. The <pkg>AdapEnetClass</pkg> package implements
     accelerated failure time models using regularised weighted least
     squares (e.g., weighted elastic net, adaptive elastic net). 
   </li>
@@ -831,7 +831,7 @@ something is inaccurate or missing.</p>
   </li>
   <li>The <pkg>survMisc</pkg> package proposes miscellaneous functions
   that extends the <pkg>survival</pkg> package, e.g., additional
-  logrank type tests, goodness of fit plots, etc.
+  logrank type tests, goodness of fit plots.
   </li>
   <li>
     The <pkg>coarseDataTools</pkg> package implements an EM algorithm
