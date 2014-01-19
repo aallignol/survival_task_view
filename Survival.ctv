@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2013-03-18</version>
+<version>2013-12-21</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -38,9 +38,13 @@ something is inaccurate or missing.</p>
     The <pkg>NADA</pkg> package includes a function to compute the Kaplan-Meier 
     estimator for left-censored data.
     <code>svykm</code> in <pkg>survey</pkg> provides a weighted
-    Kaplan-Meier estimator.  The <code>kaplan-meier</code> function
+    Kaplan-Meier estimator.
+    <code>nested.km</code> in <pkg>NestedCohort</pkg> estimates the
+    survival curve for each level of categorical variables with
+    missing data.  The <code>kaplan-meier</code> function
     in <pkg>spatstat</pkg> computes the Kaplan-Meier estimator from
-    histogram data.  The <code>KM</code> function in
+    histogram data.  The <pkg>MAMSE</pkg> package permits to compute a
+    weighted Kaplan-Meier estimate.  The <code>KM</code> function in
     package <pkg>rhosp</pkg> plots the survival function using a
     variant of the Kaplan-Meier estimator in a hospitalisation risk
     context.  The <pkg>survPresmooth</pkg> package computes
@@ -141,10 +145,6 @@ something is inaccurate or missing.</p>
     two survival distributions based on the Gini index.
   </li>
   <li>
-    The <pkg>cmprskContin</pkg> package compares continuous mark-specific relative 
-    risks in two treatment groups, with a view towards vaccine trials.
-  </li>
-  <li>
     The <pkg>TestSurvRec</pkg> package implements statistical tests to
     compare two survival curves with recurrent events.
   </li>
@@ -171,6 +171,8 @@ something is inaccurate or missing.</p>
     <code>timecox</code> in package <pkg>timereg</pkg> fits Cox models
     with possibly time-varying effects.  The <pkg>mfp</pkg> package
     permits to fit Cox models with multiple fractional polynomial.
+    The <pkg>NestedCohort</pkg> fits Cox models for covariates with
+    missing data.
     A Cox model model can be fitted to data from
     complex survey design using the <code>svycoxph</code> function
     in <pkg>survey</pkg>. The <pkg>intcox</pkg> package implements the
@@ -282,9 +284,6 @@ something is inaccurate or missing.</p>
     additive models for censored data.  The <pkg>gamlss.cens</pkg>
     package implements the generalised additive model for location,
     scale and shape that can be fitted to censored data.
-    The <pkg>nltm</pkg> package fits non-linear transformation models
-    for censored data, which include, <em>e.g.</em>, proportional
-    hazards, proportional odds, or cure models.
     The <code>locfit.censor</code> function in <pkg>locfit</pkg>
     produces local regression estimates.  The <code>crq</code>
     function included in the <pkg>quantreg</pkg> package implements a
@@ -538,7 +537,7 @@ something is inaccurate or missing.</p>
 </li>
   <li>
     Bayesian parametric and semiparametric estimation for
-    semi-competing risks data is available via the <pkg>bscr</pkg>
+    semi-competing risks data is available via the <pkg>SemiCompRisks</pkg>
     package.
 </li>
 </ul>
@@ -649,10 +648,6 @@ something is inaccurate or missing.</p>
     reclassification index for comparing competing risks prediction
     models.
   </li>
-  <li>
-    The <pkg>aBioMarVsuit</pkg> package provides tools for validating
-    predictive gene signatures when the primary endpoint is survival.
-  </li>
 </ul>
 
 <h1>Power Analysis</h1>
@@ -749,11 +744,6 @@ something is inaccurate or missing.</p>
     W.J. (2003, 2007) also contain survival data sets.
   </li>
   <li>
-    The <pkg>bwsurvival</pkg> package proposes a nonparametric
-    estimator of the conditional survival function for successive
-    survival times.
-  </li>
-  <li>
     The <pkg>SvyNom</pkg> package permits to construct, validate and
     calibrate nomograms stemming from complex right-censored survey
     data.
@@ -771,7 +761,6 @@ something is inaccurate or missing.</p>
 </info>
 
 <packagelist>
-<pkg>aBioMarVsuit</pkg>
 <pkg>AER</pkg>
 <pkg>ahaz</pkg>
 <pkg>AIM</pkg>
@@ -785,13 +774,10 @@ something is inaccurate or missing.</p>
 <pkg>BMA</pkg>
 <pkg>bpcp</pkg>
 <pkg>boot</pkg>
-<pkg>bscr</pkg>
-<pkg>bwsurvival</pkg>
 <pkg>censReg</pkg>
 <pkg>changeLOS</pkg>
 <pkg>clinfun</pkg>
 <pkg priority="core">cmprsk</pkg>
-<pkg>cmprskContin</pkg>
 <pkg>coin</pkg>
 <pkg>complex.surv.dat.sim</pkg>
 <pkg>concreg</pkg>
@@ -864,6 +850,7 @@ something is inaccurate or missing.</p>
 <pkg>logspline</pkg>
 <pkg>lpc</pkg>
 <pkg>lss</pkg>
+<pkg>MAMSE</pkg>
 <pkg>maxstat</pkg>
 <pkg>mboost</pkg>
 <pkg>MCMCglmm</pkg>
@@ -881,7 +868,7 @@ something is inaccurate or missing.</p>
 <pkg>mvna</pkg>
 <pkg>mvpart</pkg>
 <pkg>NADA</pkg>
-<pkg>nltm</pkg>
+<pkg>NestedCohort</pkg>
 <pkg>NPHMC</pkg>
 <pkg>OIsurv</pkg>
 <pkg>OrdFacReg</pkg>
@@ -911,6 +898,7 @@ something is inaccurate or missing.</p>
 <pkg>RobustAFT</pkg>
 <pkg>rpart</pkg>
 <pkg>saws</pkg>
+<pkg>SemiCompRisks</pkg>
 <pkg>SGL</pkg>
 <pkg>simexaft</pkg>
 <pkg>SMIR</pkg>
