@@ -415,7 +415,7 @@ something is inaccurate or missing.</p>
     <pkg>randomSurvivalForest</pkg> provides summary measures for
     competing risk such as ensemble CIF.  The <pkg>NPMLEcmprsk</pkg>
     package implements the semiparametric mixture model for competing
-    risks data. The <pkg>wcrsk</pkg> implements a proportioanl
+    risks data. The <pkg>wtcrsk</pkg> implements a proportional
     subdistribution hazards model with adjustment for
     covariate-dependent censoring.
   </li>
@@ -628,7 +628,7 @@ something is inaccurate or missing.</p>
     package implements the Lasso and elastic-net penalized Cox's
     regression using the cockail algorithm.  The <pkg>SGL</pkg>
     package permits to fit Cox models with a combination of lasso and
-    group lasso regularisation. <pkg>coxRidge</pkg> fits Cox models
+    group lasso regularisation. <pkg>CoxRidge</pkg> fits Cox models
     with penalized ridge-type (ridge, dynamic and weighted dynamic)
     partial likelihood. The <pkg>AdapEnetClass</pkg> implements
     accelerated failure time models using regularised weighted least
