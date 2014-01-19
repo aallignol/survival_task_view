@@ -149,10 +149,6 @@ something is inaccurate or missing.</p>
     two survival distributions based on the Gini index.
   </li>
   <li>
-    The <pkg>TestSurvRec</pkg> package implements statistical tests to
-    compare two survival curves with recurrent events.
-  </li>
-  <li>
     The <pkg>FHtest</pkg> package offers several tests based on the
     Fleming-Harrington class for comparing surival curves with right-
     and interval-censored data.
@@ -846,6 +842,7 @@ something is inaccurate or missing.</p>
 </info>
 
 <packagelist>
+<pkg>AdapEnetClass</pkg>
 <pkg>AER</pkg>
 <pkg>ahaz</pkg>
 <pkg>AIM</pkg>
@@ -855,6 +852,7 @@ something is inaccurate or missing.</p>
 <pkg>BaSTA</pkg>
 <pkg>bayesSurv</pkg>
 <pkg>BayHaz</pkg>
+<pkg>BGPhazard</pkg>
 <pkg>Biograph</pkg>
 <pkg>BMA</pkg>
 <pkg>bpcp</pkg>
@@ -863,6 +861,7 @@ something is inaccurate or missing.</p>
 <pkg>changeLOS</pkg>
 <pkg>clinfun</pkg>
 <pkg priority="core">cmprsk</pkg>
+<pkg>coarseDataTools</pkg>
 <pkg>coin</pkg>
 <pkg>complex.surv.dat.sim</pkg>
 <pkg>concreg</pkg>
@@ -873,6 +872,7 @@ something is inaccurate or missing.</p>
 <pkg>coxme</pkg>
 <pkg>coxphf</pkg>
 <pkg>coxphw</pkg>
+<pkg>CoxRidge</pkg>
 <pkg>coxrobust</pkg>
 <pkg>CPE</pkg>
 <pkg>CPHshape</pkg>
@@ -923,6 +923,8 @@ something is inaccurate or missing.</p>
 <pkg>JPSurv</pkg>
 <pkg>kaps</pkg>
 <pkg>km.ci</pkg>
+<pkg>kmc</pkg>
+<pkg>kmconfband</pkg>
 <pkg>kmi</pkg>
 <pkg>KMsurv</pkg>
 <pkg>lava.tobit</pkg>
@@ -932,6 +934,7 @@ something is inaccurate or missing.</p>
 <pkg>locfit</pkg>
 <pkg>logconcens</pkg>
 <pkg>LogicReg</pkg>
+<pkg>LogrankA</pkg>
 <pkg>logspline</pkg>
 <pkg>lpc</pkg>
 <pkg>lss</pkg>
@@ -945,6 +948,7 @@ something is inaccurate or missing.</p>
 <pkg>mixAK</pkg>
 <pkg>mixPHM</pkg>
 <pkg>MLEcens</pkg>
+<pkg>MRsurv</pkg>
 <pkg>msm</pkg>
 <pkg>msSurv</pkg>
 <pkg>mstate</pkg>
@@ -955,6 +959,7 @@ something is inaccurate or missing.</p>
 <pkg>NADA</pkg>
 <pkg>NestedCohort</pkg>
 <pkg>NPHMC</pkg>
+<pkg>NPMLEcmprsk</pkg>
 <pkg>OIsurv</pkg>
 <pkg>OrdFacReg</pkg>
 <pkg>OutlierDC</pkg>
@@ -970,6 +975,7 @@ something is inaccurate or missing.</p>
 <pkg>prodlim</pkg>
 <pkg>quantreg</pkg>
 <pkg>parfm</pkg>
+<pkg>psbcGroup</pkg>
 <pkg>phmm</pkg>
 <pkg>powerSurvEpi</pkg>
 <pkg>pseudo</pkg>
@@ -982,17 +988,25 @@ something is inaccurate or missing.</p>
 <pkg>risksetROC</pkg>
 <pkg priority="core">rms</pkg>
 <pkg>RobustAFT</pkg>
+<pkg>ROCt</pkg>
 <pkg>rpart</pkg>
+<pkg>rsig</pkg>
 <pkg>saws</pkg>
 <pkg>SemiCompRisks</pkg>
+<pkg>SemiMarkov</pkg>
 <pkg>SGL</pkg>
 <pkg>simexaft</pkg>
+<pkg>simMSM</pkg>
+<pkg>simPH</pkg>
 <pkg>SMIR</pkg>
 <pkg>SmoothHazard</pkg>
+<pkg>smoothHR</pkg>
 <pkg>smoothSurv</pkg>
 <pkg>SMPracticals</pkg>
 <pkg>spatstat</pkg>
+<pkg>spatsurv</pkg>
 <pkg>superpc</pkg>
+<pkg>surv2sampleComp</pkg>
 <pkg>survAUC</pkg>
 <pkg>survBayes</pkg>
 <pkg>survC1</pkg>
@@ -1004,8 +1018,11 @@ something is inaccurate or missing.</p>
 <pkg>survivalROC</pkg>
 <pkg>survIDINRI</pkg>
 <pkg>survJamda</pkg>
+<pkg>survMisc</pkg>
 <pkg>survrec</pkg>
+<pkg>SurvRegCensCov</pkg>
 <pkg>survPresmooth</pkg>
+<pkg>survsim</pkg>
 <pkg>survSNP</pkg>
 <pkg>SvyNom</pkg>
 <pkg>TBSSurvival</pkg>
@@ -1019,6 +1036,8 @@ something is inaccurate or missing.</p>
 <pkg>TSHRC</pkg>
 <pkg>uniCox</pkg>
 <pkg>VGAM</pkg>
+<pkg>wtcrsk</pkg>
+<pkg>YPmodel</pkg>
 </packagelist>
 
 <links>
