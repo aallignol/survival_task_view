@@ -1,4 +1,39 @@
+################################
+### Recherche septembre 2014 ###
+################################
+
+MicSim
+spatsurv
+SurvRegCensCov
+ELT
+aftgee
+paf
+gamboostMSM
+bshazard
+seqDesign
+GUTS
+invGauss
+PBD?
+survivalMPL
+MIICD
+PHeval
+bujar
+iRepro ?
+IsoCI ?
+popdemo ?
+ICsurv
+spBayesSurv
+morse ?
+penMSM
+QoLR ?
+IDPSurvival (bayes)
+coxinterval
+DStree
+survAccuracyMeasures
+
+###########################
 ### Recherche 16.3.2013 ### 
+###########################
 
 = randomForestSRC
 = timeROC (paul)
@@ -46,3 +81,4 @@
 / spatsurv
 / SurvRegCensCov
 / coarseDataTools
+
