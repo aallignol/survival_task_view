@@ -2,14 +2,18 @@
 ### Recherche septembre 2014 ###
 ################################
 
-MicSim
-spatsurv
-SurvRegCensCov
-ELT
-aftgee
-paf
-gamboostMSM
-bshazard
+/ vitality 
+/ MicSim
+/ lsmeans
+/ spatsurv
+/ SurvRegCensCov
+/ aftgee
+/ PReMiuM
+/ imputeYn
+/ AdapEnetClass
+/ paf
+/ gamboostMSM
+/ bshazard
 seqDesign
 GUTS
 invGauss
@@ -30,6 +34,8 @@ IDPSurvival (bayes)
 coxinterval
 DStree
 survAccuracyMeasures
+
+A plotting section
 
 ###########################
 ### Recherche 16.3.2013 ### 

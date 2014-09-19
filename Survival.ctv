@@ -78,9 +78,11 @@ something is inaccurate or missing.</p>
     truncated survival data.
   </li>
   <li>
-    <b><em>MLE:</em></b>
-    The <pkg>fitdistrplus</pkg> package permits to fit an univariate 
-    distribution by maximum likelihood. Data can be interval censored.
+    <b><em>Parametric:</em></b> The <pkg>fitdistrplus</pkg> package
+    permits to fit an univariate distribution by maximum
+    likelihood. Data can be interval censored.
+    The <pkg>vitality</pkg> package provides routines for fitting
+    models in the vitality family of mortality models.
   </li>
 </ul>
 
@@ -101,6 +103,10 @@ something is inaccurate or missing.</p>
   <li>
     The <pkg>ICE</pkg> package aims at estimating the hazard function for interval
     censored data.
+  </li>
+  <li>
+    The <pkg>bshazard</pkg> package provides nonparametric smoothing
+    of the hazard through B-splines. 
   </li>
 </ul>
 
@@ -173,10 +179,10 @@ something is inaccurate or missing.</p>
     The <pkg>coxrobust</pkg> package proposes a robust implementation
     of the Cox model.
     <code>timecox</code> in package <pkg>timereg</pkg> fits Cox models
-    with possibly time-varying effects. 
-    The <pkg>NestedCohort</pkg> fits Cox models for covariates with
-    missing data.  A Cox model model can be fitted to data from
-    complex survey design using the <code>svycoxph</code> function
+    with possibly time-varying effects.  The <pkg>NestedCohort</pkg>
+    fits Cox models for covariates with missing data.  A Cox model
+    model can be fitted to data from complex survey design using
+    the <code>svycoxph</code> function
     in <pkg>survey</pkg>. The <pkg>intcox</pkg> package implements the
     Cox model for interval-censored data using the ICM-algorithm.
     The <pkg>dynsurv</pkg> package fits time-varying coefficient
@@ -196,17 +202,24 @@ something is inaccurate or missing.</p>
     the latter package draws a quantile curve of the survival
     distribution as a function of covariates.  The <pkg>multcomp</pkg>
     package computes simultaneous tests and confidence intervals for
-    the Cox model and other parametric survival models.
-    The <bioc>multtest</bioc> package on Bioconductor proposes a
-    resampling based multiple hypothesis testing that can be applied
-    to the Cox model.  Testing coefficients of Cox regression models
-    using a Wald test with a sandwich estimator of variance can be
-    done using the <pkg>saws</pkg> package.  The <pkg>rankhazard</pkg>
-    package permits to plot visualisation of the relative importance
-    of covariates in a proportional hazards
+    the Cox model and other parametric survival
+    models. The <pkg>lsmeans</pkg> package permits to obtain
+    least-squares means (and contrasts thereof) from linear models. In
+    particular, the it provides support for
+    the <code>coxph</code>, <code>survreg</code>
+    and <code>coxme</code> functions.  The <bioc>multtest</bioc>
+    package on Bioconductor proposes a resampling based multiple
+    hypothesis testing that can be applied to the Cox model.  Testing
+    coefficients of Cox regression models using a Wald test with a
+    sandwich estimator of variance can be done using
+    the <pkg>saws</pkg> package.  The <pkg>rankhazard</pkg> package
+    permits to plot visualisation of the relative importance of
+    covariates in a proportional hazards
     model. The <pkg>smoothHR</pkg> package provides hazard ratio
     curves that allows for nonlinear relationship between predictor
-    and survival.
+    and survival. The <pkg>paf</pkg> package permits to compute the
+    unadjusted/adjusted attributable fraction function from a Cox
+    proportional hazards model.
   </li>
 
   <li>
@@ -248,7 +261,13 @@ something is inaccurate or missing.</p>
     measurement error.  A robust version of the accelerated failure
     time model can be found
     in <pkg>RobustAFT</pkg>. The <pkg>coarseDataTools</pkg> package
-    fits AFT models for interval censored data.
+    fits AFT models for interval censored data. The <pkg>aftgee</pkg>
+    package implements both rank-based estimates and least square
+    estimates (via generalised estimating equations) to the AFT model.
+    An alternative weighting scheme for parameters estimation in the
+    AFT model is proposed in the <pkg>imputeYn</pkg>
+    package. The <pkg>AdapEnetClass</pkg> package implements elastic
+    net regularisation for the AFT model.
   </li>
 
   <li>
@@ -357,7 +376,9 @@ something is inaccurate or missing.</p>
     and other three state models can be obtained with package
     <pkg>p3state.msm</pkg>. The <pkg>TPmsm</pkg> package permits to
     estimate transition probabilities of an illness-death model or
-    three-state progressive model.<br/>
+    three-state progressive model. The <pkg>gamboostMSM</pkg> package
+    extends the <pkg>mboost</pkg> package to estimation in the
+    mulstistate model framework. <br/>
 
     The <pkg>Epi</pkg> package implements
     Lexis objects as a way to represent, manipulate and summarise data
@@ -574,6 +595,10 @@ something is inaccurate or missing.</p>
     The <pkg>spatsurv</pkg> package fits a Bayesian parametric
     proportional hazards model for which events have been geo-located.
   </li>
+  <li>
+    The <pkg>PReMiuM</pkg> package implements Bayesian clustering
+    using a Dirichlet process mixture model censored responses.
+  </li>
 </ul>
 
 <h1>High-Dimensional Data</h1>
@@ -753,6 +778,13 @@ something is inaccurate or missing.</p>
     The <pkg>survsim</pkg> package permits to simulate simple and
     complex survival data such as recurrent event data and competing
     risks.
+</li>
+  <li>
+    The <pkg>MicSim</pkg> package provides routines for performing
+    continuous-time microsimulation for population projection. The
+    basis for the microsimulation are a multistate model, Markov or
+    non-Markov, for which the transition intensities are specified, as
+    well as an initial cohort. 
 </li>
 </ul>
 
@@ -1012,7 +1044,6 @@ something is inaccurate or missing.</p>
     risks and multistate models</a>
   <a href="http://www.msbi.nl/dnn/Research/SurvivalAnalysis/Multistate/tabid/144/Default.aspx">Associated
     functions from the tutorial</a>
-  <a href="http://www.math.uu.se/staff/pages/?uname=garmo">Course and exercise on survival analysis</a>
   <a href="http://cran.r-project.org/doc/contrib/Fox-Companion/appendix-cox-regression.pdf">Proportional-Hazards
     Regression for Survival Data. Appendix to An R and S-PLUS
     Companion to Applied Regression.</a>
