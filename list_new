@@ -5,16 +5,12 @@
 / vitality 
 / MicSim
 / lsmeans
-/ spatsurv
-/ SurvRegCensCov
 / aftgee
 / PReMiuM
 / imputeYn
-/ AdapEnetClass
 / paf
 / gamboostMSM
 / bshazard
-?GUTS
 / invGauss
 / survivalMPL
 / MIICD
