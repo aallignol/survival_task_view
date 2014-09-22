@@ -14,30 +14,22 @@
 / paf
 / gamboostMSM
 / bshazard
-seqDesign
-GUTS
-invGauss
-PBD?
-survivalMPL
-MIICD
-PHeval
-bujar
-iRepro ?
-IsoCI ?
-popdemo ?
-ICsurv
-spBayesSurv
-morse ?
-penMSM
-QoLR ?
-IDPSurvival (bayes)
-coxinterval
-DStree
-survAccuracyMeasures
-MST
-multipleNCC
-BEANSP
-SmoothHazard
+?GUTS
+/ invGauss
+/ survivalMPL
+/ MIICD
+/ PHeval
+/ bujar
+/ ICsurv
+/ spBayesSurv
+/ penMSM
+/ IDPSurvival (bayes)
+/ coxinterval
+/ DStree
+/ survAccuracyMeasures
+/ MST
+/ multipleNCC
+/ SmoothHazard
 
 A plotting section
 
