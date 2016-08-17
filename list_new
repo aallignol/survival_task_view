@@ -17,16 +17,16 @@ jackknifeKME
 SimHaz
 SurvRegCensCov
 csrkdiag
-(popEpi)
+(popEpi) (email)
 frailtySurv
 TP.idm
 coxPlus
-hdnom
+hdnom (email)
 survRank
 SSRMST
 addhazard
 PRIMsrc
-rstpm2
+rstpm2 (email)
 TransModel
 AHR
 LncMod
@@ -58,7 +58,7 @@ LTRCtrees
 jointModel
 (simLife)
 condSurv
-mexhaz
+mexhaz (+email)
 kernscr
 plac
 flexrsurv
@@ -79,9 +79,14 @@ gcerisk
 cmprskQR
 miCoPTCM
 icRSF
-survminer
+survminer (+email)
 intercure
 MPLikelihoodWB
+
+gte (email)
+ranger (email)
+glmnet (email)
+
 
 ################################
 ### Recherche septembre 2014 ###
