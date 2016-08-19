@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2016-05-26</version>
+<version>2016-08-19</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -518,7 +518,7 @@ something is inaccurate or missing.</p>
     proportional subdistribution hazards model with adjustment for
     covariate-dependent censoring. The <pkg>MIICD</pkg> package
     implements Pan's (2000) multiple imputation approach to the Fine
-    and Gray model for interval censored data. The <pkg>csrkdiag</pkg>
+    and Gray model for interval censored data. The <pkg>crskdiag</pkg>
     package provides graphical and analytical approaches for checking
     the assumptions of the Fine and Gray model. The <pkg>CFC</pkg>
     package permits to perform Bayesian, and non-Bayesian,
@@ -639,7 +639,7 @@ something is inaccurate or missing.</p>
     effects models. The <pkg>joint.Cox</pkg> package performs Cox
     regression and dynamic prediction under the joint frailty-copula
     model between tumour progression and death for
-    meta-analysis. <pkg>jointModel</pkg> fits semiparametric
+    meta-analysis. <pkg>JointModel</pkg> fits semiparametric
     regression model for longitudinal responses and a semiparametric
     transformation model for time-to-event data.
   </li>
@@ -894,7 +894,7 @@ something is inaccurate or missing.</p>
     estimating the AUC, TPR(c), FPR(c), PPV(c), and NPV(c) for
     survival data.
   </li>
-  <li>The <pkg>survRank</pkg> package provides functions for the
+  <li>The <pkg>SurvRank</pkg> package provides functions for the
     estimation of the prediction accuracy in a unified survival AUC
     approach. 
   </li>
@@ -1129,7 +1129,7 @@ something is inaccurate or missing.</p>
   <pkg>censReg</pkg>
   <pkg>CFC</pkg>
   <pkg>clinfun</pkg>
-  <pkg>cmprsk</pkg>
+  <pkg priority="core">cmprsk</pkg>
   <pkg>cmprskQR</pkg>
   <pkg>coarseDataTools</pkg>
   <pkg>coin</pkg>
@@ -1156,7 +1156,7 @@ something is inaccurate or missing.</p>
   <pkg>crrp</pkg>
   <pkg>crrSC</pkg>
   <pkg>crrstep</pkg>
-  <pkg>csrkdiag</pkg>
+  <pkg>crskdiag</pkg>
   <pkg>currentSurvival</pkg>
   <pkg>Cyclops</pkg>
   <pkg>DAAG</pkg>
@@ -1167,7 +1167,7 @@ something is inaccurate or missing.</p>
   <pkg>DTDA</pkg>
   <pkg>dynpred</pkg>
   <pkg>dynsurv</pkg>
-  <pkg>eha</pkg>
+  <pkg priority="core">eha</pkg>
   <pkg>ELYP</pkg>
   <pkg>emplik2</pkg>
   <pkg>emplik</pkg>
@@ -1220,7 +1220,7 @@ something is inaccurate or missing.</p>
   <pkg>JMbayes</pkg>
   <pkg>joineR</pkg>
   <pkg>joint.Cox</pkg>
-  <pkg>jointModel</pkg>
+  <pkg>JointModel</pkg>
   <pkg>JPSurv</pkg>
   <pkg>kaps</pkg>
   <pkg>km.ci</pkg>
@@ -1262,8 +1262,8 @@ something is inaccurate or missing.</p>
   <pkg>msmtools</pkg>
   <pkg>msSurv</pkg>
   <pkg>MST</pkg>
-  <pkg>mstate</pkg>
-  <pkg>muhaz</pkg>
+  <pkg priority="core">mstate</pkg>
+  <pkg priority="core">muhaz</pkg>
   <pkg>multcomp</pkg>
   <pkg>multipleNCC</pkg>
   <pkg>mvna</pkg>
@@ -1309,7 +1309,7 @@ something is inaccurate or missing.</p>
   <pkg>rhosp</pkg>
   <pkg>riskRegression</pkg>
   <pkg>risksetROC</pkg>
-  <pkg>rms</pkg>
+  <pkg priority="core">rms</pkg>
   <pkg>RobustAFT</pkg>
   <pkg>ROCt</pkg>
   <pkg>rpart</pkg>
@@ -1344,7 +1344,7 @@ something is inaccurate or missing.</p>
   <pkg>survey</pkg>
   <pkg>Survgini</pkg>
   <pkg>survIDINRI</pkg>
-  <pkg>survival</pkg>
+  <pkg priority="core">survival</pkg>
   <pkg>survivalMPL</pkg>
   <pkg>survivalROC</pkg>
   <pkg>survJamda</pkg>
@@ -1352,7 +1352,7 @@ something is inaccurate or missing.</p>
   <pkg>survminer</pkg>
   <pkg>survMisc</pkg>
   <pkg>survPresmooth</pkg>
-  <pkg>survRank</pkg>
+  <pkg>SurvRank</pkg>
   <pkg>survrec</pkg>
   <pkg>SurvRegCensCov</pkg>
   <pkg>survRM2</pkg>
@@ -1363,7 +1363,7 @@ something is inaccurate or missing.</p>
   <pkg>tdROC</pkg>
   <pkg>TestSurvRec</pkg>
   <pkg>thregI</pkg>
-  <pkg>timereg</pkg>
+  <pkg priority="core">timereg</pkg>
   <pkg>timeROC</pkg>
   <pkg>tlmec</pkg>
   <pkg>TP.idm</pkg>
