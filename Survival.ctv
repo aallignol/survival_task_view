@@ -1103,209 +1103,282 @@ something is inaccurate or missing.</p>
 </info>
 
 <packagelist>
-<pkg>AER</pkg>
-<pkg>aftgee</pkg>
-<pkg>ahaz</pkg>
-<pkg>AIM</pkg>
-<pkg>asbio</pkg>
-<pkg>aster</pkg>
-<pkg>aster2</pkg>
-<pkg>BaSTA</pkg>
-<pkg>bayesSurv</pkg>
-<pkg>BayHaz</pkg>
-<pkg>BGPhazard</pkg>
-<pkg>BMA</pkg>
-<pkg>bpcp</pkg>
-<pkg>boot</pkg>
-<pkg>bshazard</pkg>
-<pkg>bujar</pkg>
-<pkg>censReg</pkg>
-<pkg>clinfun</pkg>
-<pkg priority="core">cmprsk</pkg>
-<pkg>coarseDataTools</pkg>
-<pkg>coin</pkg>
-<pkg>concreg</pkg>
-<pkg>condGEE</pkg>
-<pkg>compeir</pkg>
-<pkg>compound.Cox</pkg>
-<pkg>CoxBoost</pkg>
-<pkg>coxinterval</pkg>
-<pkg>coxme</pkg>
-<pkg>coxphf</pkg>
-<pkg>coxphw</pkg>
-<pkg>CoxRidge</pkg>
-<pkg>coxrobust</pkg>
-<pkg>CPE</pkg>
-<pkg>CPHshape</pkg>
-<pkg>Cprob</pkg>
-<pkg>CR</pkg>
-<pkg>crrSC</pkg>
-<pkg>crrstep</pkg>
-<pkg>currentSurvival</pkg>
-<pkg>DAAG</pkg>
-<pkg>dblcens</pkg>
-<pkg>DPpackage</pkg>
-<pkg>DStree</pkg>
-<pkg>DTDA</pkg>
-<pkg>dynpred</pkg>
-<pkg>dynsurv</pkg>
-<pkg priority="core">eha</pkg>
-<pkg>emplik</pkg>
-<pkg>Epi</pkg>
-<pkg>epiR</pkg>
-<pkg>etm</pkg>
-<pkg>exactRankTests</pkg>
-<pkg>fastcox</pkg>
-<pkg>FHtest</pkg>
-<pkg>fitdistrplus</pkg>
-<pkg>flexsurv</pkg>
-<pkg>frailtyHL</pkg>
-<pkg>frailtypack</pkg>
-<pkg>gamboostMSM</pkg>
-<pkg>gamlss.cens</pkg>
-<pkg>gbm</pkg>
-<pkg>gems</pkg>
-<pkg>genSurv</pkg>
-<pkg>glmpath</pkg>
-<pkg>globalboosttest</pkg>
-<pkg>glrt</pkg>
-<pkg>gof</pkg>
-<pkg>gss</pkg>
-<pkg>ICE</pkg>
-<pkg>ICsurv</pkg>
-<pkg>IDPSurvival</pkg>
-<pkg>interval</pkg>
-<pkg>invGauss</pkg>
-<pkg>ipdmeta</pkg>
-<pkg>ipred</pkg>
-<pkg>JM</pkg>
-<pkg>JMbayes</pkg>
-<pkg>joineR</pkg>
-<pkg>JPSurv</pkg>
-<pkg>kaps</pkg>
-<pkg>km.ci</pkg>
-<pkg>kmc</pkg>
-<pkg>kmconfband</pkg>
-<pkg>kmi</pkg>
-<pkg>KMsurv</pkg>
-<pkg>lava.tobit</pkg>
-<pkg>lbiassurv</pkg>
-<pkg>LearnBayes</pkg>
-<pkg>lmec</pkg>
-<pkg>locfit</pkg>
-<pkg>logconcens</pkg>
-<pkg>LogicReg</pkg>
-<pkg>LogrankA</pkg>
-<pkg>logspline</pkg>
-<pkg>lpc</pkg>
-<pkg>lsmeans</pkg>
-<pkg>lss</pkg>
-<pkg>MAMSE</pkg>
-<pkg>maxstat</pkg>
-<pkg>mboost</pkg>
-<pkg>MCMCglmm</pkg>
-<pkg>MCMCpack</pkg>
-<pkg>mets</pkg>
-<pkg>mfp</pkg>
-<pkg>MicSim</pkg>
-<pkg>MIICD</pkg>
-<pkg>mixAK</pkg>
-<pkg>mixPHM</pkg>
-<pkg>MLEcens</pkg>
-<pkg>MRsurv</pkg>
-<pkg>msm</pkg>
-<pkg>msSurv</pkg>
-<pkg>MST</pkg>
-<pkg priority="core">mstate</pkg>
-<pkg priority="core">muhaz</pkg>
-<pkg>multcomp</pkg>
-<pkg>multipleNCC</pkg>
-<pkg>mvna</pkg>
-<pkg>NADA</pkg>
-<pkg>NestedCohort</pkg>
-<pkg>NPHMC</pkg>
-<pkg>NPMLEcmprsk</pkg>
-<pkg>OIsurv</pkg>
-<pkg>OrdFacReg</pkg>
-<pkg>OutlierDC</pkg>
-<pkg>p3state.msm</pkg>
-<pkg>paf</pkg>
-<pkg>pamr</pkg>
-<pkg>parfm</pkg>
-<pkg>party</pkg>
-<pkg>pec</pkg>
-<pkg>penalized</pkg>
-<pkg>penMSM</pkg>
-<pkg>peperr</pkg>
-<pkg>PermAlgo</pkg>
-<pkg>PHeval</pkg>
-<pkg>plsRcox</pkg>
-<pkg>polspline</pkg>
-<pkg>prodlim</pkg>
-<pkg>quantreg</pkg>
-<pkg>psbcGroup</pkg>
-<pkg>phmm</pkg>
-<pkg>powerSurvEpi</pkg>
-<pkg>PReMiuM</pkg>
-<pkg>pseudo</pkg>
-<pkg>randomForestSRC</pkg>
-<pkg>rankhazard</pkg>
-<pkg>relsurv</pkg>
-<pkg>rhosp</pkg>
-<pkg>riskRegression</pkg>
-<pkg>risksetROC</pkg>
-<pkg priority="core">rms</pkg>
-<pkg>RobustAFT</pkg>
-<pkg>ROCt</pkg>
-<pkg>rpart</pkg>
-<pkg>rsig</pkg>
-<pkg>saws</pkg>
-<pkg>SemiCompRisks</pkg>
-<pkg>SemiMarkov</pkg>
-<pkg>SGL</pkg>
-<pkg>simexaft</pkg>
-<pkg>simMSM</pkg>
-<pkg>simPH</pkg>
-<pkg>SMIR</pkg>
-<pkg>SmoothHazard</pkg>
-<pkg>smoothHR</pkg>
-<pkg>smoothSurv</pkg>
-<pkg>SMPracticals</pkg>
-<pkg>spatstat</pkg>
-<pkg>spatsurv</pkg>
-<pkg>spBayesSurv</pkg>
-<pkg>superpc</pkg>
-<pkg>surv2sampleComp</pkg>
-<pkg>survAccuracyMeasures</pkg>
-<pkg>survAUC</pkg>
-<pkg>survC1</pkg>
-<pkg>survexp.fr</pkg>
-<pkg>survey</pkg>
-<pkg>Survgini</pkg>
-<pkg priority="core">survival</pkg>
-<pkg>survivalMPL</pkg>
-<pkg>survivalROC</pkg>
-<pkg>survIDINRI</pkg>
-<pkg>survJamda</pkg>
-<pkg>survrec</pkg>
-<pkg>survPresmooth</pkg>
-<pkg>survsim</pkg>
-<pkg>survSNP</pkg>
-<pkg>SvyNom</pkg>
-<pkg>TBSSurvival</pkg>
-<pkg>TestSurvRec</pkg>
-<pkg priority="core">timereg</pkg>
-<pkg>timeROC</pkg>
-<pkg>tlmec</pkg>
-<pkg>TPmsm</pkg>
-<pkg>tpr</pkg>
-<pkg>TraMineR</pkg>
-<pkg>TSHRC</pkg>
-<pkg>uniCox</pkg>
-<pkg>VGAM</pkg>
-<pkg>vitality</pkg>
-<pkg>wtcrsk</pkg>
-<pkg>YPmodel</pkg>
+  <pkg>addhazard</pkg>
+  <pkg>AER</pkg>
+  <pkg>aftgee</pkg>
+  <pkg>ahaz</pkg>
+  <pkg>AHR</pkg>
+  <pkg>AIM</pkg>
+  <pkg>APtools</pkg>
+  <pkg>asaur</pkg>
+  <pkg>asbio</pkg>
+  <pkg>aster2</pkg>
+  <pkg>aster</pkg>
+  <pkg>BaSTA</pkg>
+  <pkg>BayesPiecewiseICAR</pkg>
+  <pkg>bayesSurv</pkg>
+  <pkg>BayHaz</pkg>
+  <pkg>BGPhazard</pkg>
+  <pkg>Biograph</pkg>
+  <pkg>BMA</pkg>
+  <pkg>bnnSurvival</pkg>
+  <pkg>boot</pkg>
+  <pkg>bpcp</pkg>
+  <pkg>bshazard</pkg>
+  <pkg>bujar</pkg>
+  <pkg>censReg</pkg>
+  <pkg>CFC</pkg>
+  <pkg>clinfun</pkg>
+  <pkg>cmprsk</pkg>
+  <pkg>cmprskQR</pkg>
+  <pkg>coarseDataTools</pkg>
+  <pkg>coin</pkg>
+  <pkg>compareC</pkg>
+  <pkg>compeir</pkg>
+  <pkg>compound.Cox</pkg>
+  <pkg>concreg</pkg>
+  <pkg>condGEE</pkg>
+  <pkg>condSURV</pkg>
+  <pkg>controlTest</pkg>
+  <pkg>CoxBoost</pkg>
+  <pkg>coxinterval</pkg>
+  <pkg>coxme</pkg>
+  <pkg>Coxnet</pkg>
+  <pkg>coxphf</pkg>
+  <pkg>coxphw</pkg>
+  <pkg>CoxRidge</pkg>
+  <pkg>coxrobust</pkg>
+  <pkg>coxsei</pkg>
+  <pkg>CPE</pkg>
+  <pkg>CPHshape</pkg>
+  <pkg>Cprob</pkg>
+  <pkg>CR</pkg>
+  <pkg>crrp</pkg>
+  <pkg>crrSC</pkg>
+  <pkg>crrstep</pkg>
+  <pkg>csrkdiag</pkg>
+  <pkg>currentSurvival</pkg>
+  <pkg>Cyclops</pkg>
+  <pkg>DAAG</pkg>
+  <pkg>dblcens</pkg>
+  <pkg>discSurv</pkg>
+  <pkg>DPpackage</pkg>
+  <pkg>DStree</pkg>
+  <pkg>DTDA</pkg>
+  <pkg>dynpred</pkg>
+  <pkg>dynsurv</pkg>
+  <pkg>eha</pkg>
+  <pkg>ELYP</pkg>
+  <pkg>emplik2</pkg>
+  <pkg>emplik</pkg>
+  <pkg>Epi</pkg>
+  <pkg>epiR</pkg>
+  <pkg>etm</pkg>
+  <pkg>exactRankTests</pkg>
+  <pkg>fastcox</pkg>
+  <pkg>fastpseudo</pkg>
+  <pkg>FHtest</pkg>
+  <pkg>fitdistrplus</pkg>
+  <pkg>flexPM</pkg>
+  <pkg>flexrsurv</pkg>
+  <pkg>flexsurv</pkg>
+  <pkg>frailtyHL</pkg>
+  <pkg>frailtypack</pkg>
+  <pkg>frailtySurv</pkg>
+  <pkg>gamboostMSM</pkg>
+  <pkg>gamlss.cens</pkg>
+  <pkg>gbm</pkg>
+  <pkg>gcerisk</pkg>
+  <pkg>gems</pkg>
+  <pkg>genSurv</pkg>
+  <pkg>glmnet</pkg>
+  <pkg>glmpath</pkg>
+  <pkg>globalboosttest</pkg>
+  <pkg>glrt</pkg>
+  <pkg>gof</pkg>
+  <pkg>GORCure</pkg>
+  <pkg>gss</pkg>
+  <pkg>GSSE</pkg>
+  <pkg>gte</pkg>
+  <pkg>hdnom</pkg>
+  <pkg>ICBayes</pkg>
+  <pkg>ICE</pkg>
+  <pkg>icenReg</pkg>
+  <pkg>ICGOR</pkg>
+  <pkg>icRSF</pkg>
+  <pkg>ICsurv</pkg>
+  <pkg>IDPSurvival</pkg>
+  <pkg>InformativeCensoring</pkg>
+  <pkg>intercure</pkg>
+  <pkg>interval</pkg>
+  <pkg>invGauss</pkg>
+  <pkg>ipdmeta</pkg>
+  <pkg>ipred</pkg>
+  <pkg>isoph</pkg>
+  <pkg>jackknifeKME</pkg>
+  <pkg>JM</pkg>
+  <pkg>JMbayes</pkg>
+  <pkg>joineR</pkg>
+  <pkg>joint.Cox</pkg>
+  <pkg>jointModel</pkg>
+  <pkg>JPSurv</pkg>
+  <pkg>kaps</pkg>
+  <pkg>km.ci</pkg>
+  <pkg>kmc</pkg>
+  <pkg>kmconfband</pkg>
+  <pkg>kmi</pkg>
+  <pkg>KMsurv</pkg>
+  <pkg>landest</pkg>
+  <pkg>lava.tobit</pkg>
+  <pkg>lbiassurv</pkg>
+  <pkg>LearnBayes</pkg>
+  <pkg>LexisPlotR</pkg>
+  <pkg>lmec</pkg>
+  <pkg>locfit</pkg>
+  <pkg>logconcens</pkg>
+  <pkg>LogicReg</pkg>
+  <pkg>LogrankA</pkg>
+  <pkg>logspline</pkg>
+  <pkg>lpc</pkg>
+  <pkg>lsmeans</pkg>
+  <pkg>lss</pkg>
+  <pkg>LTRCtrees</pkg>
+  <pkg>MAMSE</pkg>
+  <pkg>maxstat</pkg>
+  <pkg>mboost</pkg>
+  <pkg>MCMCglmm</pkg>
+  <pkg>MCMCpack</pkg>
+  <pkg>mets</pkg>
+  <pkg>mexhaz</pkg>
+  <pkg>mfp</pkg>
+  <pkg>miCoPTCM</pkg>
+  <pkg>MicSim</pkg>
+  <pkg>MIICD</pkg>
+  <pkg>mixAK</pkg>
+  <pkg>mixPHM</pkg>
+  <pkg>MLEcens</pkg>
+  <pkg>MRsurv</pkg>
+  <pkg>msm</pkg>
+  <pkg>msmtools</pkg>
+  <pkg>msSurv</pkg>
+  <pkg>MST</pkg>
+  <pkg>mstate</pkg>
+  <pkg>muhaz</pkg>
+  <pkg>multcomp</pkg>
+  <pkg>multipleNCC</pkg>
+  <pkg>mvna</pkg>
+  <pkg>NADA</pkg>
+  <pkg>NestedCohort</pkg>
+  <pkg>NPHMC</pkg>
+  <pkg>NPMLEcmprsk</pkg>
+  <pkg>npsurv</pkg>
+  <pkg>OIsurv</pkg>
+  <pkg>OrdFacReg</pkg>
+  <pkg>OutlierDC</pkg>
+  <pkg>p3state.msm</pkg>
+  <pkg>paf</pkg>
+  <pkg>pamr</pkg>
+  <pkg>parfm</pkg>
+  <pkg>parfm</pkg>
+  <pkg>party</pkg>
+  <pkg>pch</pkg>
+  <pkg>pec</pkg>
+  <pkg>penalized</pkg>
+  <pkg>PenCoxFrail</pkg>
+  <pkg>penMSM</pkg>
+  <pkg>peperr</pkg>
+  <pkg>PermAlgo</pkg>
+  <pkg>PHeval</pkg>
+  <pkg>phmm</pkg>
+  <pkg>plac</pkg>
+  <pkg>plsRcox</pkg>
+  <pkg>polspline</pkg>
+  <pkg>popEpi</pkg>
+  <pkg>powerSurvEpi</pkg>
+  <pkg>PReMiuM</pkg>
+  <pkg>prodlim</pkg>
+  <pkg>psbcGroup</pkg>
+  <pkg>pseudo</pkg>
+  <pkg>quantreg</pkg>
+  <pkg>randomForestSRC</pkg>
+  <pkg>ranger</pkg>
+  <pkg>rankhazard</pkg>
+  <pkg>reda</pkg>
+  <pkg>relsurv</pkg>
+  <pkg>reReg</pkg>
+  <pkg>rhosp</pkg>
+  <pkg>riskRegression</pkg>
+  <pkg>risksetROC</pkg>
+  <pkg>rms</pkg>
+  <pkg>RobustAFT</pkg>
+  <pkg>ROCt</pkg>
+  <pkg>rpart</pkg>
+  <pkg>rsig</pkg>
+  <pkg>rstpm2</pkg>
+  <pkg>saws</pkg>
+  <pkg>SemiCompRisks</pkg>
+  <pkg>SemiMarkov</pkg>
+  <pkg>SGL</pkg>
+  <pkg>simexaft</pkg>
+  <pkg>SimHaz</pkg>
+  <pkg>simMSM</pkg>
+  <pkg>simPH</pkg>
+  <pkg>SimSCRPiecewise</pkg>
+  <pkg>smcure</pkg>
+  <pkg>SMIR</pkg>
+  <pkg>SmoothHazard</pkg>
+  <pkg>smoothHR</pkg>
+  <pkg>smoothSurv</pkg>
+  <pkg>SMPracticals</pkg>
+  <pkg>spatstat</pkg>
+  <pkg>spatsurv</pkg>
+  <pkg>spBayesSurv</pkg>
+  <pkg>SSRMST</pkg>
+  <pkg>superpc</pkg>
+  <pkg>surv2sampleComp</pkg>
+  <pkg>survAccuracyMeasures</pkg>
+  <pkg>survAUC</pkg>
+  <pkg>survC1</pkg>
+  <pkg>SurvCorr</pkg>
+  <pkg>survexp.fr</pkg>
+  <pkg>survey</pkg>
+  <pkg>Survgini</pkg>
+  <pkg>survIDINRI</pkg>
+  <pkg>survival</pkg>
+  <pkg>survivalMPL</pkg>
+  <pkg>survivalROC</pkg>
+  <pkg>survJamda</pkg>
+  <pkg>SurvLong</pkg>
+  <pkg>survminer</pkg>
+  <pkg>survMisc</pkg>
+  <pkg>survPresmooth</pkg>
+  <pkg>survRank</pkg>
+  <pkg>survrec</pkg>
+  <pkg>SurvRegCensCov</pkg>
+  <pkg>survRM2</pkg>
+  <pkg>survsim</pkg>
+  <pkg>survSNP</pkg>
+  <pkg>SvyNom</pkg>
+  <pkg>TBSSurvival</pkg>
+  <pkg>tdROC</pkg>
+  <pkg>TestSurvRec</pkg>
+  <pkg>thregI</pkg>
+  <pkg>timereg</pkg>
+  <pkg>timeROC</pkg>
+  <pkg>tlmec</pkg>
+  <pkg>TP.idm</pkg>
+  <pkg>TPmsm</pkg>
+  <pkg>tpr</pkg>
+  <pkg>TraMineR</pkg>
+  <pkg>TransModel</pkg>
+  <pkg>tranSurv</pkg>
+  <pkg>TSHRC</pkg>
+  <pkg>uniah</pkg>
+  <pkg>uniCox</pkg>
+  <pkg>VGAM</pkg>
+  <pkg>vitality</pkg>
+  <pkg>wtcrsk</pkg>
+  <pkg>YPmodel</pkg>
 </packagelist>
 
 <links>
