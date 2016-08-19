@@ -53,12 +53,23 @@ something is inaccurate or missing.</p>
     estimator following Pollock et al. (1998). The <pkg>bpcp</pkg>
     package provides several functions for computing confidence
     intervals of the survival distribution (e.g., beta product
-    confidence procedure). The <pkg>lbiassurv</pkg> package offers various
-    length-bias corrections to survival curve
+    confidence procedure). The <pkg>lbiassurv</pkg> package offers
+    various length-bias corrections to survival curve
     estimation. Non-Parametric confidance bands for the Kaplan-Meier
     estimator can be computed using the <pkg>kmconfband</pkg> package.
     The <pkg>kmc</pkg> package implements the Kaplan-Meier estimator
-    with constraints.
+    with constraints. The <pkg>landest</pkg> package allows landmark
+    estimation and testing of survival
+    probabilities. The <pkg>jackknifeKME</pkg> package computes the
+    original and modified jackknife estimates of Kaplan-Meier
+    estimators. The <pkg>tranSurv</pkg> package permits to estimate a
+    survival distribution in the presence of dependent left-truncation
+    and right-censoring. The <pkg>condSURV</pkg> package provides
+    methods for estimating the conditional survival function for
+    ordered multivariate failure time data. The <pkg>gte</pkg> package
+    implements the generalised Turnbull estimator proposed by Dehghan
+    and Duchesne for estimating the conditional survival function with
+    interval-censored data.  
   </li>
 
   <li>
@@ -67,12 +78,14 @@ something is inaccurate or missing.</p>
     of the survival distribution for various censoring and truncation 
     schemes.
     <pkg>MLEcens</pkg> can also be used to compute the MLE for interval-censored data.
-    <pkg>dblcens</pkg> permits to compute the NPMLE of the cumulative distribution
-    function for left- and right-censored data.
-    The <code>icfit</code> function in package <pkg>interval</pkg> computes the NPMLE
-    for interval-censored data.
-    The <pkg>DTDA</pkg> implements several algorithms permitting to analyse possibly doubly 
-    truncated survival data.
+    <pkg>dblcens</pkg> permits to compute the NPMLE of the cumulative
+    distribution function for left- and right-censored data.
+    The <code>icfit</code> function in package <pkg>interval</pkg>
+    computes the NPMLE for interval-censored data.
+    The <pkg>DTDA</pkg> package implements several algorithms
+    permitting to analyse possibly doubly truncated survival
+    data. <pkg>npsurv</pkg> computes the NPMLE of a survival function
+    for general interval-censored data.
   </li>
   <li>
     <b><em>Parametric:</em></b> The <pkg>fitdistrplus</pkg> package
@@ -164,6 +177,15 @@ something is inaccurate or missing.</p>
     The short term and long term hazard ratio model for two samples
     survival data can be found in the <pkg>YPmodel</pkg> package.
   </li>
+  <li>The <pkg>controlTest</pkg> implements a nonparametric two-sample
+    procedure for comparing the median survival time. 
+  </li>
+  <li>The <pkg>survRM2</pkg> package performs two-sample comparison
+    of the restricted mean survival time
+  </li>
+  <li>The <pkg>emplik2</pkg> package permits to compare two samples
+  with censored data using empirical likelihood ratio tests.  
+  </li>
 </ul>
   
 <p><strong>Regression Modelling</strong></p>
@@ -181,17 +203,16 @@ something is inaccurate or missing.</p>
     of the Cox model.
     <code>timecox</code> in package <pkg>timereg</pkg> fits Cox models
     with possibly time-varying effects.  The <pkg>mfp</pkg> package
-    permits to fit Cox models with multiple fractional polynomial. The <pkg>NestedCohort</pkg>
-    fits Cox models for covariates with missing data.  A Cox model
-    model can be fitted to data from complex survey design using
-    the <code>svycoxph</code> function
-    in <pkg>survey</pkg>. The <pkg>multipleNCC</pkg> package fits Cox
-    models using a weighted partial likelihood for nested case-control
-    studies.
-    The <pkg>MIICD</pkg> package implements Pan's (2000) multiple
-    imputation approach to Cox models for interval censored data.
-    The <pkg>ICsurv</pkg> package fits Cox models for
-    interval-censored data through an EM algorithm. 
+    permits to fit Cox models with multiple fractional
+    polynomial. The <pkg>NestedCohort</pkg> fits Cox models for
+    covariates with missing data.  A Cox model model can be fitted to
+    data from complex survey design using the <code>svycoxph</code>
+    function in <pkg>survey</pkg>. The <pkg>multipleNCC</pkg> package
+    fits Cox models using a weighted partial likelihood for nested
+    case-control studies.  The <pkg>MIICD</pkg> package implements
+    Pan's (2000) multiple imputation approach to Cox models for
+    interval censored data.  The <pkg>ICsurv</pkg> package fits Cox
+    models for interval-censored data through an EM algorithm.
     The <pkg>dynsurv</pkg> package fits time-varying coefficient
     models for interval censored and right censored survival data
     using a Bayesian Cox model, a spline based Cox model or a
@@ -201,11 +222,24 @@ something is inaccurate or missing.</p>
     model using an active set algorithm for dummy variables of ordered
     factors. The <pkg>survivalMPL</pkg> package fits Cox models using
     maximum penalised likelihood and provide a non parametric smooth
-    estimate of the baseline hazard function.
+    estimate of the baseline hazard function. A Cox model with
+    piecewise constant hazards can be fitted using the <pkg>pch</pkg>
+    package. The <pkg>isoph</pkg> allows nonparametric estimation of
+    an isotonic covariate effect for proportional hazards
+    model. The <pkg>icenReg</pkg> package implements several models
+    for interval-censored data, e.g., Cox, proportional odds, and
+    accelerated failure time models. A Cox type Self-Exciting
+    Intensity model can be fitted to right-censored data using
+    the <pkg>coxsei</pkg> package. The <pkg>SurvLong</pkg> contains
+    methods for estimation of proportional hazards models with
+    intermittently observed longitudinal
+    covariates. The <pkg>plac</pkg> package provides routines to fit
+    the Cox model with left-truncated data using augmented information
+    from the marginal of the truncation times.
 
-    <br/>  The <code>cumres</code> function in <pkg>gof</pkg>
-    computes goodness-of-fit methods for the Cox proportional hazards
-    model.  The proportionality assumption can be checked using
+    <br/> The <code>cumres</code> function in <pkg>gof</pkg> computes
+    goodness-of-fit methods for the Cox proportional hazards model.
+    The proportionality assumption can be checked using
     the <code>cox.zph</code> function in <pkg>survival</pkg>.
     The <pkg>CPE</pkg> package calculates concordance probability
     estimate for the Cox model, as does the <code>coxphCPE</code>
@@ -231,8 +265,10 @@ something is inaccurate or missing.</p>
     and survival. The <pkg>paf</pkg> package permits to compute the
     unadjusted/adjusted attributable fraction function from a Cox
     proportional hazards model. The <pkg>PHeval</pkg> package proposes
-    tools to check the proportional hazards assumption using a standardised
-    score process.
+    tools to check the proportional hazards assumption using a
+    standardised score process. The <pkg>ELYP</pkg> package implements
+    empirical likelihood analysis for the Cox Model and Yang-Prentice
+    (2005) Model. 
   </li>
 
   <li>
@@ -249,7 +285,10 @@ something is inaccurate or missing.</p>
     implements the model of Royston and Parmar (2002). The model uses
     natural cubic splines for the baseline survival function, and
     proportional hazards, proportional odds or probit functions for
-    regression.
+    regression. The <pkg>SurvRegCensCov</pkg> package allows
+    estimation of a Weibull Regression for a right-censored endpoint,
+    one interval-censored covariate, and an arbitrary number of
+    non-censored covariates. 
   </li>
 
   <li>
@@ -282,11 +321,15 @@ something is inaccurate or missing.</p>
     and <pkg>timereg</pkg> fit the additive hazards model of Aalen in
     functions <code>aareg</code> and <code>aalen</code>,
     respectively. <pkg>timereg</pkg> also proposes an implementation
-    of the Cox-Aalen model (that can also be used to perform the Lin, Wei and
-    Ying (1994) goodness-of-fit for Cox regression models) and the
-    partly parametric additive risk model of McKeague and Sasieni. A
-    version of the Cox-Aalen model for interval censored data is
-    available in the <pkg>coxinterval</pkg> package.
+    of the Cox-Aalen model (that can also be used to perform the Lin,
+    Wei and Ying (1994) goodness-of-fit for Cox regression models) and
+    the partly parametric additive risk model of McKeague and
+    Sasieni. A version of the Cox-Aalen model for interval censored
+    data is available in the <pkg>coxinterval</pkg>
+    package. The <pkg>uniah</pkg> package fits shape-restricted
+    additive hazards models. The <pkg>addhazard</pkg> package contains
+    tools to fit additive hazards model to random sampling, two-phase
+    sampling and two-phase sampling with auxiliary information. 
   </li>
 
   <li>
@@ -315,30 +358,31 @@ something is inaccurate or missing.</p>
     where drift towards the barrier has been randomized with a
     Gaussian distribution. The <pkg>pseudo</pkg> package computes the
     pseudo-observation for modelling the survival function based on
-    the Kaplan-Meier estimator and the restricted mean.
-    <pkg>flexsurv</pkg> fits parametric time-to-event models, in which
-    any parametric distribution can be used to model the survival
-    probability, and where one of the parameters is a linear function
-    of covariates.  The <code>Icens</code> function in
-    package <pkg>Epi</pkg> provides a multiplicative relative risk and
-    an additive excess risk model for interval-censored data.
-    The <pkg>VGAM</pkg> package can fit vector generalised linear and
-    additive models for censored data.  The <pkg>gamlss.cens</pkg>
-    package implements the generalised additive model for location,
-    scale and shape that can be fitted to censored data.
-    The <code>locfit.censor</code> function in <pkg>locfit</pkg>
-    produces local regression estimates.  The <code>crq</code>
-    function included in the <pkg>quantreg</pkg> package implements a
-    conditional quantile regression model for censored data.
-    The <pkg>JM</pkg> package fits shared parameter models for the
-    joint modelling of a longitudinal response and event times.  The
-    temporal process regression model is implemented in
-    the <pkg>tpr</pkg> package.  Aster models, which combine aspects
-    of generalized linear models and Cox models, are implemented in
-    the <pkg>aster</pkg> and <pkg>aster2</pkg> packages.
-    The <pkg>concreg</pkg> package implements conditional logistic
-    regression for survival data as an alternative to the Cox model
-    when hazards are non-proportional. <pkg>lava.tobit</pkg>, an
+    the Kaplan-Meier estimator and the restricted
+    mean. The <pkg>fastpseudo</pkg> package dose the same for the
+    restricted mean survival time.  <pkg>flexsurv</pkg> fits
+    parametric time-to-event models, in which any parametric
+    distribution can be used to model the survival probability, and
+    where one of the parameters is a linear function of covariates.
+    The <code>Icens</code> function in package <pkg>Epi</pkg> provides
+    a multiplicative relative risk and an additive excess risk model
+    for interval-censored data.  The <pkg>VGAM</pkg> package can fit
+    vector generalised linear and additive models for censored data.
+    The <pkg>gamlss.cens</pkg> package implements the generalised
+    additive model for location, scale and shape that can be fitted to
+    censored data.  The <code>locfit.censor</code> function
+    in <pkg>locfit</pkg> produces local regression estimates.
+    The <code>crq</code> function included in the <pkg>quantreg</pkg>
+    package implements a conditional quantile regression model for
+    censored data.  The <pkg>JM</pkg> package fits shared parameter
+    models for the joint modelling of a longitudinal response and
+    event times.  The temporal process regression model is implemented
+    in the <pkg>tpr</pkg> package.  Aster models, which combine
+    aspects of generalized linear models and Cox models, are
+    implemented in the <pkg>aster</pkg> and <pkg>aster2</pkg>
+    packages.  The <pkg>concreg</pkg> package implements conditional
+    logistic regression for survival data as an alternative to the Cox
+    model when hazards are non-proportional. <pkg>lava.tobit</pkg>, an
     extension of the <b>lava</b> package, fits latent variable models
     for censored outcomes via a probit link
     formulation. The <pkg>BGPhazard</pkg> package implements Markov
@@ -346,7 +390,27 @@ something is inaccurate or missing.</p>
     discrete failure time data. The <pkg>surv2sampleComp</pkg>
     packages proposes some model-free contrast comparison measures
     such as difference/ratio of cumulative hazards, quantiles and
-    restricted mean.
+    restricted mean. The <pkg>rstpm2</pkg> package provides link-based
+    survival models that extend the Royston-Parmar models, a family of
+    flexible parametric models. The <pkg>TransModel</pkg> package
+    implements a unified estimation procedure for the analysis of
+    censored data using linear transformation
+    models. The <pkg>flexPM</pkg> package fits a flexible parametric
+    regression model to possibly right-censored, left-truncated
+    data. The <pkg>ICGOR</pkg> fits the generalized odds rate hazards
+    model to interval-censored data while <pkg>GORCure</pkg>
+    generalized odds rate mixture cure model to interval-censored
+    data. The <pkg>thregI</pkg> package permits to fit a threshold
+    regression model for interval-censored data based on the
+    first-hitting-time of a boundary by the sample path of a Wiener
+    diffusion process. The <pkg>miCoPTCM</pkg> package fits
+    semiparametric promotion time cure models with possibly
+    mis-measured covariates. The <pkg>intercure</pkg> package
+    implements semiparametric cure rate estimators for interval
+    censored data. The <pkg>smcure</pkg> package permits to fit
+    semiparametric proportional hazards and accelerated failure time
+    mixture cure models.
+    
   </li>
 </ul>
 
@@ -377,12 +441,15 @@ something is inaccurate or missing.</p>
     <pkg>msm</pkg> package contains functions for fitting general
     continuous-time Markov and hidden Markov multistate models to
     longitudinal data. Transition rates and output processes can be
-    modelled in terms of covariates. The <pkg>SemiMarkov</pkg> package
-    can be used to fit semi-Markov multistate models in continuous
-    time.  The distribution of the waiting times can be chosen between
-    the exponential, the Weibull and exponentiated Weibull
-    distributions.  Non-parametric estimates in illness-death models
-    and other three state models can be obtained with package
+    modelled in terms of covariates. The <pkg>msmtools</pkg> package
+    provides utilities to facilitate the modelling of longitudinal
+    data under a multistate framework using the <pkg>msm</pkg>
+    package.The <pkg>SemiMarkov</pkg> package can be used to fit
+    semi-Markov multistate models in continuous time.  The
+    distribution of the waiting times can be chosen between the
+    exponential, the Weibull and exponentiated Weibull distributions.
+    Non-parametric estimates in illness-death models and other three
+    state models can be obtained with package
     <pkg>p3state.msm</pkg>. The <pkg>TPmsm</pkg> package permits to
     estimate transition probabilities of an illness-death model or
     three-state progressive model. The <pkg>gamboostMSM</pkg> package
@@ -397,15 +464,20 @@ something is inaccurate or missing.</p>
     transient state. Left-truncated and right-censored data are also
     allowed. The model is either parametric (Weibull) or
     semi-parametric with M-splines approximation of the baseline
-    intensities.<br/>
+    intensities. The <pkg>TP.idm</pkg> package implement the estimator
+    of Una-Alvarez and Meira-Machado (2015) for non-Markov
+    illness-death models.<br/>
 
-    The <pkg>Epi</pkg> package implements
-    Lexis objects as a way to represent, manipulate and summarise data
-    from multistate models.  The <pkg>TraMineR</pkg> package is
+    The <pkg>Epi</pkg> package implements Lexis objects as a way to
+    represent, manipulate and summarise data from multistate models.
+    The <pkg>LexisPlotR</pkg> package, based on <b>ggplot2</b>,
+    permits to draw Lexis diagrams. The <pkg>TraMineR</pkg> package is
     intended for analysing state or event sequences that describe life
-    courses. <pkg>asbio</pkg> computes the
-    expected numbers of individuals in specified age classes or life
-    stages given survivorship probabilities from a transition matrix.
+    courses. The <pkg>Biograph</pkg> package permits to describe and
+    analyse life histories following a multistate perspective on the
+    life course. <pkg>asbio</pkg> computes the expected numbers of
+    individuals in specified age classes or life stages given
+    survivorship probabilities from a transition matrix.
   </li>
   
   <li>
@@ -440,14 +512,22 @@ something is inaccurate or missing.</p>
     to estimate the cumulative incidence function.
     The <pkg>compeir</pkg> package estimates event-specific incidence
     rates, rate ratios, event-specific incidence proportions and
-    cumulative incidence functions.
-    The <pkg>NPMLEcmprsk</pkg>
+    cumulative incidence functions.  The <pkg>NPMLEcmprsk</pkg>
     package implements the semi-parametric mixture model for competing
     risks data. The <pkg>wtcrsk</pkg> package implements a
     proportional subdistribution hazards model with adjustment for
     covariate-dependent censoring. The <pkg>MIICD</pkg> package
     implements Pan's (2000) multiple imputation approach to the Fine
-    and Gray model for interval censored data.
+    and Gray model for interval censored data. The <pkg>csrkdiag</pkg>
+    package provides graphical and analytical approaches for checking
+    the assumptions of the Fine and Gray model. The <pkg>CFC</pkg>
+    package permits to perform Bayesian, and non-Bayesian,
+    cause-specific competing risks analysis for parametric and
+    non-parametric survival functions. The <pkg>gcerisk</pkg> package
+    provides some methods for competing risks data. Estimation,
+    testing and regression modeling of subdistribution functions in
+    the competing risks setting using quantile regressions can be had
+    in <pkg>cmprskQR</pkg>. 
   </li>
   
   <li>
@@ -461,10 +541,15 @@ something is inaccurate or missing.</p>
     package proposes implementations of several models for recurrent
     events data, such as the Pe&#241;a-Strawderman-Hollander,
     Wang-Chang estimators, and MLE estimation under a Gamma Frailty
-    model.  The <pkg>condGEE</pkg> package
-    implements the conditional GEE for recurrent event gap times.
-    The <pkg>TestSurvRec</pkg> package
-    implements weighted logrank type tests for recurrent events.
+    model.  The <pkg>condGEE</pkg> package implements the conditional
+    GEE for recurrent event gap times.  The <pkg>TestSurvRec</pkg>
+    package implements weighted logrank type tests for recurrent
+    events. The <pkg>reda</pkg> package provides function to fit gamma
+    frailty model with either a piecewise constant or a spline as the
+    baseline rate function for recurrent event data, as well as some
+    miscellaneous functions for recurrent event data. Several
+    regression models for recurrent event data are implemented in
+    the <pkg>reReg</pkg> package. 
   </li>
 </ul>
 
@@ -482,6 +567,17 @@ something is inaccurate or missing.</p>
     the proportional excess and additive excess models. 
   </li>
   <li>
+    The <pkg>mexhaz</pkg> package allows fitting an hazard regression
+    model using different shapes for the baseline hazard. The model
+    can be used in the relative survival setting (excess mortality
+    hazard) as well as in the overall survival setting (overall
+    mortality hazard).
+  </li>
+  <li>
+    The <pkg>flexrsurv</pkg> package implements the models of Remontet
+    et al. (2007) and Mahboubi et al. (2011).  
+  </li>
+  <li>
     The <pkg>JPSurv</pkg> package implements methods for
     population-based survival analysis, like the proportional hazard
     relative survival model and the join point relative survival model.
@@ -495,9 +591,13 @@ something is inaccurate or missing.</p>
     The <pkg>MRsurv</pkg> package permits to fit multiplicative
     regression models for relative survival. 
   </li>
+  <li><pkg>popEpi</pkg> allows for estimation of EdererII and Pohar
+    Perme relative / net survival as well as standardized mortality
+    ratios
+  </li>
   <li>
     The <pkg>ROCt</pkg> package implements time-dependent ROC curves
-    and extensions to relative survival.
+    and extensions to relative survival. 
   </li>
 </ul>
 
@@ -519,19 +619,29 @@ something is inaccurate or missing.</p>
     that can be used for, e.g., meta-analysis and for hierarchically
     clustered data (with 2 levels of clustering), respectively.  A
     proportional hazards model with mixed effects can be fitted using
-    the
-    <pkg>phmm</pkg> package.  The <pkg>lmec</pkg> package fits a
+    the <pkg>phmm</pkg> package.  The <pkg>lmec</pkg> package fits a
     linear mixed-effects model for left-censored data. The Cox model
     using h-likelihood estimation for the frailty terms can be fitted
     using the <pkg>frailtyHL</pkg> package.  The <pkg>tlmec</pkg>
     package implements a linear mixed effects model for censored data
-    with Student-t or normal distributions.
+    with Student-t or normal distributions. The <pkg>frailtySurv</pkg>
+    package simulates and fits semiparametric shared frailty models
+    under a wide range of frailty distributions. The <pkg>parfm</pkg>
+    package implements parametric frailty models by maximum marginal
+    likelihood. The <pkg>PenCoxFrail</pkg> package provides a
+    regularisation approach for Cox frailty models through
+    penalisation. 
   </li>
   <li>
     <em><b>Joint modelling of time-to-event and longitudinal
     data:</b></em> The <pkg>joineR</pkg> package allows the analysis
-    of repeated measurements and time-to-event data via joint random effects
-    models. 
+    of repeated measurements and time-to-event data via joint random
+    effects models. The <pkg>joint.Cox</pkg> package performs Cox
+    regression and dynamic prediction under the joint frailty-copula
+    model between tumour progression and death for
+    meta-analysis. <pkg>jointModel</pkg> fits semiparametric
+    regression model for longitudinal responses and a semiparametric
+    transformation model for time-to-event data.
   </li>
 </ul>
 
@@ -557,6 +667,11 @@ something is inaccurate or missing.</p>
     The <pkg>MST</pkg> package constructs trees for multivariate
     survival data using marginal and frailty models.
   </li>
+  <li>
+    The <pkg>SurvCorr</pkg> package permits to estimate correlation
+    coefficients with associated confidence limits for bivariate,
+    partially censored survival times. 
+</li>
 </ul>
 
 <h1>Bayesian Models</h1>
@@ -632,7 +747,18 @@ something is inaccurate or missing.</p>
     The <pkg>IDPSurvival</pkg> package implements non-parametric
     survival analysis techniques using a prior near-ignorant Dirichlet
     Process.
-</li>
+  </li>
+  <li>
+    The <pkg>ICBayes</pkg> packages permits to fit Bayesian
+    semiparametric regression survival models (proportional hazards
+    model, proportional odds model, and probit model) to
+    interval-censored time-to-event data
+  </li>
+  <li>
+    The <pkg>BayesPiecewiseICAR</pkg> package fits a piecewise
+    exponential hazard to survival data using a Hierarchical Bayesian
+    model.
+  </li>
 </ul>
 
 <h1>High-Dimensional Data</h1>
@@ -646,17 +772,26 @@ something is inaccurate or missing.</p>
     <pkg>LogicReg</pkg> can perform logic regression.
     <pkg>kaps</pkg> implements K-adaptive partitioning and recursive
     partitioning algorithms for censored survival data.
-    The <pkg>DStree</pkg> package implements trees and bagged trees for
-    discrete-times survival data.
+    The <pkg>DStree</pkg> package implements trees and bagged trees
+    for discrete-times survival data. The <pkg>LTRCtrees</pkg> package
+    provides recursive partition algorithms designed for fitting
+    survival tree with left-truncated and right censored
+    data. <pkg>bnnSurvival</pkg> implements a bootstrap aggregated
+    version of the k-nearest neighbors survival probability prediction
+    method.
   </li>
   <li>
     <em><b>Random forest:</b></em> Package <pkg>ipred</pkg> implements
-    bagging for survival data.  The <pkg>randomForestSRC</pkg>
-    package fits random forest to survival data, while a variant of
-    the random forest is implemented in <pkg>party</pkg>.
+    bagging for survival data.  The <pkg>randomForestSRC</pkg> package
+    fits random forest to survival data, while a variant of the random
+    forest is implemented in <pkg>party</pkg>. A faster implementation
+    can be found in package <pkg>ranger</pkg>. An alternative
+    algorithm for random forests is implemented in <pkg>icRSF</pkg>. 
   </li>
   <li>
     <b><em>Regularised and shrinkage methods:</em></b>
+    The <pkg>glmnet</pkg> package provides procedures for fitting the
+    entire lasso or elastic-net regularization path for Cox models. 
     The <pkg>glmpath</pkg> package implements a L1 regularised Cox
     proportional hazards model.  An L1 and L2 penalised Cox models are
     available in <pkg>penalized</pkg>.  The <pkg>pamr</pkg> package
@@ -671,7 +806,14 @@ something is inaccurate or missing.</p>
     package permits to fit Cox models with a combination of lasso and
     group lasso regularisation. <pkg>CoxRidge</pkg> fits Cox models
     with penalized ridge-type (ridge, dynamic and weighted dynamic)
-    partial likelihood.
+    partial likelihood. The <pkg>hdnom</pkg> package implements 9
+    types of penalised Cox regression methods and provides methods for
+    model validation, calibration, comparison, and nomogram
+    visualisation. Another implementation of regularised Cox models
+    can be found in <pkg>Coxnet</pkg>. A penalised version of the Fine
+    and Gray model can be found
+    in <pkg>crrp</pkg>. The <pkg>Cyclops</pkg> package implements
+    cyclic coordinate descent for the Cox proportional hazards model.
   </li>
   <li>
     <em><b>Boosting:</b></em>
@@ -721,6 +863,11 @@ something is inaccurate or missing.</p>
     (Cumulative sensitivity and dynamic specificity).
   </li>
   <li>
+    <pkg>tdROC</pkg>can be used to compute time-dependent ROC curve
+    from censored survival data using nonparametric weight
+    adjustments.
+  </li>
+  <li>
     <pkg>risksetROC</pkg> implements time-dependent ROC curves,
     AUC and integrated AUC of Heagerty and Zheng (Biometrics, 2005).
   </li>
@@ -746,6 +893,18 @@ something is inaccurate or missing.</p>
     The <pkg>survAccuracyMeasures</pkg> package provides functions for
     estimating the AUC, TPR(c), FPR(c), PPV(c), and NPV(c) for
     survival data.
+  </li>
+  <li>The <pkg>survRank</pkg> package provides functions for the
+    estimation of the prediction accuracy in a unified survival AUC
+    approach. 
+  </li>
+  <li> The <pkg>compareC</pkg> package permits to compare C indices
+    with right-censored survival outcomes
+  </li>
+  <li>
+    The <pkg>APtools</pkg> package provide tools to estimate the
+    average positive predictive values and the AUC for risk scores or
+    marker. 
   </li>
 </ul>
 
@@ -815,7 +974,14 @@ something is inaccurate or missing.</p>
     basis for the microsimulation are a multistate model, Markov or
     non-Markov, for which the transition intensities are specified, as
     well as an initial cohort. 
-</li>
+  </li>
+  <li>The <pkg>SimHaz</pkg> package permits to simulate data with a
+    dichotomous time-dependent exposure.
+  </li>
+  <li>The <pkg>SimSCRPiecewise</pkg> package can be used to simulate
+    univariate and semi-competing risks data given covariates and
+    piecewise exponential baseline hazards.
+  </li>
 </ul>
 
 <h1>Graphics</h1>
@@ -847,6 +1013,21 @@ something is inaccurate or missing.</p>
 
 <h1>Miscellaneous</h1>
 <ul>
+  <li>
+    The <pkg>survminer</pkg> package contains the
+    function <code>ggsurvplot</code> for drawing survival curves with
+    the 'number at risk' table. Other functions are also available for
+    visual examinations of cox model assumptions.
+  </li>
+  <li>
+    The <pkg>InformativeCensoring</pkg> package multiple imputation
+    methods for dealing with informative censoring.
+  </li> 
+  <li>
+    The <pkg>discSurv</pkg> provides data transformations, estimation
+    utilities, predictive evaluation measures and simulation functions for
+    discrete time survival analysis.
+  </li>
   <li>
     <pkg>dynpred</pkg> is the companion package to "Dynamic Prediction
     in Clinical Survival Analysis".
@@ -895,6 +1076,27 @@ something is inaccurate or missing.</p>
   <li>
     The <pkg>coarseDataTools</pkg> package implements an EM algorithm
     to estimate the relative case fatality ratio between two groups.
+  </li>
+  <li>The <pkg>GSSE</pkg> package proposes a fully efficient sieve
+    maximum likelihood method to estimate genotype-specific distribution
+    of time-to-event outcomes under a nonparametric model
+  </li>
+  <li>power and sample size calculation based on the difference in
+    restricted mean survival times can be performed using
+    the <pkg>SSRMST</pkg> package. 
+  </li>
+  <li>
+    The <pkg>AHR</pkg> package allows for the estimation of
+    multivariate average hazard ratios as defined by Kalbfleisch and
+    Prentice.
+  </li>
+  <li>
+    The <pkg>survMisc</pkg> provides miscellaneous routines to help in
+    the analysis of right-censored survival data.
+  </li>
+  <li>
+    Accompanying data sets to the book <em>Applied Survival Analysis
+      Using R</em> can be found in package <pkg>asaur</pkg>.
 </li>
 </ul>
 

@@ -2,91 +2,80 @@
 ### Recherche aout 2016 ###
 ###########################
 
-LexisPlotR
-uniah
-qrcm
-reda
-ICBayes
-pch
-isoph
-landest
-npsurv
-reReg
-jackknifeKME
-(GSSE)
-SimHaz
-SurvRegCensCov
-csrkdiag
-(popEpi) (email)
-frailtySurv
-TP.idm
-coxPlus
-hdnom (email)
-survRank
-SSRMST
-addhazard
-PRIMsrc
-rstpm2 (email)
-TransModel
-AHR
-LncMod
-crrp
-controlTest
-(parfm)
-flexPM
-icenReg
-discSurv
-ELYP
-Coxnet
-CFC
-joint.Cox
-survCorr
-coxsei
-SurvLong
-fastpseudo
-survRM2
-emplik2
-compareC
-InformativeCensoring
-Cyclops
-time2events
-SimSCRPiecewise
-BayesPiecewiseICAR
-tranSurv
-APtools
-LTRCtrees
-jointModel
-(simLife)
-condSurv
-mexhaz (+email)
-kernscr
-plac
-flexrsurv
-msmtools
-(Biograph)
-tdROC
-SCRSELECT
-ICGOR
-GORCure
-PenCoxFrail
-thregl
-bnnSurvival
-survMisc
-asaur
-addhaz
-FamEvent
-gcerisk
-cmprskQR
-miCoPTCM
-icRSF
-survminer (+email)
-intercure
-MPLikelihoodWB
+/ LexisPlotR
+/ uniah
+/ reda
+/ ICBayes
+/ pch
+/ isoph
+/ landest
+/ npsurv
+/reReg
+/ jackknifeKME
+/ (GSSE)
+/ SimHaz
+/ SurvRegCensCov
+/ csrkdiag
+/ (popEpi) (email)
+/ frailtySurv
+/ TP.idm
+/ hdnom (email)
+/ survRank
+/ SSRMST
+/ addhazard
+/ rstpm2 (email)
+/ TransModel
+/AHR
+/ crrp
+/controlTest
+/ (parfm)
+/ flexPM
+/icenReg
+/discSurv
+/ELYP
+/ Coxnet
+/CFC
+/joint.Cox
+/survCorr
+/ coxsei
+/ SurvLong
+/ fastpseudo
+/ survRM2
+/ emplik2
+/ compareC
+/ InformativeCensoring
+/Cyclops
+/ SimSCRPiecewise
+/ BayesPiecewiseICAR
+/ tranSurv
+/ APtools
+/ LTRCtrees
+/ jointModel
+/ condSURV
+/ mexhaz (+email)
+/ plac
+/ flexrsurv
+/ msmtools
+/ (Biograph)
+/ tdROC
+/ICGOR
+/ GORCure
+/ PenCoxFrail
+/ thregI
+/ bnnSurvival
+/ survMisc
+/ asaur
+/ gcerisk
+/ cmprskQR
+/ miCoPTCM
+/ icRSF
+/ survminer (+email)
+/ intercure
 
-smcure (email)
-gte (email)
-ranger (email)
-glmnet (email)
+/smcure (email)
+/ gte (email)
+/ ranger (email)
+/ glmnet (email)
 
 
 ################################
