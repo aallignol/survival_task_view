@@ -1,9 +1,10 @@
 require(ctv)
+require(XML)
 
-myTaskView <- read.ctv("Survival.ctv")
+gmyTaskView <- read.ctv("Survival.ctv")
 ctv2html(myTaskView, file = "Survival.html")
 
-## 
+##
 check_ctv_packages("Survival.ctv")
 
 cran_packages <- as.vector(available.packages()[,1])
