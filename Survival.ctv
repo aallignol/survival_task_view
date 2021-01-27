@@ -952,6 +952,11 @@ or submit a pull request.</p>
     univariate and semi-competing risks data given covariates and
     piecewise exponential baseline hazards.
   </li>
+  <li>The <pkg>SimSurvNMarker</pkg> package provides functions to
+      simulate from joint survival and potentially multivariate marker
+      models. User-defined basis expansions in time can be passed
+      which effect the log hazard, the markers, and the association
+      between the two.</li>
 </ul>
 
 <h1>Graphics</h1>
@@ -1273,6 +1278,7 @@ or submit a pull request.</p>
   <pkg>simPH</pkg>
   <pkg>SimSCRPiecewise</pkg>
   <pkg>simsurv</pkg>
+  <pkg>SimSurvNMarker</pkg>
   <pkg>smcure</pkg>
   <pkg>SmoothHazard</pkg>
   <pkg>smoothHR</pkg>
