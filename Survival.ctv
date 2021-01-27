@@ -15,7 +15,7 @@ within the relevant time period, producing so-called censored observations.
 <p>This task view aims at presenting the useful R packages for the analysis
 of time to event data.</p>
 <p>Please let the
-<a href="mailto:arthur.allignol@uni-ulm.de">maintainers</a> know if
+<a href="mailto:arthur.allignol@gmail.com">maintainers</a> know if
 something is inaccurate or missing. The Task View is also on
 github. Feel free to open
 an <a href="https://github.com/aallignol/survival_task_view/issues">issue</a>
@@ -228,7 +228,7 @@ or submit a pull request.</p>
     the Cox model with left-truncated data using augmented information
     from the marginal of the truncation times.
 
-    <br>The proportionality assumption can be checked using
+    <br/>The proportionality assumption can be checked using
     the <code>cox.zph</code> function in <pkg>survival</pkg>.
     The <pkg>CPE</pkg> package calculates concordance probability
     estimate for the Cox model, as does the <code>coxphCPE</code>
@@ -520,13 +520,14 @@ or submit a pull request.</p>
     also permits to fit joint frailty models for joint modelling of
     recurrent events and a terminal event.  The <pkg>condGEE</pkg>
     package implements the conditional GEE for recurrent event gap
-    times.  The <pkg>reda</pkg>
-    package provides function to fit gamma frailty model with either a
-    piecewise constant or a spline as the baseline rate function for
-    recurrent event data, as well as some miscellaneous functions for
-    recurrent event data. Several regression models for recurrent
-    event data are implemented in the <pkg>reReg</pkg> package.
-  </li>
+    times.  The <pkg>reda</pkg> package provides function to fit gamma
+    frailty model with either a piecewise constant or a spline as the
+    baseline rate function for recurrent event data, as well as some
+    miscellaneous functions for recurrent event data. Several
+    regression models for recurrent event data are implemented in
+    the <pkg>reReg</pkg> package. The <pkg>spef</pkg> package includes
+    functions for fitting semiparametric regression models for panel
+    count survival data. </li>
 </ul>
 
 <h1>Relative Survival</h1>
@@ -817,8 +818,10 @@ or submit a pull request.</p>
 <h1>Predictions and Prediction Performance</h1>
 <ul>
   <li>
-    The <pkg>pec</pkg> package provides utilities to plot prediction error
-    curves for several survival models
+    The <pkg>pec</pkg> package provides utilities to plot prediction
+    error curves for several survival
+    models. The <pkg>riskRegression</pkg> package now includes most of
+    the functionality of the <pkg>pec</pkg> package.
   </li>
   <li>
     <pkg>peperr</pkg> implements prediction error techniques which can
@@ -1290,6 +1293,7 @@ or submit a pull request.</p>
   <pkg>spatstat</pkg>
   <pkg>spatsurv</pkg>
   <pkg>spBayesSurv</pkg>
+  <pkg>spef</pkg>
   <pkg>SSRMST</pkg>
   <pkg>superpc</pkg>
   <pkg>surv2sampleComp</pkg>
@@ -1344,11 +1348,9 @@ or submit a pull request.</p>
   <a href="https://www.lumc.nl/org/msbi/research/medische-statistiek/survival-analysis/MethodologicalResearch/dynamic-prediction/">Dynamic prediction in clinical survival analysis</a>
   <a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/RmS">Regression modelling strategy</a>
   <a href="http://www.gamlss.com/">GAMLSS</a>
-  <a href="http://www3.interscience.wiley.com/cgi-bin/abstract/113390852/ABSTRACT">Tutorial in competing
+  <a href="https://onlinelibrary.wiley.com/doi/10.1002/sim.2712">Tutorial in competing
     risks and multistate models</a>
-  <a href="http://www.msbi.nl/dnn/Research/SurvivalAnalysis/Multistate/tabid/144/Default.aspx">Associated
-    functions from the tutorial</a>
-  <a href="http://socserv.mcmaster.ca/jfox/Books/Companion/appendix/Appendix-Cox-Regression.pdf">Proportional-Hazards
+  <a href="https://socialsciences.mcmaster.ca/jfox/Books/Companion/appendices/Appendix-Cox-Regression.pdf">Proportional-Hazards
     Regression for Survival Data. Appendix to An R and S-PLUS Companion to Applied Regression.</a>
     <a href="http://www.jstatsoft.org/v38">Journal of Statistical Software. Special Volume: Competing Risks and Multi-State Models</a>
 </links>
