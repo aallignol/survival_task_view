@@ -618,7 +618,9 @@ or submit a pull request.</p>
     proposed by Henderson and colleagues
     (2000) <a href="http://dx.doi.org/10.1093/biostatistics/1.4.465">doi:10.1093/biostatistics/1.4.465</a>,
     but extended to the case of multiple continuous longitudinal
-    measures.
+    measures. The <pkg>rstanarm</pkg> package fits joint models for
+    one or more longitudinal outcomes (continuous, binary or count
+    data) and a time-to-event, estimated under a Bayesian framework.
   </li>
 </ul>
 
@@ -690,16 +692,21 @@ or submit a pull request.</p>
   <li>
     The <pkg>JMbayes</pkg> package performs joint modelling of
     longitudinal and time-to-event data under a bayesian approach.
-</li>
+  </li>
+  <li>
+    The <pkg>rstanarm</pkg> package fits a joint model for one or more
+    longitudinal outcomes (continuous, binary or count data) and a
+    time-to-event under a Bayesian framework.
+  </li>
   <li>
     Bayesian parametric and semi-parametric estimation for
     semi-competing risks data is available via the <pkg>SemiCompRisks</pkg>
     package.
-</li>
+  </li>
   <li>The <pkg>psbcGroup</pkg> package implements penalized
-  semi-parametric Bayesian Cox models with elastic net, fused lasso and
-  group lasso priors.
-</li>
+    semi-parametric Bayesian Cox models with elastic net, fused lasso and
+    group lasso priors.
+  </li>
   <li>
     The <pkg>spatsurv</pkg> package fits a Bayesian parametric
     proportional hazards model for which events have been geo-located.
@@ -1254,6 +1261,7 @@ or submit a pull request.</p>
   <pkg priority="core">rms</pkg>
   <pkg>RobustAFT</pkg>
   <pkg>rpart</pkg>
+  <pkg>rstanarm</pkg>
   <pkg>rstpm2</pkg>
   <pkg>saws</pkg>
   <pkg>SemiCompRisks</pkg>

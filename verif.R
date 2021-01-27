@@ -1,7 +1,7 @@
 require(ctv)
 require(XML)
 
-gmyTaskView <- read.ctv("Survival.ctv")
+myTaskView <- read.ctv("Survival.ctv")
 ctv2html(myTaskView, file = "Survival.html")
 
 ##
