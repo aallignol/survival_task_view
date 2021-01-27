@@ -523,9 +523,7 @@ or submit a pull request.</p>
     approaches.  Packages <pkg>survival</pkg>
     (via <code>survfit</code>) and <pkg>prodlim</pkg> can also be used
     to estimate the cumulative incidence function.
-    The <pkg>compeir</pkg> package estimates event-specific incidence
-    rates, rate ratios, event-specific incidence proportions and
-    cumulative incidence functions.  The <pkg>NPMLEcmprsk</pkg>
+    The <pkg>NPMLEcmprsk</pkg>
     package implements the semi-parametric mixture model for competing
     risks data. The <pkg>MIICD</pkg> package implements Pan's (2000)
     multiple imputation approach to the Fine and Gray model for
@@ -707,155 +705,6 @@ or submit a pull request.</p>
     Cox proportional hazards models.
   </li>
   <li>
-    The <code>DPsurvint</code> function in <pkg>DPpackage</pkg> fits a Bayesian
-    semi-parametric AFT model. <code>LDDPsurvival</code> in the same package
-    fits a Linear Dependent Dirichlet Process Mixture of survival models.
-  </li>
-  <li>
-    <code>NMixMCMC</code> in <pkg>mixAK</pkg> performs an MCMC estimation
-    of normal mixtures for censored data.
-  </li>
-  <li>
-    A MCMC for Gaussian linear regression with left-, right- or interval-censored
-    data can be fitted using the <code>MCMCtobit</code> in <pkg>MCMCpack</pkg>.
-  </li>
-  <li>
-    The <pkg>BayHaz</pkg> package estimates the hazard function from censored
-    data in a Bayesian framework.
-  </li>
-  <li>
-    The <code>weibullregpost</code> function in <pkg>LearnBayes</pkg> computes
-    the log posterior density for a Weibull proportional-odds regression model.
-  </li>
-  <li>
-    The <pkg>MCMCglmm</pkg> fits generalised linear mixed models using MCMC
-    to right-, left- and interval censored data.
-  </li>
-  <li>
-    The <pkg>BaSTA</pkg> package aims at drawing inference on
-    age-specific mortality from capture-recapture/recovery data when
-    some or all records have missing information on times of birth
-    and death. Covariates can also be included in the model.
-  </li>
-  <li>
-    The <pkg>JMbayes</pkg> package performs joint modelling of
-    longitudinal and time-to-event data under a bayesian approach.
-</li>
-  <li>
-    Bayesian parametric and semi-parametric estimation for
-    semi-competing risks data is available via the <pkg>SemiCompRisks</pkg>
-    package.
-</li>
-  <li>The <pkg>psbcGroup</pkg> package implements penalized
-  semi-parametric Bayesian Cox models with elastic net, fused lasso and
-  group lasso priors.
-</li>
-  <li>
-    The <pkg>spatsurv</pkg> package fits a Bayesian parametric
-    proportional hazards model for which events have been geo-located.
-  </li>
-  <li>
-    The <pkg>PReMiuM</pkg> package implements Bayesian clustering
-    using a Dirichlet process mixture model to censored responses.
-  </li>
-  <li>
-    The <pkg>spBayesSurv</pkg> package provides Bayesian model fitting
-    for several survival models including spatial copula, linear
-    dependent Dirichlet process mixture model, anova Dirichlet process
-    mixture model, proportional hazards model and marginal spatial
-    proportional hazards model.
-  </li>
-  <li>
-    The <pkg>IDPSurvival</pkg> package implements non-parametric
-    survival analysis techniques using a prior near-ignorant Dirichlet
-    Process.
-  </li>
-  <li>
-    The <pkg>ICBayes</pkg> packages permits to fit Bayesian
-    semiparametric regression survival models (proportional hazards
-    model, proportional odds model, and probit model) to
-    interval-censored time-to-event data
-  </li>
-  <li>
-    The <pkg>BayesPiecewiseICAR</pkg> package fits a piecewise
-    exponential hazard to survival data using a Hierarchical Bayesian
-    model.
-  </li>
-</ul>
-
-<h1>High-Dimensional Data</h1>
-<ul>
-  <li>
-    <em><b>Recursive partitioning:</b></em>
-    <pkg>rpart</pkg> implements CART-like trees that can be used with
-    censored outcomes.
-    The <pkg>party</pkg> package implements recursive partitioning for survival
-    data.
-    <pkg>LogicReg</pkg> can perform logic regression.
-    <pkg>kaps</pkg> implements K-adaptive partitioning and recursive
-    partitioning algorithms for censored survival data.
-    The <pkg>DStree</pkg> package implements trees and bagged trees
-    for discrete-times survival data. The <pkg>LTRCtrees</pkg> package
-    provides recursive partition algorithms designed for fitting
-    survival tree with left-truncated and right censored
-    data. The package also
-    <em><b>Joint modelling of time-to-event and longitudinal
-    data:</b></em> The <pkg>joineR</pkg> package allows the analysis
-    of repeated measurements and time-to-event data via joint random
-    effects models. The <pkg>joint.Cox</pkg> package performs Cox
-    regression and dynamic prediction under the joint frailty-copula
-    model between tumour progression and death for
-    meta-analysis. <pkg>JointModel</pkg> fits semiparametric
-    regression model for longitudinal responses and a semiparametric
-    transformation model for time-to-event data.
-  </li>
-</ul>
-
-<h1>Multivariate Survival</h1>
-<p> Multivariate survival refers to the analysis of unit, e.g., the
-  survival of twins or a family. To analyse such data, we can estimate
-  the joint distribution of the survival times
-</p>
-
-<ul>
-  <li>
-    <em><b>Joint modelling:</b></em>
-    Both <bioc>Icens</bioc> and <pkg>MLEcens</pkg> can estimate bivariate
-    survival data subject to interval censoring.
-  </li>
-  <li>
-    The <pkg>mets</pkg> package implements various statistical models
-    for multivariate event history data, e.g., multivariate cumulative
-    incidence models, bivariate random effects probit models,
-    Clayton-Oakes model.
-  </li>
-  <li>
-    The <pkg>MST</pkg> package constructs trees for multivariate
-    survival data using marginal and frailty models.
-  </li>
-  <li>
-    The <pkg>SurvCorr</pkg> package permits to estimate correlation
-    coefficients with associated confidence limits for bivariate,
-    partially censored survival times.
-</li>
-</ul>
-
-<h1>Bayesian Models</h1>
-<ul>
-  <li>
-    The <pkg>bayesSurv</pkg> package proposes an implementation of a bivariate
-    AFT model.
-  </li>
-  <li>
-    The package <pkg>BMA</pkg> computes a Bayesian model averaging for
-    Cox proportional hazards models.
-  </li>
-  <li>
-    The <code>DPsurvint</code> function in <pkg>DPpackage</pkg> fits a Bayesian
-    semi-parametric AFT model. <code>LDDPsurvival</code> in the same package
-    fits a Linear Dependent Dirichlet Process Mixture of survival models.
-  </li>
-  <li>
     <code>NMixMCMC</code> in <pkg>mixAK</pkg> performs an MCMC estimation
     of normal mixtures for censored data.
   </li>
@@ -972,9 +821,7 @@ or submit a pull request.</p>
     package implements the Lasso and elastic-net penalized Cox's
     regression using the cockail algorithm.  The <pkg>SGL</pkg>
     package permits to fit Cox models with a combination of lasso and
-    group lasso regularisation. <pkg>CoxRidge</pkg> fits Cox models
-    with penalized ridge-type (ridge, dynamic and weighted dynamic)
-    partial likelihood. The <pkg>hdnom</pkg> package implements 9
+    group lasso regularisation. The <pkg>hdnom</pkg> package implements 9
     types of penalised Cox regression methods and provides methods for
     model validation, calibration, comparison, and nomogram
     visualisation. Another implementation of regularised Cox models
@@ -1180,12 +1027,6 @@ or submit a pull request.</p>
     representing multistate data, in particular Lexis diagrams.
   </li>
   <li>
-    The <pkg>compeir</pkg> package provide multistate-type graphics
-    for competing risks, in which the thickness of the transition
-    arrows from the initial event to each competing event describes
-    the particular amount of every incidence rate.
-  </li>
-  <li>
     The <pkg>FamEvent</pkg> generates time-to-event outcomes for
     families that habour genetic mutation under different sampling
     designs and estimates the penetrance functions for family data
@@ -1268,11 +1109,6 @@ or submit a pull request.</p>
     the <pkg>SSRMST</pkg> package.
   </li>
   <li>
-    The <pkg>AHR</pkg> package allows for the estimation of
-    multivariate average hazard ratios as defined by Kalbfleisch and
-    Prentice.
-  </li>
-  <li>
     The <pkg>survMisc</pkg> provides miscellaneous routines to help in
     the analysis of right-censored survival data.
   </li>
@@ -1290,7 +1126,6 @@ or submit a pull request.</p>
   <pkg>AER</pkg>
   <pkg>aftgee</pkg>
   <pkg>ahaz</pkg>
-  <pkg>AHR</pkg>
   <pkg>AIM</pkg>
   <pkg>APtools</pkg>
   <pkg>asaur</pkg>
@@ -1318,7 +1153,6 @@ or submit a pull request.</p>
   <pkg>coarseDataTools</pkg>
   <pkg>coin</pkg>
   <pkg>compareC</pkg>
-  <pkg>compeir</pkg>
   <pkg>compound.Cox</pkg>
   <pkg>concreg</pkg>
   <pkg>condGEE</pkg>
@@ -1330,7 +1164,6 @@ or submit a pull request.</p>
   <pkg>Coxnet</pkg>
   <pkg>coxphf</pkg>
   <pkg>coxphw</pkg>
-  <pkg>CoxRidge</pkg>
   <pkg>coxrobust</pkg>
   <pkg>coxsei</pkg>
   <pkg>CPE</pkg>
