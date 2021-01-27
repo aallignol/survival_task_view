@@ -740,7 +740,7 @@ or submit a pull request.</p>
   </li>
 </ul>
 
-<h1>High-Dimensional Data</h1>
+<h1>Machine learning</h1>
 <ul>
   <li>
     <em><b>Recursive partitioning:</b></em>
@@ -808,7 +808,9 @@ or submit a pull request.</p>
     model using the compound covariate method. <pkg>plsRcox</pkg>
     provides partial least squares regression and various techniques
     for fitting Cox models in high dimensionnal
-    settings.
+    settings. The <pkg>mlr3proba</pkg> package, part of the mlr3
+    ecosystem implements survival models, including classical models
+    (Cox, AFT) and machine learning models(random forests, SVMs).
   </li>
 </ul>
 
@@ -1214,6 +1216,7 @@ or submit a pull request.</p>
   <pkg>mixAK</pkg>
   <pkg>mixPHM</pkg>
   <pkg>MLEcens</pkg>
+  <pkg>mlr3proba</pkg>
   <pkg>MRsurv</pkg>
   <pkg>msm</pkg>
   <pkg>msmtools</pkg>
